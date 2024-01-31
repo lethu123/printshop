@@ -26,6 +26,7 @@
   font-family: ATM-AvoBold;
   src: url(../assets/fonts/UTM_AvoBold.ttf);
 }
+
 /* @font-face {
   font-family: ATM-Avo;
   src: url(../assets/fonts/UTM_Avo.ttf);
@@ -35,12 +36,10 @@
 body {
   font-family: ATM-Avo;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -54,3 +53,20 @@ body {
     font-family: ATM-Avo;
   }
 }
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+
+/* 
+.swiper-button-prev {
+  background-color: transparent;
+  color: #000;
+}
+.swiper-button-prev::after {
+  content: '\2190' !important;
+  font-size: 24px;
+  line-height: 1;
+}
+*/

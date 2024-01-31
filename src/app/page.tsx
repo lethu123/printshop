@@ -11,6 +11,8 @@ import FooterComponent from "@srccomponents/home/FooterComponent";
 import CoperatorComponent from "@srccomponents/home/CoperatorComponent";
 import ProductComponent from "@srccomponents/home/ProductComponent";
 import CategoryComponent from "@srccomponents/home/CategoryComponent";
+ 
+
 
 export default function Home() {
   return (
@@ -83,6 +85,7 @@ export default function Home() {
       <CoperatorComponent />
       {/* footer */}
       <FooterComponent />
+ 
 
     </Screen>
   );
