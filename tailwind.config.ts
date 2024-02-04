@@ -20,6 +20,8 @@ const config: Config = {
       avo_bold: ['ATM-AvoBold']
     }
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 };
 export default config;

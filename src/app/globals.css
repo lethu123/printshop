@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -27,18 +28,17 @@
   src: url(../assets/fonts/UTM_AvoBold.ttf);
 }
 
-/* @font-face {
-  font-family: ATM-Avo;
-  src: url(../assets/fonts/UTM_Avo.ttf);
-}
-  */
+
 
 body {
   font-family: ATM-Avo;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background-color: #141414;
+  background-image: url(../assets/images/background.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   scroll-behavior: smooth;
 }
 
@@ -54,10 +54,42 @@ body {
   }
 }
 
-.swiper-wrapper {
+/* .slick-slide {
+  padding: 10px;
+} */
+
+.slick-track {
+  display: flex !important;
   align-items: center;
+  gap: 20px;
+
 }
 
+.slick-slide {
+  height: inherit !important;
+  /* margin-right: 20px; */
+}
+
+.slick-slide div:focus-visible {
+  outline: none;
+}
+ 
+
+.slick-arrow.slick-prev {
+  left: 50px !important;
+  z-index: 1;
+
+}
+.slick-arrow.slick-prev::before, .slick-arrow.slick-next::before {
+  content: '';
+}
+
+.slick-arrow.slick-next {
+  right: 100px !important;
+  z-index: 1;
+}
+ 
+ 
 
 /* 
 .swiper-button-prev {

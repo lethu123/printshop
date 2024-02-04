@@ -76,7 +76,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`${styles.bg_category} py-[9rem]`}>
+      <div className={`${styles.bg_category} py-[4rem]`}>
         <ProductComponent />
         <CategoryComponent />
       </div>
@@ -85,8 +85,6 @@ export default function Home() {
       <CoperatorComponent />
       {/* footer */}
       <FooterComponent />
- 
-
     </Screen>
   );
 }

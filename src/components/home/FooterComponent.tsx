@@ -11,14 +11,14 @@ import phone2 from '@assets/images/phone-orange.svg'
 
 const FooterComponent = () => {
   return (
-    <footer className="pb-[6rem]" style={{ background: '#1D1D1D' }}>
+    <footer className="pb-[6rem]">
     <Container>
       <div className="grid grid-cols-5 gap-5 items-stretch">
         <div className="col-span-3">
           <h1 className="text-white text-[21.9px]">CÔNG TY TNHH QUẢNG CÁO VÀ THƯƠNG MẠI
             <br />
             DƯƠNG PHONG (DPA)</h1>
-          <div className="flex items-center gap-40">
+          <div className="flex items-center gap-16">
             <div  >
               <div className="flex text-white gap-2">
                 <Image width={12} alt="" src={location} />
@@ -93,7 +93,7 @@ const FooterComponent = () => {
         </div>
 
         <div className="col-span-2 flex items-end">
-          <div className="flex gap-10 items-center ">
+          <div className="flex gap-8 items-center ">
             <h2 className="text-white text-[15.42px] font-avo_bold">New Enter</h2>
             <div>
               <input className={`${styles.input} text-[15.42px] p-3 border-0 outline-0 rounded-full font-semibold placeholder:text-black`} placeholder="enter your email address" />

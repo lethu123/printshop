@@ -12,11 +12,13 @@ import Link from 'next/link';
 const CategoryComponent = () => {
     return (
         <div>
-            <div className="w-5/6 mx-auto mt-[9rem]">
+            <div className="w-5/6 mx-auto my-[8rem]">
                 <h1 className={`${styles.text_custom_yellow} text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>DỊCH VỤ</h1>
                 <div className="grid grid-cols-10 gap-1 mt-5">
                     <div className="col-span-2">
-                        <Image alt="" className="w-full" src={service1} />
+                        <div className={`${styles.image_hover}`}>
+                            <Image alt="" className="w-full" src={service1} />
+                        </div>
                     </div>
                     <div className="col-span-2">
                         <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
@@ -26,7 +28,9 @@ const CategoryComponent = () => {
 
                     </div>
                     <div className="col-span-2">
-                        <Image className="w-full" alt="" src={service2} />
+                        <div className={`${styles.image_hover}`}>
+                            <Image className="w-full" alt="" src={service2} />
+                        </div>
                     </div>
                     <div className="col-span-2">
                         <div className={`${styles.bg_custom_yellow} h-full relative z-0`}>
@@ -34,13 +38,19 @@ const CategoryComponent = () => {
                             <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
                         </div>
                     </div> <div className="col-span-2">
-                        <Image className="w-full" alt="" src={service6} />
+                        <div className={`${styles.image_hover}`}>
+                            <Image className="w-full" alt="" src={service6} />
+                        </div>
                     </div>
                     <div className="col-span-2">
-                        <Image className="w-full" alt="" src={service3} />
+                        <div className={`${styles.image_hover}`}>
+                            <Image className="w-full" alt="" src={service3} />
+                        </div>
                     </div>
                     <div className="col-span-2">
-                        <Image className="w-full" alt="" src={service4} />
+                        <div className={`${styles.image_hover}`}>
+                            <Image className="w-full" alt="" src={service4} />
+                        </div>
                     </div>
                     <div className="col-span-2">
                         <div className={`${styles.bg_custom_yellow} h-full flex relative z-0`}>
@@ -49,8 +59,10 @@ const CategoryComponent = () => {
                         </div>
                     </div>
                     <div className="col-span-4 relative">
-                        <Image className="w-full" alt="" src={service5} />
-                        <div className={`${styles.follow_me} absolute -bottom-20 right-[50%]`} style={{transform: 'translateX(50%)'}} >
+                        <div className={`${styles.image_hover}`}>
+                            <Image className="w-full" alt="" src={service5} />
+                        </div>
+                        <div className={`${styles.follow_me} absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
                             <Link href={'/'}>Xem thêm</Link>
                         </div>
                     </div>

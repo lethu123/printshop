@@ -8,7 +8,7 @@ import logo4 from '@assets/images/logo4.svg';
 
 const CoperatorComponent = () => {
     return (
-        <div className={`${styles.coperator} border-t py-[6rem] relative `} style={{ borderTopColor: '#FF9D00', borderBottomColor: '#FF9D00', background: '#1D1D1D' }}>
+        <div className={`${styles.coperator} border-t py-[6rem] relative `} style={{ borderTopColor: '#FF9D00', borderBottomColor: '#FF9D00' }}>
             <h1 className="text-white text-center tracking-[5px] text-[30.48px]">CÁC QUÝ ĐỐI TÁC CỦA CHÚNG TÔI</h1>
             <div className="flex gap-x-[2rem] gap-y-[1rem] items-end px-[5rem] pt-6 flex-wrap justify-center">
                 <Image alt="" src={logo1} style={{ width: '6rem' }} />

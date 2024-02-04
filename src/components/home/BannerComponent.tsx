@@ -1,45 +1,81 @@
 import React from 'react'
-import homecss from '@assets/scss/home.module.scss' 
+import homecss from '@assets/scss/home.module.scss'
 import Container from '@srccommons/Container'
 import Image from 'next/image'
 import logo from '@assets/images/logo.svg'
+import Link from 'next/link'
+import styles from '@assets/scss/home.module.scss'
 
 const BannerComponent = () => {
     return (
         <div className={`${homecss.banner} bg-fixed h-svh flex flex-col justify-between`}>
             {/* me */}
             <Container>
-                <div className="flex items-center justify-around pt-6">
-                    <div>
-                        <span className="text-white text-[18px]">Trang chủ</span>
+                <div className="flex items-center gap-14 justify-center pt-6">
+                    <Link href={'/'} className="text-white text-[18px] py-3">Trang chủ</Link>
+                    <div className={`${styles.submenu} relative`}>
+                        <div className={`  text-white text-[18px] cursor-pointer py-3`}>Sản phẩm </div>
+                        <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
+                            <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                                <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
+                                    <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        Sản phẩm 1
+                                    </a>
+                                    <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        Sản phẩm 2 
+                                    </a>
+                                    <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        Sản phẩm 3
+                                    </a>
+                                    <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        Sản phẩm 4
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <span className="text-white text-[18px]">Sản phẩm</span>
-                    </div>
-                    <div>
-                        <span className="text-white text-[18px]">Dịch vụ</span>
+                    <div className={`${styles.submenu} relative`}>
+                        <div  className="text-white text-[18px] cursor-pointer py-3">Dịch vụ</div>
+                        <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
+                            <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                                <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
+                                    <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                       Dịch vụ 1
+                                    </a>
+                                    <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                       Dịch vụ 2
+                                    </a>
+                                    <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                       Dịch vụ 3
+                                    </a>
+                                    <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                       Dịch vụ 4
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <Image height={70} width={150} alt='' src={logo} />
                     </div>
                     <div>
-                        <span className="text-white text-[18px]">Về chúng tôi</span>
+                        <Link href={'/'} className="text-white text-[18px] py-3">Về chúng tôi</Link>
                     </div>
                     <div>
-                        <span className="text-white text-[18px]">Tin tức</span>
+                        <Link href={'/'} className="text-white text-[18px] py-3">Tin tức</Link>
                     </div>
                     <div>
-                        <span className="text-white text-[18px]">Liên hệ</span>
+                        <Link href={'/'} className="text-white text-[18px] py-3">Liên hệ</Link>
                     </div>
                 </div>
-            </Container> 
+            </Container>
             <Container>
                 <div className="flex justify-center items-center pb-8">
-                    <div><span className="text-white text-[34.32px]">SẢN XUẤT BỀN VỮNG</span></div>
+                    <div><span className="text-white text-[34.32px] cursor-pointer">SẢN XUẤT BỀN VỮNG</span></div>
                     <div className={`${homecss.divider_col} `}></div>
-                    <div><span className="text-white text-[34.32px] ">THÂN THIỆN MÔI TRƯỜNG</span></div>
+                    <div><span className="text-white text-[34.32px] cursor-pointer">THÂN THIỆN MÔI TRƯỜNG</span></div>
                     <div className={`${homecss.divider_col} `}></div>
-                    <div><span className="text-white text-[34.32px] ">TIẾT KIỆM NĂNG LƯỢNG</span></div>
+                    <div><span className="text-white text-[34.32px] cursor-pointer">TIẾT KIỆM NĂNG LƯỢNG</span></div>
                 </div>
             </Container>
         </div>
