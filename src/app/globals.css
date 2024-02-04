@@ -39,7 +39,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 
 @layer utilities {
@@ -54,9 +54,10 @@ body {
   }
 }
 
-/* .slick-slide {
-  padding: 10px;
-} */
+ .bg-sidebar {
+  background-color: #141414;
+  background-image: url(../assets/images/background.png); 
+ }
 
 .slick-track {
   display: flex !important;

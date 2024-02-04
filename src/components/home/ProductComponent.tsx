@@ -11,20 +11,8 @@ import sp2 from '@assets/images/sp2.png';
 import sp3 from '@assets/images/sp3.png';
 import Link from 'next/link';
 
-const settings = {
-  className: "center123",
-  infinite: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  speed: 1000,
-  lazyLoad: true,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />
-};
-function SampleNextArrow(props: any) {
-  console.log(props);
 
+function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <div
@@ -62,7 +50,16 @@ const ProductComponent = () => {
       <div className="w-5/6 mx-auto">
         <h1 className={`${styles.text_custom_yellow} text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>sản phẩm</h1>
       </div>
-      <Slider {...settings}>
+      <Slider
+        className='center'
+        infinite={true}
+        centerPadding='60px'
+        slidesToShow={3}
+        slidesToScroll={3}
+        speed={1000}
+        nextArrow={<SampleNextArrow />}
+        prevArrow={<SamplePrevArrow />}
+      >
         <div className='pt-3'>
           <div className={`${styles.image_hover} rounded`}>
             <Image alt="" src={sp} className='w-full' />

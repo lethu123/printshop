@@ -48,10 +48,6 @@
  }
 
  .bg_category {
-     //  background-image: url('../images/bg.png');
-     //  background-color: #1D1D1D;
-     //  background-repeat: no-repeat;
-     //  background-size: contain;
 
      .divider_col3 {
          height: 55px;
@@ -110,6 +106,17 @@
      &::before {
          transform: scale(1);
          transform-origin: center center;
+     }
+ }
+
+ .sidebar {
+     ul>li {
+         padding: 10px 0;
+
+         >a {
+             color: white;
+
+         }
      }
  }
 
