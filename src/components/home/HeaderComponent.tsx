@@ -10,8 +10,8 @@ const HeaderComponent = () => {
     return (
         <div style={{ background: '#1D1D1D' }} >
             <Container >
-                <div className='flex justify-around items-center py-[9px]' >
-                    <div className='flex items-center'>
+                <div className='flex lg:justify-around justify-between items-center py-[9px] flex-wrap px-6' >
+                    <div className='items-center hidden lg:flex'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={location} />
                         <span className="text-white ml-2 text-[16.5px]">66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh</span>
                     </div>

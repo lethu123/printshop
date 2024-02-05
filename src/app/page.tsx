@@ -5,13 +5,14 @@ import BannerComponent from "@srccomponents/home/BannerComponent";
 import styles from '@assets/scss/home.module.scss'
 import Image from "next/image";
 import bannerIntro from '@assets/images/banner.png'
+import icon30 from '@assets/images/30-01.svg'
 
 
 import FooterComponent from "@srccomponents/home/FooterComponent";
 import CoperatorComponent from "@srccomponents/home/CoperatorComponent";
 import ProductComponent from "@srccomponents/home/ProductComponent";
 import CategoryComponent from "@srccomponents/home/CategoryComponent";
- 
+
 
 
 export default function Home() {
@@ -21,25 +22,27 @@ export default function Home() {
       {/* BANNER */}
       <BannerComponent />
 
-      <div className={`${styles.bg_intro} pb-[8rem]`}  >
-        <div className="w-5/6 ms-auto">
-          <div className="flex items-end">
-            <h1 className={`${styles.number} text-[200px] leading-[13rem]`}>30</h1>
-            <div className="pb-6 flex items-end">
+      <div className={`${styles.bg_intro} pb-[5rem]`}  >
+        <div className="w-5/6 mx-auto lg:ms-auto xl:mr-0">
+          <div className="flex items-end flex-wrap">
+            <div>
+              <Image alt='' src={icon30} />
+            </div>
+            {/* <div className="flex items-end"> */}
               <div >
-                <h1 className="text-[25.45px]">NĂM</h1>
-                <h1 className="text-[17.31px] text-white font-ava_bold">ĐỂ PHÁT TRIỂN</h1>
-                <h2 className="text-[13.35px] text-white ">ĐỂ TẬN TUY</h2>
+                <h1 className="text-[30px] md:text-[25.45px]">NĂM</h1>
+                <h1 className="text-[22px] md:text-[17.31px] text-white font-ava_bold">ĐỂ PHÁT TRIỂN</h1>
+                <h2 className="text-[18px] md:text-[13.35px] text-white ">ĐỂ TẬN TUY</h2>
               </div>
-              <div className={`${styles.divider_col2} mx-[40px]`}></div>
-              <div>
+              <div className={`${styles.divider_col2} hidden md:block mx-[40px]`}></div>
+              <div className="w-full mt-4 md:mt-0 md:w-auto">
                 <h1 className="text-[25.41px] font-ava_bold">QUÁ TRÌNH HÌNH THÀNH</h1>
                 <h1 className="text-[25.41px] text-white">VÀ PHÁT TRIỂN</h1>
               </div>
-            </div>
+            {/* </div> */}
           </div>
           <div className="grid grid-cols-6 gap-10 items-center mt-5">
-            <div className="col-span-3">
+            <div className="col-span-6 xl:col-span-3">
               <p className="text-[18px]">
                 <span className="font-avo_bold">4-1998:</span>
                 <span className="text-white "> Thành lập Trung tâm Dịch vụ Quảng cáo và tổ chức Hội chợ: chuyên cung cấp các dịch vụ thiết kế, in ấn, quảng cáo ngoài trời, tổ chức hội chợ, sự kiện, thực hiện các dịch truyền thông, sản xuất TVCs
@@ -69,7 +72,7 @@ export default function Home() {
                 <span className="text-white "> Liên tục nâng cấp nhà in, xưởng sản xuất thiết bị quảng cáo, trang bị máy móc hiện đại, hoàn thiện quy trình sản xuất đảm bảo tự động hoá chiếm 70% các công đoạn.</span>
               </p>
             </div>
-            <div className="col-span-3">
+            <div className=" lg:col-start-2 col-span-6 lg:col-span-4  xl:col-span-3">
               <Image alt="" src={bannerIntro} style={{ width: "100%" }} />
             </div>
           </div>

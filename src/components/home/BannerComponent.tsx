@@ -76,11 +76,11 @@ const BannerComponent = () => {
             </Container>
             <Container>
                 <div className="flex justify-center items-center pb-8">
-                    <div><span className="text-white text-[34.32px] cursor-pointer">SẢN XUẤT BỀN VỮNG</span></div>
+                    <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT <br className='sm:hidden'/> BỀN VỮNG</p></div>
                     <div className={`${homecss.divider_col} `}></div>
-                    <div><span className="text-white text-[34.32px] cursor-pointer">THÂN THIỆN MÔI TRƯỜNG</span></div>
+                    <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p></div>
                     <div className={`${homecss.divider_col} `}></div>
-                    <div><span className="text-white text-[34.32px] cursor-pointer">TIẾT KIỆM NĂNG LƯỢNG</span></div>
+                    <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">TIẾT KIỆM <br className='sm:hidden' /> NĂNG LƯỢNG</p></div>
                 </div>
             </Container>
         </div>
