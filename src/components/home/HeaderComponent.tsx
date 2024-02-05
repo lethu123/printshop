@@ -19,7 +19,7 @@ const HeaderComponent = () => {
                         <Image style={{ width: 20, height: 20 }} alt='' src={icPhone} />
                         <span className="text-white ml-2 text-[16.5px]">(+84) 28 2200 6511</span>
                     </div>
-                    <div className='flex items-center'>
+                    <div className='flex items-center flex-wrap'>
                         <div className='flex items-center mr-3'> <Image style={{ width: 20, height: 20 }} alt='' src={flagVN} /> <span className="text-white ml-2 text-[15px]">TIẾNG VIỆT</span> </div>
                         <div className='flex items-center'> <Image style={{ width: 20, height: 20 }} alt='' src={flagUK} /> <span className="text-white ml-2 text-[15px]">TIẾNG ANH</span> </div>
                     </div>

@@ -12,7 +12,7 @@ import Link from 'next/link';
 const CategoryComponent = () => {
     return (
         <div>
-            <div className="w-5/6 mx-auto my-[8rem]">
+            <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto my-[8rem]">
                 <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>DỊCH VỤ</h1>
                 <div className="grid grid-cols-10 md:grid-cols-12 lg:grid-cols-10 items-stretch gap-1 mt-5 order-first">
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
