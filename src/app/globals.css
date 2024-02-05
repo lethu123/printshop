@@ -33,10 +33,10 @@
 body {
   font-family: ATM-Avo;
   color: rgb(var(--foreground-rgb));
-  background-color: #141414;
-  background-image: url(../assets/images/background.png);
+  background-color: #272727;
+  background-image: url(../assets/images/lg.svg);
   background-position: center top;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   scroll-behavior: smooth; 
