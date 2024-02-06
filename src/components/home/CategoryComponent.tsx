@@ -62,9 +62,11 @@ const CategoryComponent = () => {
                         <div className={`${styles.image_hover}`}>
                             <Image className="w-full" alt="" src={service5} />
                         </div>
-                        <div className={`${styles.follow_me} absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-                            <Link href={'/'}>Xem thêm</Link>
-                        </div>
+                        <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
+                            <button className={`${styles.follow_me} ${styles.spin} ${styles.circle}`}>Xem thêm
+                                <div></div>
+                            </button>
+                        </div> 
                     </div>
 
                 </div>

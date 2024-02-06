@@ -34,7 +34,12 @@ const CoperatorComponent = () => {
             </div>
             <div className="flex items-center mt-9">
                 <div className="flex-1" style={{ height: 1, background: '#FF9D00' }}></div>
-                <div className={`${styles.follow_me} mb-[4rem]`}><span className={`text-white text-center text-[18px] px-7`}>ĐẾN VỚI CHÚNG TÔI </span></div>
+
+                <button className={`${styles.follow_me} ${styles.spin} ${styles.circle} mb-[4rem] text-white text-center text-[16px] px-7`}> ĐẾN VỚI CHÚNG TÔI
+                    <div></div>
+                </button>
+
+                {/* <div className={`${styles.follow_me} mb-[4rem]`}><span className={`text-white text-center text-[16px] px-7`}>ĐẾN VỚI CHÚNG TÔI </span></div> */}
                 <div className="flex-1" style={{ height: 1, background: '#FF9D00' }}></div>
             </div>
         </div>

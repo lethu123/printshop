@@ -114,8 +114,10 @@ const ProductComponent = () => {
           <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center uppercase px-5 mt-5`}>thiết bị quảng cáo</h3>
         </div>
       </Slider>
-      <div className={`${styles.follow_me} absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-        <Link href={'/'}>Xem thêm</Link>
+      <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
+        <button className={`${styles.follow_me} ${styles.spin} ${styles.circle}`}>Xem thêm
+          <div></div>
+        </button>
       </div>
     </div>
   )

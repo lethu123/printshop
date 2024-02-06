@@ -8,12 +8,12 @@ import logo from '@assets/images/logo.svg'
 import MenuMobile from './MenuMobile'
 
 const BannerComponent = () => {
-    
+
     return (
         <div className={`${homecss.banner} bg-fixed h-svh flex flex-col justify-between`}>
             {/* me */}
             <Container>
-               <MenuMobile /> 
+                <MenuMobile />
                 <div className="hidden lg:block">
                     <div className="flex items-center gap-14 justify-center pt-6">
                         <Link href={'/'} className="text-white text-[18px] py-3">Trang chủ</Link>
@@ -75,8 +75,13 @@ const BannerComponent = () => {
                 </div>
             </Container>
             <Container>
-                <div className="flex justify-center items-center pb-8">
-                    <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT <br className='sm:hidden'/> BỀN VỮNG</p></div>
+                <div className='sm:hidden mb-5'>
+                    <p className="text-white  text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT  BỀN VỮNG</p>
+                    <p className="text-white  text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN  MÔI TRƯỜNG</p>
+                    <p className="text-white  text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">TIẾT KIỆM  NĂNG LƯỢNG</p>
+                </div>
+                <div className="justify-center items-center pb-8 hidden sm:flex">
+                    <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p></div>
                     <div className={`${homecss.divider_col} `}></div>
                     <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p></div>
                     <div className={`${homecss.divider_col} `}></div>
