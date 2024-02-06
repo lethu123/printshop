@@ -62,13 +62,13 @@ body {
 .slick-track {
   display: flex !important;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
 
 }
 
 .slick-slide {
-  height: inherit !important;
-  /* margin-right: 20px; */
+  height: inherit !important; 
+  padding: 0 10px;
 }
 
 .slick-slide div:focus-visible {
