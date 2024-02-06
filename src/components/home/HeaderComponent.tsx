@@ -8,7 +8,7 @@ import Container from '@srccommons/Container'
 
 const HeaderComponent = () => {
     return (
-        <div style={{ background: '#1D1D1D' }} >
+        <div className='bg-header1' >
             <Container >
                 <div className='flex lg:justify-around justify-between items-center py-[9px] flex-wrap px-6' >
                     <div className='items-center hidden lg:flex'>

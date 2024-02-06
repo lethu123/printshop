@@ -7,7 +7,7 @@ import service3 from '@assets/images/service3.png';
 import service4 from '@assets/images/service4.png';
 import service5 from '@assets/images/service5.png';
 import service6 from '@assets/images/service6.png';
-import Link from 'next/link';
+import '@assets/scss/home.scss';
 
 const CategoryComponent = () => {
     return (
@@ -63,10 +63,10 @@ const CategoryComponent = () => {
                             <Image className="w-full" alt="" src={service5} />
                         </div>
                         <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-                            <button className={`${styles.follow_me} ${styles.spin} ${styles.circle}`}>Xem thêm
+                            <button className={`follow_me spin circle`}>Xem thêm
                                 <div></div>
                             </button>
-                        </div> 
+                        </div>
                     </div>
 
                 </div>

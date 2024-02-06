@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import './globals.css'; 
+import './globals.scss'; 
 
 export const metadata: Metadata = {
   title: "Nhà in Dương Phong",
@@ -18,7 +18,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body  >{children}</body>
     </html>
   );
 }

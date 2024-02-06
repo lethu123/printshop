@@ -1,0 +1,169 @@
+ .follow_me {
+     border-radius: 50%;
+     border: 1px solid #AC835E;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     font-size: 22px;
+     background: #1D1D1D;
+     text-transform: uppercase;
+     position: relative;
+     vertical-align: middle;
+     z-index: 0;
+
+     &::before,
+     &::after {
+         box-sizing: inherit;
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 100%;
+     }
+
+     >div {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #F77E0B;
+         z-index: -1;
+         transform: scale(0);
+         transform-origin: center center;
+         transition: transform 0.4s linear;
+         border-radius: 50%;
+     }
+ }
+
+ .spin {
+     width: 150px;
+     height: 150px;
+     padding: 0;
+     transition:
+         border-top-color 0.15s linear, // Stagger border appearances
+         border-right-color 0.15s linear 0.10s,
+         border-bottom-color 0.15s linear 0.20s;
+
+     &:hover {
+         //  background: #F77E0B;
+         border: 0;
+
+         >div {
+             transform: scale(1);
+             transform-origin: center center;
+         }
+     }
+
+     &::before,
+     &::after {
+         top: 0;
+         left: 0;
+     }
+
+     &::before {
+         border: 2px solid transparent; // We're animating border-color again
+     }
+
+     &:hover::before {
+         border-top-color: white; // Show borders
+         border-right-color: white;
+         border-bottom-color: white;
+
+         transition:
+             border-top-color 0.15s linear, // Stagger border appearances
+             border-right-color 0.15s linear 0.10s,
+             border-bottom-color 0.15s linear 0.20s;
+     }
+
+     &::after {
+         border: 0 solid transparent; // Makes border thinner at the edges? I forgot what I was doing
+     }
+
+     &:hover::after {
+         border-top: 2px solid white; // Shows border
+         border-left-width: 2px; // Solid edges, invisible borders
+         border-right-width: 2px; // Solid edges, invisible borders
+         transform: rotate(270deg); // Rotate around circle
+         transition:
+             transform 0.4s linear 0s,
+             border-left-width 0s linear 0.35s; // Solid edge post-rotation
+     }
+ }
+
+ .circle {
+     border-radius: 100%;
+     box-shadow: none;
+
+     &::before,
+     &::after {
+         border-radius: 100%;
+     }
+ }
+
+
+ .bg-setting {
+     background: white;
+
+     .setting-icon {
+         color: black;
+     }
+ }
+
+ .button_hover {
+     background-color: #1D1D1D;
+     transition: background-color 1s;
+     position: relative;
+     z-index: 0;
+     overflow: hidden;
+
+     &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #F77E0B;
+         z-index: -1;
+         transform: scale(0);
+         transform-origin: center center;
+         transition: transform 0.4s linear;
+         border-radius: 50%;
+     }
+ }
+
+ .button_hover:hover {
+     &::before {
+         transform: scale(1);
+         transform-origin: center center;
+     }
+ }
+
+ .light-mode {
+     .follow_me {
+         background: #F77E0B;
+
+         >div {
+             background-color: #1D1D1D;
+         }
+     }
+
+     .coperator {
+         background-color: gray;
+     }
+
+     .bg-setting {
+         border: 1px solid rgb(199, 197, 197);
+         border-right: 0;
+     }
+
+     .button_hover {
+         background-color: #F77E0B;
+
+         &::before {
+             background-color: #1D1D1D;
+         }
+     }
+ }

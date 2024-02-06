@@ -3,6 +3,7 @@ import React from 'react'
 import styles from '@assets/scss/home.module.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import '@assets/scss/home.scss'; 
 import Slider from "react-slick";
 import icLeft from "@assets/images/arrow_left.svg"
 import icRight from "@assets/images/arrow_right.svg"
@@ -20,7 +21,7 @@ function SampleNextArrow(props: any) {
       style={{ ...style }}
       onClick={onClick}
     >
-      <div className={`h-[5rem] w-[5rem] rounded-full  bg-black flex items-center justify-center ${styles.button_hover}`}>
+      <div className={`h-[5rem] w-[5rem] rounded-full  bg-black flex items-center justify-center button_hover`}>
         <Image alt='' src={icRight} />
       </div>
     </div>
@@ -35,7 +36,7 @@ function SamplePrevArrow(props: any) {
       style={{ ...style }}
       onClick={onClick}
     >
-      <div className={`h-[5rem] w-[5rem] rounded-full  bg-black flex items-center justify-center ${styles.button_hover}`}>
+      <div className={`h-[5rem] w-[5rem] rounded-full  bg-black flex items-center justify-center button_hover`}>
         <Image alt='' src={icLeft} />
       </div>
     </div>
@@ -52,7 +53,7 @@ const ProductComponent = () => {
       </div>
       <Slider
         className='center'
-        infinite={true} 
+        infinite={true}
         slidesToShow={3}
         slidesToScroll={3}
         autoplay={true}
@@ -116,7 +117,7 @@ const ProductComponent = () => {
         </div>
       </Slider>
       <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-        <button className={`${styles.follow_me} ${styles.spin} ${styles.circle}`}>Xem thêm
+        <button className={`follow_me spin circle`}>Xem thêm
           <div></div>
         </button>
       </div>
