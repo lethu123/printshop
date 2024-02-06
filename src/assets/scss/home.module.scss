@@ -6,6 +6,52 @@
 
  .banner {
      @include backgroundFN('../images/banner.png');
+
+     .menu_single {
+         position: relative;
+
+         &::after,
+         &::before {
+             opacity: 0;
+             transition: transform 0.3s, opacity 0.2s;
+             font-size: 115% !important;
+             font-family: Raleway, sans-serif;
+             color: #f8dfa9;
+         }
+
+         &::before {
+             margin-right: 8px;
+             content: "[";
+             -webkit-transform: translateX(20px);
+             -moz-transform: translateX(20px);
+             -ms-transform: translateX(20px);
+             -o-transform: translateX(20px);
+             transform: translateX(20px);
+             display: inline-block;
+         }
+
+         &::after {
+             margin-left: 8px;
+             content: "]";
+             display: inline-block;
+             -ms-transform: translateX(-20px);
+             -o-transform: translateX(-20px);
+             -webkit-transform: translateX(-20px);
+             -moz-transform: translateX(-20px);
+             transform: translateX(-20px);
+         }
+
+         &:hover {
+             &::before,  &::after {
+                 -webkit-transform: translateX(0);
+                 -moz-transform: translateX(0);
+                 -ms-transform: translateX(0);
+                 -o-transform: translateX(0);
+                 transform: translateX(0);
+                 opacity: 1;
+             } 
+         }
+     }
  }
 
  .divider_col {
@@ -204,13 +250,15 @@
  .submenu {
      .submenu_show {
          height: 0;
-         transform: translateY(-0.75rem);
+         transform: scaleY(0);
+         transform-origin: top;
          transition: transform 0.4s linear;
      }
 
      &:hover .submenu_show {
          height: auto;
-         transform: translateY(0);
+         transform-origin: top;
+         transform: scaleY(1);
      }
 
  }
@@ -225,10 +273,10 @@
          border-bottom-color 0.15s linear 0.20s;
 
      &:hover {
-        //  background: #F77E0B;
+         //  background: #F77E0B;
          border: 0;
 
-         > div {
+         >div {
              transform: scale(1);
              transform-origin: center center;
          }

@@ -21,12 +21,12 @@ const FooterComponent = () => {
             <div className="flex items-center gap-8 lg:gap-16 flex-wrap justify-center lg:justify-start">
               <div >
                 <div className="flex text-white gap-2">
-                  <Image width={12} alt="" src={location} />
+                  <Image className='w-[12px]' alt="" src={location} />
                   <span className='text=[15px]'>66/52 Phổ Quang, P. 2, Q. Tân Bình, Tp.HCM</span>
                 </div>
                 <div className="flex justify-between">
                   <div className="flex text-white gap-2">
-                    <Image width={12} alt="" src={phone} />
+                    <Image className='w-[12px]' alt="" src={phone} />
                     <span className='text=[15px]'> 08. 38 44 1111M</span>
                   </div>
                   <div>
@@ -34,7 +34,7 @@ const FooterComponent = () => {
                   </div>
                 </div>
                 <div className="flex text-white gap-2">
-                  <Image width={12} alt="" src={email} />
+                  <Image className='w-[12px]' alt="" src={email} />
                   <span className='text=[15px]'>contact@dpa.vn</span>
                 </div>
               </div>
