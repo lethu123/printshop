@@ -28,7 +28,7 @@ const Screen = ({ children }: { children: React.ReactNode; }) => {
         </div>
       </div>
 
-      <Script>
+      <Script id='main-script'>
         {`
         let body = document.querySelector('body');
         document.querySelector('#dark-mode').addEventListener('click', () => {
