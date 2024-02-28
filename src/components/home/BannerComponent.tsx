@@ -18,7 +18,7 @@ const BannerComponent = () => {
                     <div className="flex items-center gap-14 justify-center pt-6">
                         <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Trang chủ</Link>
                         <div className={`${styles.submenu} relative`}>
-                            <div className={`  text-white text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></div>
+                            <div className={`  text-white text-[18px] ccursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></div>
                             <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                                 <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
