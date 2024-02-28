@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from '@assets/scss/home.module.scss'
-import service1 from '@assets/images/service1.png';
-import service2 from '@assets/images/service2.png';
-import service3 from '@assets/images/service3.png';
-import service4 from '@assets/images/service4.png';
-import service5 from '@assets/images/service5.png';
-import service6 from '@assets/images/service6.png';
+import service1 from '@assets/images/sv5.jpg';
+import service2 from '@assets/images/sv4.1.jpg';
+import service3 from '@assets/images/sv2.jpg';
+import service4 from '@assets/images/sv3.jpg';
+import service5 from '@assets/images/spbb1.jpg';
+import service6 from '@assets/images/sv1.jpg';
 import '@assets/scss/home.scss';
 
 const CategoryComponent = () => {
@@ -17,7 +17,7 @@ const CategoryComponent = () => {
                 <div className="grid grid-cols-10 md:grid-cols-12 lg:grid-cols-10 items-stretch gap-1 mt-5 order-first">
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.image_hover}`}>
-                            <Image alt="" className="w-full" src={service1} />
+                            <Image alt="" className="w-full h-[214px]" src={service1} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
@@ -29,7 +29,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2 order-6 md:order-none">
                         <div className={`${styles.image_hover}`}>
-                            <Image className="w-full" alt="" src={service2} />
+                            <Image className="w-full h-[214px]" alt="" src={service2} />
                         </div>
                     </div>
                     <div className="col-span-5  md:col-span-4 lg:col-span-2 order-0 md:order-none">
@@ -39,17 +39,17 @@ const CategoryComponent = () => {
                         </div>
                     </div> <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.image_hover}`}>
-                            <Image className="w-full" alt="" src={service6} />
+                            <Image className="w-full h-[214px]" alt="" src={service6} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.image_hover}`}>
-                            <Image className="w-full" alt="" src={service3} />
+                            <Image className="w-full h-[214px]" alt="" src={service3} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.image_hover}`}>
-                            <Image className="w-full" alt="" src={service4} />
+                            <Image className="w-full h-[214px]" alt="" src={service4} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
@@ -60,7 +60,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-10 md:col-span-12 lg:col-span-4 relative order-last">
                         <div className={`${styles.image_hover}`}>
-                            <Image className="w-full" alt="" src={service5} />
+                            <Image className="w-full h-[214px]" alt="" src={service5} />
                         </div>
                         <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
                             <button className={`follow_me spin circle`}>Xem thêm
