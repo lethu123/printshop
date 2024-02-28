@@ -7,7 +7,7 @@ import '@assets/scss/home.scss';
 import Slider from "react-slick";
 import icLeft from "@assets/images/arrow_left.svg"
 import icRight from "@assets/images/arrow_right.svg"
-import sp from '@assets/images/sp1.jpg';
+import sp from '@assets/images/sp1.1.jpg';
 import sp2 from '@assets/images/sp2.jpg';
 import sp3 from '@assets/images/sp.jpg';
 import Link from 'next/link';
