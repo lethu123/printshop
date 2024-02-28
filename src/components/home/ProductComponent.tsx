@@ -98,7 +98,7 @@ const ProductComponent = () => {
           <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 mt-5`}>ấn phẩm</h3>
         </div>
         <div >
-        <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center uppercase px-5 mb-5`}>thiết bị quảng cáo</h3>
+        <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center uppercase px-5  mb-5`}>thiết bị quảng cáo</h3>
 
           <div className={`${styles.image_hover} rounded`}>
             <Image alt="" src={sp3} className='w-full ' />
