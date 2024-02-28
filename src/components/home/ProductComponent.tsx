@@ -7,9 +7,9 @@ import '@assets/scss/home.scss';
 import Slider from "react-slick";
 import icLeft from "@assets/images/arrow_left.svg"
 import icRight from "@assets/images/arrow_right.svg"
-import sp from '@assets/images/sp.png';
-import sp2 from '@assets/images/sp2.png';
-import sp3 from '@assets/images/sp3.png';
+import sp from '@assets/images/sp1.jpg';
+import sp2 from '@assets/images/sp2.jpg';
+import sp3 from '@assets/images/sp.jpg';
 import Link from 'next/link';
 
 
@@ -98,9 +98,10 @@ const ProductComponent = () => {
           <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 mt-5`}>ấn phẩm</h3>
         </div>
         <div >
-          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 mb-5`}>Bao bì - hộp giấy</h3>
+        <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center uppercase px-5 mb-5`}>thiết bị quảng cáo</h3>
+
           <div className={`${styles.image_hover} rounded`}>
-            <Image alt="" src={sp2} className='w-full' />
+            <Image alt="" src={sp3} className='w-full ' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
             </div>
@@ -108,13 +109,15 @@ const ProductComponent = () => {
         </div>
         <div className='pt-3'>
           <div className={`${styles.image_hover} rounded`}>
-            <Image alt="" src={sp3} className='w-full ' />
+            <Image alt="" src={sp2} className='w-full' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
             </div>
           </div>
-          <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center uppercase px-5 mt-5`}>thiết bị quảng cáo</h3>
+          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 mt-5`}>Bao bì - hộp giấy</h3>
+
         </div>
+       
       </Slider>
       <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
         <button className={`follow_me spin circle`}>Xem thêm
