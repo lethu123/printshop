@@ -16,19 +16,15 @@ const menu = [
         path: '/',
         subMenu: [
             {
-                title: 'Sản phẩm 1',
+                title: 'Ấn Phẩm',
                 path: '/'
             },
             {
-                title: 'Sản phẩm 2',
+                title: 'Bao bì - hộp giấy',
                 path: '/'
             },
             {
-                title: 'Sản phẩm 3',
-                path: '/'
-            },
-            {
-                title: 'Sản phẩm 4',
+                title: 'Thiết bị quảng cáo',
                 path: '/'
             },
         ]
@@ -38,21 +34,17 @@ const menu = [
         path: '/',
         subMenu: [
             {
-                title: 'Dịch vụ 1',
+                title: 'Thiết kế ấn phẩm',
                 path: '/'
             },
             {
-                title: 'Dịch vụ 2',
+                title: 'Thiết kế - tạo mẫu bao bì',
                 path: '/'
             },
             {
-                title: 'Dịch vụ 3',
+                title: 'Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm',
                 path: '/'
-            },
-            {
-                title: 'Dịch vụ 4',
-                path: '/'
-            },
+            }, 
         ]
     },
     {

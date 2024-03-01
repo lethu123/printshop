@@ -166,14 +166,14 @@
          height: 0;
          transform: scaleY(0);
          transform-origin: top;
-         transition: transform 0.5s linear;
+         transition: transform 0.3s linear;
      }
 
      .menu_show {
          height: auto;
          transform: scaleY(1);
          transform-origin: top;
-         transition: transform 0.5s linear;
+         transition: transform 0.3s linear;
          margin-top: 20px;
      }
 
@@ -184,7 +184,7 @@
          height: 0;
          transform: scaleY(0);
          transform-origin: top;
-         transition: transform 0.4s linear;
+         transition: transform 0.3s linear;
      }
 
      &:hover .submenu_show {

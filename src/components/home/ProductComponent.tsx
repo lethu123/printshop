@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import icLeft from "@assets/images/arrow_left.svg"
 import icRight from "@assets/images/arrow_right.svg"
 import sp from '@assets/images/sp1.1.jpg';
-import sp2 from '@assets/images/sp2.png';
+import sp2 from '@assets/images/sp2.jpg';
 import sp3 from '@assets/images/sp.jpg';
 import Link from 'next/link';
 
@@ -101,7 +101,7 @@ const ProductComponent = () => {
         <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 mb-5`}>Bao bì - hộp giấy</h3>
 
           <div className={`${styles.image_hover} rounded`}>
-            <Image alt="" src={sp2} className='w-full' />
+            <Image alt="" src={sp2} className='w-full h-[560px]' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
             </div>

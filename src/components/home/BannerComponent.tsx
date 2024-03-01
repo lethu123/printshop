@@ -18,22 +18,20 @@ const BannerComponent = () => {
                     <div className="flex items-center gap-14 justify-center pt-6">
                         <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Trang chủ</Link>
                         <div className={`${styles.submenu} relative`}>
-                            <div className={`  text-white text-[18px] ccursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></div>
+                            <div className={`  text-white text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></div>
                             <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                                 <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
                                         <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                            Sản phẩm 1
+                                            Ấn Phẩm
                                         </Link>
                                         <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                            Sản phẩm 2
+                                            Bao bì - hộp giấy
                                         </Link>
                                         <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                            Sản phẩm 3
+                                            Thiết bị quảng cáo
                                         </Link>
-                                        <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                            Sản phẩm 4
-                                        </Link>
+
                                     </div>
                                 </div>
                             </div>
@@ -44,23 +42,20 @@ const BannerComponent = () => {
                                 <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
                                         <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                            Dịch vụ 1
+                                            Thiết kế ấn phẩm
                                         </Link>
                                         <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                            Dịch vụ 2
+                                            Thiết kế - tạo mẫu bao bì
                                         </a>
                                         <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                            Dịch vụ 3
-                                        </a>
-                                        <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                            Dịch vụ 4
+                                            Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <Image className='h-[70px] w-[150px]'  alt='' src={logo} />
+                            <Image className='h-[70px] w-[150px]' alt='' src={logo} />
                         </div>
                         <div>
                             <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Về chúng tôi</Link>

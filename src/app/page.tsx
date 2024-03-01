@@ -7,13 +7,10 @@ import Image from "next/image";
 import bannerIntro from '@assets/images/banner.png'
 import icon30 from '@assets/images/30.png'
 
-
 import FooterComponent from "@srccomponents/home/FooterComponent";
 import CoperatorComponent from "@srccomponents/home/CoperatorComponent";
 import ProductComponent from "@srccomponents/home/ProductComponent";
 import CategoryComponent from "@srccomponents/home/CategoryComponent";
-
-
 
 export default function Home() {
   return (
