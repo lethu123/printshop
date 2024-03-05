@@ -100,8 +100,8 @@ const ProductComponent = () => {
         <div >
         <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 mb-5`}>Bao bì - hộp giấy</h3>
 
-          <div className={`${styles.image_hover} rounded`}>
-            <Image alt="" src={sp2} className='w-full h-[560px]' />
+          <div className={`${styles.image_hover} rounded mb-7`}>
+            <Image alt="" src={sp2} className='w-full md:h-[400px] lg:h-[450px] xl:h-[560px]' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
             </div>
@@ -122,8 +122,8 @@ const ProductComponent = () => {
         
        
       </Slider>
-      <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-        <button className={`follow_me spin circle`}>Xem thêm
+      <div className={`absolute -bottom-12 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
+        <button className={`follow_me spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Xem thêm
           <div></div>
         </button>
       </div>

@@ -22,13 +22,13 @@ const BannerComponent = () => {
                             <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                                 <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
-                                        <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <Link href="/products/an-pham" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
                                             Ấn Phẩm
                                         </Link>
-                                        <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <Link href="/products/bao-bi-hop-giay" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
                                             Bao bì - hộp giấy
                                         </Link>
-                                        <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <Link href="/products/thiet-bi-quang-cao" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
                                             Thiết bị quảng cáo
                                         </Link>
 
@@ -41,13 +41,13 @@ const BannerComponent = () => {
                             <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                                 <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
-                                        <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <Link href="/services/thiet-ke-an-pham" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
                                             Thiết kế ấn phẩm
                                         </Link>
-                                        <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <a href="/services/thiet-ke-tao-mau-bao-bi" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
                                             Thiết kế - tạo mẫu bao bì
                                         </a>
-                                        <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <a href="/services/thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
                                             Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm
                                         </a>
                                     </div>

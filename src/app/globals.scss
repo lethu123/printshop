@@ -33,16 +33,21 @@
 body {
   font-family: ATM-Avo;
   color: rgb(var(--foreground-rgb));
+
+  scroll-behavior: smooth;
+}
+
+ 
+
+.home-page {
   background-color: #272727;
   background-image: url(../assets/images/lg.svg);
   background-position: center top;
   /* background-size: cover; */
   background-repeat: no-repeat;
   background-attachment: fixed;
-  scroll-behavior: smooth;
 }
-
-body.light-mode {
+body.light-mode .home-page {
   background-color: white;
   background-image: url(../assets/images/bg-light.svg);
 }

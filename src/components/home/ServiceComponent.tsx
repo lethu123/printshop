@@ -16,8 +16,8 @@ const CategoryComponent = () => {
                 <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>DỊCH VỤ</h1>
                 <div className="grid grid-cols-10 md:grid-cols-12 lg:grid-cols-10 items-stretch gap-1 mt-5 order-first">
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
-                        <div className={`${styles.image_hover}`}>
-                            <Image alt="" className="w-full h-[214px]" src={service1} />
+                        <div className={`${styles.image_hover} aspect-square`}>
+                            <Image alt="" className="w-full h-full" src={service1} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
@@ -28,8 +28,8 @@ const CategoryComponent = () => {
 
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2 order-6 md:order-none">
-                        <div className={`${styles.image_hover}`}>
-                            <Image className="w-full h-[214px]" alt="" src={service2} />
+                        <div className={`${styles.image_hover} aspect-square`}>
+                            <Image className="w-full h-full" alt="" src={service2} />
                         </div>
                     </div>
                     <div className="col-span-5  md:col-span-4 lg:col-span-2 order-0 md:order-none">
@@ -38,18 +38,18 @@ const CategoryComponent = () => {
                             <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
                         </div>
                     </div> <div className="col-span-5 md:col-span-4 lg:col-span-2">
-                        <div className={`${styles.image_hover}`}>
-                            <Image className="w-full h-[214px]" alt="" src={service6} />
+                        <div className={`${styles.image_hover} aspect-square`}>
+                            <Image className="w-full h-full" alt="" src={service6} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
-                        <div className={`${styles.image_hover}`}>
-                            <Image className="w-full h-[214px]" alt="" src={service3} />
+                        <div className={`${styles.image_hover} aspect-square`}>
+                            <Image className="w-full h-full" alt="" src={service3} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
-                        <div className={`${styles.image_hover}`}>
-                            <Image className="w-full h-[214px]" alt="" src={service4} />
+                        <div className={`${styles.image_hover} aspect-square`}>
+                            <Image className="w-full h-full" alt="" src={service4} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
@@ -59,11 +59,11 @@ const CategoryComponent = () => {
                         </div>
                     </div>
                     <div className="col-span-10 md:col-span-12 lg:col-span-4 relative order-last">
-                        <div className={`${styles.image_hover}`}>
-                            <Image className="w-full h-[214px]" alt="" src={service5} />
+                        <div className={`${styles.image_hover} aspect-[2/1]`}>
+                            <Image className="w-full h-full" alt="" src={service5} />
                         </div>
                         <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-                            <button className={`follow_me spin circle`}>Xem thêm
+                            <button className={`follow_me spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Xem thêm
                                 <div></div>
                             </button>
                         </div>

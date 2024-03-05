@@ -38,8 +38,8 @@
  }
 
  .spin {
-     width: 150px;
-     height: 150px;
+     //  width: 150px;
+     //  height: 150px;
      padding: 0;
      transition:
          border-top-color 0.15s linear, // Stagger border appearances
@@ -165,5 +165,20 @@
          &::before {
              background-color: #1D1D1D;
          }
+     }
+ }
+
+ .product-page {
+     background-color: white;
+     background-image: url(../images/bg-white.svg);
+     background-position: center top;
+     /* background-size: cover; */
+     background-repeat: no-repeat;
+
+     .bg-banner {
+         background-image: url(../images/bg-banner.png);
+         background-position: center top;
+         background-size: cover;
+         background-repeat: no-repeat;
      }
  }

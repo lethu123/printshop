@@ -10,11 +10,11 @@ import icon30 from '@assets/images/30.png'
 import FooterComponent from "@srccomponents/home/FooterComponent";
 import CoperatorComponent from "@srccomponents/home/CoperatorComponent";
 import ProductComponent from "@srccomponents/home/ProductComponent";
-import CategoryComponent from "@srccomponents/home/CategoryComponent";
+import CategoryComponent from "@srccomponents/home/ServiceComponent";
 
 export default function Home() {
   return (
-    <Screen>
+    <Screen _className="home-page">
       <HeaderComponent />
       {/* BANNER */}
       <BannerComponent />

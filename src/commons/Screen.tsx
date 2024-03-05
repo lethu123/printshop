@@ -3,9 +3,9 @@ import styles from "@assets/scss/home.module.scss"
 import Script from 'next/script';
 import "@assets/scss/home.scss"
 
-const Screen = ({ children }: { children: React.ReactNode; }) => {
+const Screen = ({ _className, children }: { children: React.ReactNode; _className: string}) => {
   return (
-    <main className="min-h-screen relative">
+    <main className={`min-h-screen max-w-screen-2xl mx-auto relative  ${_className}`}>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
       {children}
