@@ -17,15 +17,15 @@ const menu = [
         subMenu: [
             {
                 title: 'Ấn Phẩm',
-                path: '/'
+                path: '/products/an-pham'
             },
             {
                 title: 'Bao bì - hộp giấy',
-                path: '/'
+                path: '/products/bao-bi-hop-giay'
             },
             {
                 title: 'Thiết bị quảng cáo',
-                path: '/'
+                path: '/products/thiet-bi-quang-cao'
             },
         ]
     },
@@ -35,15 +35,15 @@ const menu = [
         subMenu: [
             {
                 title: 'Thiết kế ấn phẩm',
-                path: '/'
+                path: '/services/thiet-ke-an-pham'
             },
             {
                 title: 'Thiết kế - tạo mẫu bao bì',
-                path: '/'
+                path: '/services/thiet-ke-tao-mau-bao-bi'
             },
             {
                 title: 'Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm',
-                path: '/'
+                path: '/services/thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham'
             }, 
         ]
     },

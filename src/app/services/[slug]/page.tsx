@@ -97,7 +97,7 @@ const ServiceDetail = () => {
           </div>
         </div>
 
-        <div id='thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham' className='mt-[10rem]'>
+        <div id='thiet-ke-tao-mau-bao-bi' className='mt-[10rem]'>
           <div className='bg-banner py-8 mt-16'>
             <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT KẾ TẠO MẪU BAO BÌ, HỘP</h3>
 
@@ -148,7 +148,7 @@ const ServiceDetail = () => {
           </div>
         </div>
 
-        <div id='thiet-ke-tao-mau-bao-bi' className='mt-[10rem] mb-10'>
+        <div id='thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham' className='mt-[10rem] mb-10'>
           <div className='bg-banner py-8 mt-16'>
             <h3 className='text-center text-white text-[30px] md:text-[40px]'>
 
