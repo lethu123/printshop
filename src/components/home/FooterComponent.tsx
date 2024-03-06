@@ -95,12 +95,16 @@ const FooterComponent = () => {
             </div>
           </div>
 
-          <div className="col-span-5 lg:col-span-2 flex items-end mt-5 lg:0">
-            <div className="flex gap-3 items-center flex-wrap">
-              <h2 className="custom-text-mode text-[15.42px] font-avo_bold">New Enter</h2>
-              <div className='flex gap-3 flex-wrap'>
-                <input className={`${styles.input} text-base md:text-[15.42px] p-2 xl:p-3 border-0 outline-0 rounded-full font-semibold placeholder:text-black`} placeholder="enter your email address" />
-                <button className={`${styles.btn} text-[15.42px] py-3 px-5 md:px-10 border-0 outline-0 rounded-full font-semibold`}>Subcribe</button>
+          <div className="col-span-5 lg:col-span-2 mt-5 lg:0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0676159157506!2d106.66666757451756!3d10.806133358646123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529241417a3a3%3A0x53a4d41d0d62b812!2zNjYvNTIgxJAuIFBo4buVIFF1YW5nLCBQaMaw4budbmcgMiwgVMOibiBCw6xuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709737606946!5m2!1svi!2s" width="500" height="250" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div className=" flex items-end mt-6">
+              <div className="flex gap-3 items-center flex-wrap">
+                <h2 className="custom-text-mode text-[15.42px] font-avo_bold">New Enter</h2>
+                <div className='flex gap-3 flex-wrap'>
+                  <input className={`${styles.input} text-base md:text-[15.42px] p-2 xl:p-3 border-0 outline-0 rounded-full font-semibold placeholder:text-black`} placeholder="enter your email address" />
+                  <button className={`${styles.btn} text-[15.42px] py-3 px-5 md:px-10 border-0 outline-0 rounded-full font-semibold`}>Subcribe</button>
+                </div>
               </div>
             </div>
           </div>

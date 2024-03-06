@@ -8,11 +8,13 @@ import service4 from '@assets/images/sv3.jpg';
 import service5 from '@assets/images/spbb1.jpg';
 import service6 from '@assets/images/sv1.jpg';
 import '@assets/scss/home.scss';
+import { useRouter } from 'next/navigation'
 
 const CategoryComponent = () => {
+    const router = useRouter()
     return (
         <div>
-            <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto my-[8rem]">
+            <div className="px-4 xl:px-0  my-[8rem]">
                 <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>DỊCH VỤ</h1>
                 <div className="grid grid-cols-10 md:grid-cols-12 lg:grid-cols-10 items-stretch gap-1 mt-5 order-first">
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
@@ -63,7 +65,7 @@ const CategoryComponent = () => {
                             <Image className="w-full h-full" alt="" src={service5} />
                         </div>
                         <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-                            <button className={`follow_me spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Xem thêm
+                            <button onClick={() => router.push('/services/thiet-ke-an-pham', { scroll: false })} className={`follow_me spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Xem thêm
                                 <div></div>
                             </button>
                         </div>

@@ -23,8 +23,12 @@ import service15 from '@assets/images/sv15.png';
 import service16 from '@assets/images/sv16.png';
 import service17 from '@assets/images/sv17.png';
 import service18 from '@assets/images/sp.jpg';
+import logo from '@assets/images/logo.svg'
 
 import { useParams } from 'next/navigation'
+import Link from 'next/link'
+import MenuMobile from '@srccomponents/home/MenuMobile'
+import FooterComponent from '@srccomponents/home/FooterComponent'
 
 const ServiceDetail = () => {
   const params = useParams<{ slug: string }>();
@@ -42,16 +46,77 @@ const ServiceDetail = () => {
   return (
     <Screen _className="product-page">
       {/* <HeaderComponent /> */}
+      <div>
+        <MenuMobile />
+        <div className="hidden border lg:block">
+          <Container>
+            <div className="flex items-center gap-14 justify-center py-5 bg-white">
+              <Link href={'/'} className={`${styles.menu_single} text-[18px] py-3`}>Trang chủ</Link>
+              <div className={`${styles.submenu} relative`}>
+                <div className={`  text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></div>
+                <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
+                  <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                    <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
+                      <Link href="/products/an-pham" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                        Ấn Phẩm
+                      </Link>
+                      <Link href="/products/bao-bi-hop-giay" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                        Bao bì - hộp giấy
+                      </Link>
+                      <Link href="/products/thiet-bi-quang-cao" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                        Thiết bị quảng cáo
+                      </Link>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={`${styles.submenu} relative`}>
+                <div className=" text-[18px] cursor-pointer py-3">Dịch vụ <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></div>
+                <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
+                  <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                    <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
+                      <Link href="/services/thiet-ke-an-pham" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                        Thiết kế ấn phẩm
+                      </Link>
+                      <a href="/services/thiet-ke-tao-mau-bao-bi" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                        Thiết kế - tạo mẫu bao bì
+                      </a>
+                      <a href="/services/thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                        Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <Image className='h-[70px] w-[150px]' alt='' src={logo} />
+              </div>
+              <div>
+                <Link href={'/'} className={`${styles.menu_single} text-[18px] py-3`}>Về chúng tôi</Link>
+              </div>
+              <div>
+                <Link href={'/'} className={`${styles.menu_single} text-[18px] py-3`}>Tin tức</Link>
+              </div>
+              <div>
+                <Link href={'/'} className={`${styles.menu_single} text-[18px] py-3`}>Liên hệ</Link>
+              </div>
+            </div>
+          </Container>
+        </div>
+      </div>
       <Container>
-        <h1 className='border-l-4 pl-5 border-black text-[40px] md:text-[52.14px] mt-10'>Dịch vụ </h1>
-
+        <h1 className='border-l-4 pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10'>Dịch vụ </h1>
       </Container>
-      <div className='max-w-screen-2xl mx-auto'>
-        <div id='thiet-ke-an-pham'  >
-          <div className='bg-banner py-8 mt-16'>
-            <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT BỊ QUẢNG CÁO</h3>
-          </div>
 
+      <div id='thiet-ke-an-pham'  >
+        <div className='bg-banner py-8 mt-16'>
+          <Container>
+            <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT BỊ QUẢNG CÁO</h3>
+          </Container>
+        </div>
+
+        <Container>
           <div className="grid grid-cols-12 lg:grid-cols-8 items-stretch gap-1 mt-5 order-first">
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-square`}>
@@ -95,14 +160,17 @@ const ServiceDetail = () => {
             </div>
 
           </div>
+        </Container>
+      </div>
+
+      <div id='thiet-ke-tao-mau-bao-bi' className='mt-[10rem]'>
+        <div className='bg-banner py-8 mt-16'>
+          <Container>
+            <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT KẾ TẠO MẪU BAO BÌ, HỘP</h3>
+          </Container>
         </div>
 
-        <div id='thiet-ke-tao-mau-bao-bi' className='mt-[10rem]'>
-          <div className='bg-banner py-8 mt-16'>
-            <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT KẾ TẠO MẪU BAO BÌ, HỘP</h3>
-
-          </div>
-
+        <Container>
           <div className="grid grid-cols-12 lg:grid-cols-8 items-stretch gap-1 mt-5 order-first">
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-square`}>
@@ -146,18 +214,22 @@ const ServiceDetail = () => {
             </div>
 
           </div>
-        </div>
+        </Container>
+      </div>
 
-        <div id='thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham' className='mt-[10rem] mb-10'>
-          <div className='bg-banner py-8 mt-16'>
+      <div id='thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham' className='mt-[10rem] mb-10'>
+        <div className='bg-banner py-8 mt-16'>
+          <Container>
             <h3 className='text-center text-white text-[30px] md:text-[40px]'>
 
               THIẾT KẾ - TẠO MẪU QUẦY KỆ, <br />
               TỦ TRƯNG BÀY SẢN PHẨM (POSM)
 
             </h3>
-          </div>
+          </Container>
+        </div>
 
+        <Container>
           <div className="grid grid-cols-12 lg:grid-cols-8 items-stretch gap-1 mt-5 order-first">
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-square`}>
@@ -201,12 +273,12 @@ const ServiceDetail = () => {
             </div>
 
           </div>
-        </div>
-
-
+        </Container>
       </div>
 
-
+      <div className='mt-20'>
+        <FooterComponent />
+      </div>
     </Screen>
   )
 }

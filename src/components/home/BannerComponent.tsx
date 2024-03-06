@@ -10,7 +10,7 @@ import MenuMobile from './MenuMobile'
 const BannerComponent = () => {
 
     return (
-        <div className={`${homecss.banner} bg-fixed h-[400px] lg:h-svh flex flex-col justify-between`}>
+        <div className={`${homecss.banner} bg-fixed h-[400px] lg:h-svh 2xl:max-h-[700px]  flex flex-col justify-between`}>
             {/* me */}
             <Container>
                 <MenuMobile />

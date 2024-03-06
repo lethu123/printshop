@@ -5,12 +5,12 @@ import "@assets/scss/home.scss"
 
 const Screen = ({ _className, children }: { children: React.ReactNode; _className: string}) => {
   return (
-    <main className={`min-h-screen max-w-screen-2xl mx-auto relative  ${_className}`}>
+    <main className={`min-h-screen  relative  ${_className}`}>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
       {children}
 
-      <div className={`${styles.submenu} bg-setting fixed inset-y-2/4 right-0 rounded-s-lg py-5 px-4 bg-white flex justify-center items-center text-2x`}>
+      {/* <div className={`${styles.submenu} bg-setting fixed inset-y-2/4 right-0 rounded-s-lg py-5 px-4 bg-white flex justify-center items-center text-2x`}>
         <div className={` text-[18px] setting-icon cursor-pointer py-3`}>
           <i className="fa fa-cog "></i>
         </div>
@@ -26,7 +26,7 @@ const Screen = ({ _className, children }: { children: React.ReactNode; _classNam
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Script id='main-script'>
         {`
