@@ -44,9 +44,9 @@ const ServiceDetail = () => {
   }, [params?.slug]);
 
   return (
-    <Screen _className="product-page">
+    <Screen _className="product-page relative">
       {/* <HeaderComponent /> */}
-      <div>
+      <div className='sticky top-0 bg-white z-30 shadow'>
         <MenuMobile />
         <div className="hidden border lg:block">
           <Container>
@@ -105,12 +105,14 @@ const ServiceDetail = () => {
           </Container>
         </div>
       </div>
+
       <Container>
         <h1 className='border-l-4 pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10'>Dịch vụ </h1>
       </Container>
 
-      <div id='thiet-ke-an-pham'  >
-        <div className='bg-banner py-8 mt-16'>
+      <div id='thiet-ke-an-pham' ></div>
+      <div  className='mt-[7rem]'   >
+        <div className='bg-banner py-8 '>
           <Container>
             <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT BỊ QUẢNG CÁO</h3>
           </Container>
@@ -163,8 +165,9 @@ const ServiceDetail = () => {
         </Container>
       </div>
 
-      <div id='thiet-ke-tao-mau-bao-bi' className='mt-[10rem]'>
-        <div className='bg-banner py-8 mt-16'>
+      <div  id='thiet-ke-tao-mau-bao-bi'   ></div>
+      <div  className='mt-[7rem]' >
+        <div className='bg-banner py-8'>
           <Container>
             <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT KẾ TẠO MẪU BAO BÌ, HỘP</h3>
           </Container>
@@ -217,8 +220,9 @@ const ServiceDetail = () => {
         </Container>
       </div>
 
-      <div id='thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham' className='mt-[10rem] mb-10'>
-        <div className='bg-banner py-8 mt-16'>
+      <div id='thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham' > </div>
+      <div  className=' mb-10 mt-[7rem]'>
+        <div className='bg-banner py-8'>
           <Container>
             <h3 className='text-center text-white text-[30px] md:text-[40px]'>
 

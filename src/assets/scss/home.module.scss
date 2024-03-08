@@ -4,8 +4,8 @@
      background-size: cover;
  }
 
- .banner {
-     @include backgroundFN('../images/banner.png');
+//  .banner {
+//      @include backgroundFN('../images/banner.png');
 
      .menu_single {
          position: relative;
@@ -52,7 +52,7 @@
              } 
          }
      }
- }
+//  }
 
  .divider_col {
      height: 10px;

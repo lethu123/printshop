@@ -12,16 +12,19 @@ import CoperatorComponent from "@srccomponents/home/CoperatorComponent";
 import ProductComponent from "@srccomponents/home/ProductComponent";
 import CategoryComponent from "@srccomponents/home/ServiceComponent";
 import Container from "@srccommons/Container";
+import BannerComponentV2 from "@srccomponents/home/BannerComponentV2";
 
 export default function Home() {
   return (
-    <Screen _className="home-page">
+    <Screen _className="home-page relative ">
       <HeaderComponent />
+      
       {/* BANNER */}
-      <BannerComponent />
+      {/* <BannerComponent /> */}
+      <BannerComponentV2 />
 
 
-      <div className={`${styles.bg_intro} pb-[5rem] pt-5`}  >
+      <div className={`${styles.bg_intro} pb-[5rem] pt-5 -mt-2`}  >
         <Container >
           <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto lg:ms-auto xl:mr-0">
             <div className="flex items-end flex-wrap">
@@ -82,10 +85,8 @@ export default function Home() {
 
 
       <div className={`${styles.bg_category} py-[4rem]`}>
-        <Container >
-          <ProductComponent />
-          <CategoryComponent />
-        </Container>
+        <ProductComponent />
+        <CategoryComponent />
       </div>
 
       {/* coperator */}

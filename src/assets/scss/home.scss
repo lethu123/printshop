@@ -184,5 +184,20 @@
  }
 
  .text_yellow {
-    color: #FF9D00
-}
+     color: #FF9D00
+ }
+
+ .product {
+     .slick-slide {
+         padding: 0 10px;
+     }
+ }
+
+ .banner-v2 {
+     .header-v2 {
+        //  top: 0;
+         z-index: 10;
+         width: 100%;
+        //  background: rgba(255, 255, 255, 0.5);
+     }
+ }

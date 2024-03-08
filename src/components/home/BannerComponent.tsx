@@ -1,5 +1,4 @@
-import React from 'react'
-import homecss from '@assets/scss/home.module.scss'
+import React, { useEffect } from 'react'
 import Container from '@srccommons/Container'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,9 +8,26 @@ import MenuMobile from './MenuMobile'
 
 const BannerComponent = () => {
 
+    const [scrolled, setScrolled] = React.useState(false);
+
+    const handleScroll = () => {
+        const offset = window.scrollY;
+
+        if (offset > 200) {
+            setScrolled(true);
+        }
+        else {
+            setScrolled(false);
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+    })
+
     return (
-        <div className={`${homecss.banner} bg-fixed h-[400px] lg:h-svh 2xl:max-h-[700px]  flex flex-col justify-between`}>
+        <div className={`${styles.banner} bg-fixed h-[400px] lg:h-svh 2xl:max-h-[700px]  flex flex-col justify-between`}>
             {/* me */}
+
             <Container>
                 <MenuMobile />
                 <div className="hidden lg:block">
@@ -69,6 +85,7 @@ const BannerComponent = () => {
                     </div>
                 </div>
             </Container>
+
             <Container>
                 <div className='sm:hidden mb-5'>
                     <p className="text-white  text-2xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT  BỀN VỮNG</p>
@@ -77,9 +94,9 @@ const BannerComponent = () => {
                 </div>
                 <div className="justify-center items-center pb-8 hidden sm:flex">
                     <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p></div>
-                    <div className={`${homecss.divider_col} `}></div>
+                    <div className={`${styles.divider_col} `}></div>
                     <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p></div>
-                    <div className={`${homecss.divider_col} `}></div>
+                    <div className={`${styles.divider_col} `}></div>
                     <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">TIẾT KIỆM <br className='sm:hidden' /> NĂNG LƯỢNG</p></div>
                 </div>
             </Container>
