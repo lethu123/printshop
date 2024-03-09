@@ -25,8 +25,8 @@ export default function Home() {
 
 
       <div className={`${styles.bg_intro} pb-[5rem] pt-5 -mt-2`}  >
-        <Container >
-          <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto lg:ms-auto xl:mr-0">
+        
+          <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto 3xl:mx-auto lg:ms-auto xl:mr-0">
             <div className="flex items-end flex-wrap">
               <div className="w-[150px] lg:w-[210px]">
                 <Image alt='' className="w-full" src={icon30} />
@@ -44,7 +44,7 @@ export default function Home() {
               </div>
               {/* </div> */}
             </div>
-            <div className="grid grid-cols-6 gap-10 items-center mt-5">
+            <div className="grid grid-cols-6 gap-10 mt-5">
               <div className="col-span-6 xl:col-span-3">
                 <p className="text-[18px]">
                   <span className="font-avo_bold">4-1998:</span>
@@ -80,7 +80,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </Container>
+        
       </div>
 
 

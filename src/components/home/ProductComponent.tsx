@@ -63,7 +63,7 @@ const ProductComponent = () => {
         speed={1500}
         nextArrow={<SampleNextArrow />}
         prevArrow={<SamplePrevArrow />}
-        responsive={[
+        responsive={[ 
           {
             breakpoint: 1024,
             settings: {
