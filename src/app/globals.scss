@@ -70,19 +70,16 @@ body.light-mode .home-page {
   background-image: url(../assets/images/background.png);
 }
 
-// .slick-track {
-//   display: flex !important;
-//   align-items: center;
-// }
 
-// .slick-slide {
-//   height: inherit !important;
-//   // padding: 0 10px;
-// }
 
-// .slick-slide div:focus-visible {
-//   outline: none;
-// }
+.slick-slide {
+  // height: inherit !important;
+  // padding: 0 10px;
+}
+
+.slick-slide div:focus-visible {
+  outline: none;
+}
 
 
 .slick-arrow.slick-prev {
@@ -155,10 +152,8 @@ body.light-mode .home-page {
 
 
 .slick-track {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: stretch;
+  display: flex !important;
+  align-items: center;
 }
 
 .sticky-header {
