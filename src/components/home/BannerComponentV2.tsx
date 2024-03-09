@@ -56,12 +56,16 @@ const BannerComponentV2 = () => {
         }
     }
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
-    })
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", handleScroll)
+        }
+        return () => window.removeEventListener("scroll", handleScroll)
+
+    }, [])
 
     return (
         <>
-            <div className={`header-v2  top-0 z-40 w-full  ${!scrolled ? 'absolute top-10 duration-200' : 'sticky-header shadow'}`}>
+            <div className={`header-v2  top-0 z-40 w-full  ${!scrolled ? 'absolute top-10 duration-500' : 'sticky-header shadow'}`}>
                 <Container>
                     <MenuMobile />
                     <div className="hidden lg:block">
@@ -194,7 +198,7 @@ const BannerComponentV2 = () => {
                             </div>
                         </Container>
                     </div>
-                </div> 
+                </div>
             </Slider>
         </>
 

@@ -14,7 +14,7 @@ import Container from '@srccommons/Container';
 const CategoryComponent = () => {
     const router = useRouter()
     return (
-        <div>
+        <div className='max-w-screen-2xl mx-auto'>
             <div className="px-4 xl:px-0  my-[8rem]">
                 <Container>
                     <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>DỊCH VỤ</h1>

@@ -1,10 +1,8 @@
 'use client'
 import Screen from "@commons/Screen";
-import HeaderComponent from "@components/home/HeaderComponent";
-import BannerComponent from "@srccomponents/home/BannerComponent";
+import HeaderComponent from "@components/home/HeaderComponent"; 
 import styles from '@assets/scss/home.module.scss'
 import Image from "next/image";
-import bannerIntro from '@assets/images/banner.png'
 import icon30 from '@assets/images/30.png'
 
 import FooterComponent from "@srccomponents/home/FooterComponent";
@@ -21,14 +19,13 @@ export default function Home() {
     <Screen _className="home-page relative ">
       <HeaderComponent />
 
-      {/* BANNER */}
-      {/* <BannerComponent /> */}
+      {/* BANNER */} 
       <BannerComponentV2 />
 
 
       <div className={`${styles.bg_intro} pb-[5rem] pt-5 -mt-2`}  >
 
-        <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto 3xl:mx-auto lg:ms-auto xl:mr-0">
+        <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto 3xl:mx-auto max-w-screen-2xl lg:ms-auto xl:mr-0">
           <div className="flex items-end flex-wrap">
             <div className="w-[150px] lg:w-[210px]">
               <Image alt='' className="w-full" src={icon30} />

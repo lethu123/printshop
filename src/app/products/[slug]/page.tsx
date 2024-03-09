@@ -5,12 +5,15 @@ import Screen from '@srccommons/Screen'
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 import styles from '@assets/scss/home.module.scss'
-import service1 from '@assets/images/sv5.jpg';
-import service2 from '@assets/images/sv4.1.jpg';
-import service3 from '@assets/images/sv2.jpg';
-import service4 from '@assets/images/sv3.jpg';
-import service5 from '@assets/images/spbb1.jpg';
-import service6 from '@assets/images/sv1.jpg';
+import service1 from '@assets/images/p1.png';
+import service2 from '@assets/images/p2.png';
+import service3 from '@assets/images/p3.png';
+import service4 from '@assets/images/p4.png';
+import service5 from '@assets/images/p5.png';
+import service6 from '@assets/images/p6.jpg';
+import service7 from '@assets/images/p7.png';
+import service8 from '@assets/images/p8.png';
+import service9 from '@assets/images/p9.png';
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import MenuMobile from '@srccomponents/home/MenuMobile'
@@ -134,20 +137,20 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-square`}>
-                <Image className="w-full h-full" alt="" src={service6} />
-              </div>
-            </div>
-            <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2 order-8">
-              <div className={`${styles.image_hover} aspect-square`}>
                 <Image className="w-full h-full" alt="" src={service3} />
               </div>
             </div>
-            <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2 ">
+            <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2 order-8 lg:order-none">
               <div className={`${styles.image_hover} aspect-square`}>
                 <Image className="w-full h-full" alt="" src={service4} />
               </div>
             </div>
-            <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2 order-6">
+            <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2 ">
+              <div className={`${styles.image_hover} aspect-square`}>
+                <Image className="w-full h-full" alt="" src={service5} />
+              </div>
+            </div>
+            <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2 order-6 lg:order-none">
               <div className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}>
                 <p className="text-white font-avo_bold p-3 items-end mt-auto text-base xl:text-[23px]">Thiết kế <br /> tạo mẫu bao bì, hộp</p>
                 <div className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
@@ -155,12 +158,12 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-10 sm:col-span-4 md:col-span-6 lg:col-span-4 relative">
               <div className={`${styles.image_hover} aspect-[2/1] sm:aspect-square md:aspect-[2/1]`}>
-                <Image className="w-full h-full" alt="" src={service5} />
+                <Image className="w-full h-full" alt="" src={service6} />
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-square`}>
-                <Image alt="" className="w-full h-full" src={service1} />
+                <Image alt="" className="w-full h-full" src={service7} />
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
@@ -172,7 +175,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2  ">
               <div className={`${styles.image_hover} aspect-square`}>
-                <Image className="w-full h-full" alt="" src={service2} />
+                <Image className="w-full h-full" alt="" src={service8} />
               </div>
             </div>
             <div className="col-span-5  sm:col-span-4 md:col-span-3 lg:col-span-2 ">
@@ -183,7 +186,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-square`}>
-                <Image className="w-full h-full" alt="" src={service6} />
+                <Image className="w-full h-full" alt="" src={service9} />
               </div>
             </div>
 

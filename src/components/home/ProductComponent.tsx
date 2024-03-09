@@ -49,7 +49,7 @@ const ProductComponent = () => {
   const router = useRouter()
 
   return (
-    <div className="relative product">
+    <div className="relative product  max-w-screen-2xl mx-auto">
       <div className="w-5/6 mx-auto">
         <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>sản phẩm</h1>
       </div>
