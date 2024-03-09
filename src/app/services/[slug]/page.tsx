@@ -47,9 +47,10 @@ const ServiceDetail = () => {
     <Screen _className="product-page relative">
       {/* <HeaderComponent /> */}
       <div className='sticky top-0 bg-white z-30 shadow'>
-        <MenuMobile />
-        <div className="hidden border lg:block">
-          <Container>
+        <Container>
+          <MenuMobile />
+          <div className="hidden  lg:block">
+
             <div className="flex items-center gap-14 justify-center py-5 bg-white">
               <Link href={'/'} className={`${styles.menu_single} text-[18px] py-3`}>Trang chủ</Link>
               <div className={`${styles.submenu} relative`}>
@@ -102,8 +103,8 @@ const ServiceDetail = () => {
                 <Link href={'/'} className={`${styles.menu_single} text-[18px] py-3`}>Liên hệ</Link>
               </div>
             </div>
-          </Container>
-        </div>
+          </div>
+        </Container>
       </div>
 
       <Container>
@@ -111,7 +112,7 @@ const ServiceDetail = () => {
       </Container>
 
       <div id='thiet-ke-an-pham' ></div>
-      <div  className='mt-[7rem]'   >
+      <div className='mt-[7rem]'   >
         <div className='bg-banner py-8 '>
           <Container>
             <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT BỊ QUẢNG CÁO</h3>
@@ -165,8 +166,8 @@ const ServiceDetail = () => {
         </Container>
       </div>
 
-      <div  id='thiet-ke-tao-mau-bao-bi'   ></div>
-      <div  className='mt-[7rem]' >
+      <div id='thiet-ke-tao-mau-bao-bi'   ></div>
+      <div className='mt-[7rem]' >
         <div className='bg-banner py-8'>
           <Container>
             <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT KẾ TẠO MẪU BAO BÌ, HỘP</h3>
@@ -221,7 +222,7 @@ const ServiceDetail = () => {
       </div>
 
       <div id='thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham' > </div>
-      <div  className=' mb-10 mt-[7rem]'>
+      <div className=' mb-10 mt-[7rem]'>
         <div className='bg-banner py-8'>
           <Container>
             <h3 className='text-center text-white text-[30px] md:text-[40px]'>

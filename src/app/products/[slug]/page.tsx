@@ -39,9 +39,10 @@ const ProductDetail = () => {
       {/* <HeaderComponent /> */}
 
       <div className='sticky top-0 bg-white z-30 shadow'>
-        <MenuMobile />
-        <div className="hidden border lg:block">
-          <Container>
+        <Container>
+          <MenuMobile />
+          <div className="hidden  lg:block">
+
             <div className="flex items-center gap-14 justify-center py-5 bg-white">
               <Link href={'/'} className={`${styles.menu_single}  text-[18px] py-3`}>Trang chủ</Link>
               <div className={`${styles.submenu} relative`}>
@@ -94,8 +95,9 @@ const ProductDetail = () => {
                 <Link href={'/'} className={`${styles.menu_single} text-[18px] py-3`}>Liên hệ</Link>
               </div>
             </div>
-          </Container>
-        </div>
+
+          </div>
+        </Container>
       </div>
 
       <Container>
