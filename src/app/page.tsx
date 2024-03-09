@@ -43,7 +43,7 @@ export default function Home() {
             </div>
             {/* </div> */}
           </div>
-          <div className="grid grid-cols-6 gap-10 mt-5">
+          <div className="grid grid-cols-6 gap-10 mt-5 items-center">
             <div className="col-span-6 xl:col-span-3">
               <p className="text-[18px]">
                 <span className="font-avo_bold">4-1998:</span>

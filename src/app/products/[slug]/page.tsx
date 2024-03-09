@@ -43,9 +43,9 @@ const ProductDetail = () => {
         <div className="hidden border lg:block">
           <Container>
             <div className="flex items-center gap-14 justify-center py-5 bg-white">
-              <Link href={'/'} className={`${styles.menu_single} text-[18px] py-3`}>Trang chủ</Link>
+              <Link href={'/'} className={`${styles.menu_single}  text-[18px] py-3`}>Trang chủ</Link>
               <div className={`${styles.submenu} relative`}>
-                <div className={`  text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></div>
+                <h3 className={`  text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down text-black"  ></i></h3>
                 <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                   <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
@@ -64,7 +64,7 @@ const ProductDetail = () => {
                 </div>
               </div>
               <div className={`${styles.submenu} relative`}>
-                <div className=" text-[18px] cursor-pointer py-3">Dịch vụ <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></div>
+                <h3 className=" text-[18px] cursor-pointer py-3">Dịch vụ <i className="fa fa-angle-down text-black" ></i></h3>
                 <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                   <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
