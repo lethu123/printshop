@@ -16,7 +16,7 @@ import service8 from '@assets/images/p8.png';
 import service9 from '@assets/images/p9.png';
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
-import MenuMobile from '@srccomponents/home/MenuMobile'
+import MenuMobile from '@srccommons/MenuMobile'
 import logo from '@assets/images/logo.svg'
 import FooterComponent from '@srccomponents/home/FooterComponent'
 

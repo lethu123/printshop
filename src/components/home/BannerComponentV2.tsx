@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@assets/scss/home.module.scss'
 import logo from '@assets/images/logo.svg'
-import MenuMobile from './MenuMobile'
+import MenuMobile from '../../commons/MenuMobile'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '@assets/scss/home.scss';
@@ -112,13 +112,13 @@ const BannerComponentV2 = () => {
                                 <Image className='h-[70px] w-[150px]' alt='' src={logo} />
                             </div>
                             <div>
-                                <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Về chúng tôi</Link>
+                                <Link href={'/about-us'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Về chúng tôi</Link>
                             </div>
                             <div>
                                 <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Tin tức</Link>
                             </div>
                             <div>
-                                <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Liên hệ</Link>
+                                <Link href={'/contact'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Liên hệ</Link>
                             </div>
                         </div>
                     </div>

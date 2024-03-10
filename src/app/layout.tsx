@@ -1,14 +1,24 @@
 import type { Metadata } from "next";
-import './globals.scss'; 
+import './globals.scss';
+import type { Viewport } from 'next'
 
 export const metadata: Metadata = {
   title: "Nhà in Dương Phong",
   description: "Công ty TNHH Quảng cáo & Thương mại Dương Phong – DPA – Sự lớn mạnh của bạn là thành công của chúng tôi",
   keywords: ['nhà in', 'Dương phong', 'xưởng in', 'xưởng in Dương Phong'],
   openGraph: {
-    images: 'http://dpa.vn/wp-content/uploads/2016/07/dpa-logo.png' ,
+    images: 'http://dpa.vn/wp-content/uploads/2016/07/dpa-logo.png',
   },
 };
+
+
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: 0, 
+}
 
 export default function RootLayout({
   children,
@@ -18,7 +28,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="light-mode" >{children}</body>
+      <body className="light-mode relative" >{children}</body>
     </html>
   );
 }

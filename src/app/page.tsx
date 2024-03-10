@@ -32,13 +32,13 @@ export default function Home() {
             </div>
             {/* <div className="flex items-end"> */}
             <div className="pb-3 ps-2 ">
-              <h1 className="text-[30px] md:text-[25.45px]">NĂM</h1>
-              <h1 className="text-[22px] md:text-[17.31px] text-white font-ava_bold">ĐỂ PHÁT TRIỂN</h1>
+              <h1 className="text-[30px] md:text-[25.45px] font-avo_bold">NĂM</h1>
+              <h1 className="text-[22px] md:text-[17.31px] text-white font-avo_bold">ĐỂ PHÁT TRIỂN</h1>
               <h2 className="text-[18px] md:text-[13.35px] text-white ">ĐỂ TẬN TUY</h2>
             </div>
             <div className={`${styles.divider_col2} mb-3 hidden md:block mx-[40px]`}></div>
             <div className="w-full mt-4 pb-2 md:mt-0 md:w-auto">
-              <h1 className="text-[25.41px] font-ava_bold">QUÁ TRÌNH HÌNH THÀNH</h1>
+              <h1 className="text-[25.41px] font-avo_bold">QUÁ TRÌNH HÌNH THÀNH</h1>
               <h1 className="text-[25.41px] text-white">VÀ PHÁT TRIỂN</h1>
             </div>
             {/* </div> */}

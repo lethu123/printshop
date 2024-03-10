@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -44,12 +46,12 @@ const menu = [
             {
                 title: 'Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm',
                 path: '/services/thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham'
-            }, 
+            },
         ]
     },
     {
         title: 'Về chúng tôi',
-        path: '/'
+        path: '/about-us'
     },
     {
         title: 'Tin tức',
@@ -57,7 +59,7 @@ const menu = [
     },
     {
         title: ' Liên hệ',
-        path: '/'
+        path: '/contact'
     },
     {
         title: 'Tiếng anh',
