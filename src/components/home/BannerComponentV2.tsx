@@ -68,7 +68,7 @@ const BannerComponentV2 = () => {
             <div className={`header-v2  top-0 z-40 w-full  ${!scrolled ? 'absolute top-10 duration-500' : 'sticky-header shadow'}`}>
                 <Container>
                     <MenuMobile />
-                    <div className="hidden lg:block">
+                    <div className="hidden xl:block">
                         <div className="flex items-center gap-14 justify-center py-3">
                             <Link href={'/'} className={`${styles.menu_single} menu_single text-white text-[18px] py-3`}>Trang chủ</Link>
                             <div className={`${styles.submenu} relative`}>
