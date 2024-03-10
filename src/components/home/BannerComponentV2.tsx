@@ -137,7 +137,7 @@ const BannerComponentV2 = () => {
                 prevArrow={<SamplePrevArrow />}
             >
                 <div className='relative w-full'>
-                    <div className={` h-[400px] md:h-[500px] lg:h-lvh max-h-[900px] rounded`}>
+                    <div className={` h-[400px] md:h-[500px] lg:h-lvh rounded`}>
                         <Image alt="" src={banner} className='w-full h-full' />
                     </div>
                     <div className='absolute bottom-0 w-full pb-10'>
@@ -158,7 +158,7 @@ const BannerComponentV2 = () => {
                     </div>
                 </div>
                 <div className='relative' >
-                    <div className={`h-[400px] md:h-[500px] lg:h-lvh max-h-[900px] rounded`}>
+                    <div className={`h-[400px] md:h-[500px] lg:h-lvh rounded`}>
                         <Image alt="" src={banner} className='w-full h-full' />
                     </div>
                     <div className='absolute bottom-0 w-full pb-10'>
@@ -179,7 +179,7 @@ const BannerComponentV2 = () => {
                     </div>
                 </div>
                 <div className='relative'>
-                    <div className={`h-[400px] md:h-[500px] lg:h-lvh max-h-[900px] rounded`}>
+                    <div className={`h-[400px] md:h-[500px] lg:h-lvh rounded`}>
                         <Image alt="" src={banner} className='w-full h-full' />
                     </div>
                     <div className='absolute bottom-0 w-full pb-10'>
