@@ -196,3 +196,26 @@ body.light-mode .home-page {
     }
   }
 }
+
+
+/*
+ ----------------- contact -------------------
+*/
+.form-group {
+
+  input,
+  textarea {
+    background: #ffd89a;
+
+    padding: 10px 20px;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input {
+    height: 50px;
+  }
+}
