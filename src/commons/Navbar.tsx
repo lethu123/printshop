@@ -10,34 +10,18 @@ import MenuMobile from './MenuMobile'
 import '@assets/scss/home.scss';
 
 const Navbar = () => {
-    const [scrolled, setScrolled] = React.useState(false);
 
-    const handleScroll = () => {
-        const offset = window.scrollY;
-        if (offset > 135) {
-            setScrolled(true);
-        }
-        else {
-            setScrolled(false);
-        }
-    }
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            window.addEventListener("scroll", handleScroll)
-        }
-        return () => window.removeEventListener("scroll", handleScroll)
-
-    }, [])
     return (
 
-        <div className={`header-v2  top-0 z-40 w-full  ${!scrolled ? 'absolute top-3 duration-500' : 'sticky-header shadow'}`}>
+        <div className='sticky top-0 bg-white z-30 shadow'>
             <Container>
                 <MenuMobile />
-                <div className="hidden xl:block">
-                    <div className="flex items-center gap-14 justify-center py-3">
-                        <Link href={'/'} className={`${styles.menu_single} menu_single text-white text-[18px] py-3`}>Trang chủ</Link>
+                <div className="hidden  xl:block">
+
+                    <div className="flex items-center gap-14 justify-center py-3 bg-white">
+                        <Link href={'/'} className={`${styles.menu_single}  text-[18px] py-3`}>Trang chủ</Link>
                         <div className={`${styles.submenu} relative`}>
-                            <h3 className={`  text-white text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></h3>
+                            <h3 className={`  text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down text-black"  ></i></h3>
                             <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                                 <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
@@ -56,7 +40,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className={`${styles.submenu} relative`}>
-                            <h3 className="text-white text-[18px] cursor-pointer py-3">Dịch vụ <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></h3>
+                            <h3 className=" text-[18px] cursor-pointer py-3">Dịch vụ <i className="fa fa-angle-down text-black" ></i></h3>
                             <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                                 <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
@@ -77,15 +61,16 @@ const Navbar = () => {
                             <Image className='h-[70px] w-[150px]' alt='' src={logo} />
                         </div>
                         <div>
-                            <Link href={'/about-us'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Về chúng tôi</Link>
+                            <Link href={'/about-us'} className={`${styles.menu_single} text-[18px] py-3`}>Về chúng tôi</Link>
                         </div>
                         <div>
-                            <Link href={'/news'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Tin tức</Link>
+                            <Link href={'/news'} className={`${styles.menu_single} text-[18px] py-3`}>Tin tức</Link>
                         </div>
                         <div>
-                            <Link href={'/contact'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Liên hệ</Link>
+                            <Link href={'/contact'} className={`${styles.menu_single} text-[18px] py-3`}>Liên hệ</Link>
                         </div>
                     </div>
+
                 </div>
             </Container>
         </div>

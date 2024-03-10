@@ -1,16 +1,15 @@
 
 import React from 'react'
 import Container from '@srccommons/Container'
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image' 
 import styles from '@assets/scss/home.module.scss'
 import icon30 from '@assets/images/30.png'
 import '@assets/scss/home.scss';
 import BannerSingle from '@srccommons/BannerSingle'
-import service1 from '@assets/images/sv11.png';
-import service2 from '@assets/images/sv10.png';
-import service3 from '@assets/images/sv2.jpg';
-import myTeam from "@assets/images/my-team.png"
+import service1 from '@assets/images/about2.png';
+import service2 from '@assets/images/about1.png';
+import service3 from '@assets/images/about3.png';
+import myTeam from "@assets/images/about4.png"
 import FooterComponent from '@srccomponents/home/FooterComponent'
 import Screen from '@srccommons/Screen'
 
