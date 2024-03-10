@@ -8,8 +8,10 @@ import styles from '@assets/scss/home.module.scss'
 import logo from '@assets/images/logo.svg'
 import MenuMobile from './MenuMobile'
 import '@assets/scss/home.scss';
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
+    const path = usePathname();
 
     return (
 
@@ -61,13 +63,13 @@ const Navbar = () => {
                             <Image className='h-[70px] w-[150px]' alt='' src={logo} />
                         </div>
                         <div>
-                            <Link href={'/about-us'} className={`${styles.menu_single} text-[18px] py-3`}>Về chúng tôi</Link>
+                            <Link href={'/about-us'} className={`${styles.menu_single} ${path.includes('about-us') ? styles.active : ''}  text-[18px] py-3`}>Về chúng tôi</Link>
                         </div>
                         <div>
-                            <Link href={'/news'} className={`${styles.menu_single} text-[18px] py-3`}>Tin tức</Link>
+                            <Link href={'/news'} className={`${styles.menu_single} ${path.includes('news') ? styles.active : ''} text-[18px] py-3`}>Tin tức</Link>
                         </div>
                         <div>
-                            <Link href={'/contact'} className={`${styles.menu_single} text-[18px] py-3`}>Liên hệ</Link>
+                            <Link href={'/contact'} className={`${styles.menu_single} ${path.includes('contact') ? styles.active : ''} text-[18px] py-3`}>Liên hệ</Link>
                         </div>
                     </div>
 

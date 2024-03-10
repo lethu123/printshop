@@ -70,7 +70,7 @@ const BannerComponentV2 = () => {
                     <MenuMobile />
                     <div className="hidden xl:block">
                         <div className="flex items-center gap-14 justify-center py-3">
-                            <Link href={'/'} className={`${styles.menu_single} menu_single text-white text-[18px] py-3`}>Trang chủ</Link>
+                            <Link href={'/'} className={`${styles.menu_single} ${styles.active} menu_single text-white text-[18px] py-3`}>Trang chủ</Link>
                             <div className={`${styles.submenu} relative`}>
                                 <h3 className={`  text-white text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></h3>
                                 <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>

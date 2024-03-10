@@ -12,11 +12,12 @@ import service3 from '@assets/images/about3.png';
 import myTeam from "@assets/images/about4.png"
 import FooterComponent from '@srccomponents/home/FooterComponent'
 import Screen from '@srccommons/Screen'
+import banner from '@assets/images/baner1.jpg';
 
 const AboutUs = () => {
     return (
         <Screen _className="product-page relative">
-            <BannerSingle />
+            <BannerSingle image={banner} />
             <section className='bg-black pt-10'>
                 <Container>
                     <div className='xl:flex items-center justify-between'>
@@ -97,7 +98,7 @@ const AboutUs = () => {
                     <h1 className='text-[33px] md:text-[40px] text-center font-avo_bold'>TẦM NHÌN</h1>
                 </div>
                 <Container className="py-5">
-                    <h1 className='text-[26px] sm:text-[31px] md:text-[38.64px] font-avo_bold text-[#145629]'>HƯỚNG ĐẾN NĂM 2030 LÀ 1 CÔNG TY XANH ĐẠT CÁC TIÊU CHÍ: </h1>
+                    <h1 className='text-[26px] sm:text-[31px] md:text-[36px] font-avo_bold text-[#145629]'>HƯỚNG ĐẾN NĂM 2030 LÀ 1 CÔNG TY XANH ĐẠT CÁC TIÊU CHÍ: </h1>
                     <div className='sm:hidden mb-5 mt-3'>
                         <p className="text-[#145629] font-avo_bold  text-xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer">SẢN XUẤT  BỀN VỮNG</p>
                         <p className="text-[#145629] font-avo_bold  text-xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer">THÂN THIỆN  MÔI TRƯỜNG</p>

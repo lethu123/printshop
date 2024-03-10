@@ -25,6 +25,7 @@ import service15 from '@assets/images/sv15.png';
 import service16 from '@assets/images/sp.jpg';
 import service17 from '@assets/images/sv17.png';
 import service18 from '@assets/images/sp.jpg'; 
+import banner from '@assets/images/banner3.jpg';
 
 import { useParams } from 'next/navigation' 
 import FooterComponent from '@srccomponents/home/FooterComponent'
@@ -46,7 +47,7 @@ const ServiceDetail = () => {
   return (
     <Screen _className="product-page relative">
       {/* <HeaderComponent /> */}
-      <BannerSingle />
+      <BannerSingle image={banner}/>
 
       <Container>
         <h1 className='border-l-4 pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10'>Dịch vụ </h1>

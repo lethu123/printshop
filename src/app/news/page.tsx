@@ -10,15 +10,13 @@ import service3 from '@assets/images/p3.png';
 import service4 from '@assets/images/p4.png';
 import service5 from '@assets/images/p5.png';
 import service6 from '@assets/images/p6.jpg';
-import service7 from '@assets/images/p7.png';
-import service8 from '@assets/images/p8.png';
-import service9 from '@assets/images/p9.png';
+import banner from '@assets/images/banner6.jpg';
 import FooterComponent from '@srccomponents/home/FooterComponent'
 
 const News = () => {
     return (
         <Screen _className="product-page relative">
-            <BannerSingle />
+            <BannerSingle image={banner} />
             <div className='mt-[7rem]'>
                 <div className='bg-banner py-8'>
                     <Container>

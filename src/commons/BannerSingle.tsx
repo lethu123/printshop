@@ -3,15 +3,14 @@
 import React from 'react'
 import Image from 'next/image'
 import '@assets/scss/home.scss';
-import banner from '@assets/images/banner1.png';
 import Navbar from './Navbar'
 
-const BannerSingle = () => {
+const BannerSingle = ({ image }: { image: any }) => {
     return (
         <>
             <Navbar />
-            <div className={` h-[400px] md:h-[500px] lg:h-lvh  rounded`}>
-                <Image alt="" src={banner} className='w-full h-full' />
+            <div className={` h-[400px] md:h-[500px] lg:h-lvh 3xl:max-h-[900px] rounded`}>
+                <Image alt="" src={image} className='w-full h-full' />
             </div>
         </>
 

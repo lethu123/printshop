@@ -42,16 +42,16 @@ const FooterComponent = () => {
                 </div>
               </div>
 
-              <div className="flex rounded-full items-center gap-4 bg-custom-mode p-2 lg:p-[10px]">
+              {/* <div className="flex rounded-full items-center gap-4 bg-custom-mode p-2 lg:p-[10px]">
                 <div className="bg-logo-custom-mode rounded-full w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] p-3"><Image alt="" className="w-full h-full" src={logoBlack} /></div>
                 <div>
                   <div className="flex items-center gap-4">
                     <Image width={17} alt="" src={phone2} />
                     <p className="font-extrabold custom-text-logo-mode text-base lg:text-lg pe-1">Gọi cho chúng tôi</p>
                   </div>
-                  <span className="text-[#F26311] text-base lg:text-lg font-bold">(+84) 913 927 471</span>
+                  <span className="text-[#F26311] text-base lg:text-lg font-bold"> 08. 38 44 1111</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-span-5 md:col-span-2 lg:col-span-1 ">

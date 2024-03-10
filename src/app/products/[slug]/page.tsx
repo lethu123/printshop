@@ -26,7 +26,6 @@ import bb8 from '@assets/images/bb8.png';
 import bb9 from '@assets/images/bb9.png';
 import bb10 from '@assets/images/bb10.png';
 
-
 import cc1 from '@assets/images/cc1.png';
 import cc2 from '@assets/images/sp.jpg';
 import cc3 from '@assets/images/cc3.png';
@@ -43,12 +42,7 @@ import cc13 from '@assets/images/cc13.png';
 import cc14 from '@assets/images/cc14.png';
 import cc15 from '@assets/images/cc15.png';
 import cc16 from '@assets/images/cc16.png';
-
-
-
-
-
-
+import banner from '@assets/images/banner5.jpg';
 
 import { useParams } from 'next/navigation'
 import FooterComponent from '@srccomponents/home/FooterComponent'
@@ -72,7 +66,7 @@ const ProductDetail = () => {
     <Screen _className="product-page relative">
       {/* <HeaderComponent /> */}
 
-      <BannerSingle />
+      <BannerSingle image={banner} />
 
       <Container>
         <h1 className='border-l-4 pl-5 border-[#FF9D00] text_yellow text-[40px] md:text-[52.14px] mt-10'>SẢN PHẨM </h1>

@@ -5,9 +5,9 @@ import Container from '@srccommons/Container'
 import Screen from '@srccommons/Screen'
 import { useRouter } from 'next/navigation'
 import React from 'react'
-import styles from '@assets/scss/home.module.scss'
 import logoBlack from '@assets/images/logo-black.svg'
 import phone2 from '@assets/images/phone1.svg'
+import banner from '@assets/images/banner4.jpg';
 import { IconEmail, IconLocation, IconPhone } from '@srccommons/icons'
 import Image from 'next/image'
 
@@ -18,7 +18,7 @@ const ContactUs = () => {
     return (
         <>
             <Screen _className="product-page relative">
-                <BannerSingle />
+                <BannerSingle image={banner} />
                 <section>
                     <Container>
                         <h1 className='border-l-4 pl-5 border-gray-800 text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 '>GỬI LỜI NHẮN</h1>
@@ -68,7 +68,7 @@ const ContactUs = () => {
                                     <div className='col-span-2 md:col-span-1 flex items-start'>
                                         <input className='h-[20px] w-[20px] me-2' id="c-quay-ke" name="c-quay-ke" type="checkbox" value="yes" />
                                         <label htmlFor="c-quay-ke">
-                                             Thiết kế - tạo mẫu quầy kệ, tủ <br className='sm:hidden md:block'/> trưng bày sản phẩm (POSM)  </label>
+                                            Thiết kế - tạo mẫu quầy kệ, tủ <br className='sm:hidden md:block' /> trưng bày sản phẩm (POSM)  </label>
                                     </div>
                                 </div>
 
@@ -119,7 +119,7 @@ const ContactUs = () => {
                                                 <Image width={17} alt="" src={phone2} />
                                                 <p className="font-extrabold custom-text-logo-mode text-base lg:text-lg pe-1">Gọi cho chúng tôi</p>
                                             </div>
-                                            <span className=" text-base lg:text-lg font-bold">(+84) 913 927 471</span>
+                                            <span className=" text-base lg:text-lg font-bold"> 08. 38 44 1111</span>
                                         </div>
                                     </div>
                                 </div>
