@@ -55,7 +55,7 @@ const menu = [
     },
     {
         title: 'Tin tức',
-        path: '/'
+        path: '/news'
     },
     {
         title: ' Liên hệ',

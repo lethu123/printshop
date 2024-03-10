@@ -80,7 +80,7 @@ const Navbar = () => {
                             <Link href={'/about-us'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Về chúng tôi</Link>
                         </div>
                         <div>
-                            <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Tin tức</Link>
+                            <Link href={'/news'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Tin tức</Link>
                         </div>
                         <div>
                             <Link href={'/contact'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Liên hệ</Link>
