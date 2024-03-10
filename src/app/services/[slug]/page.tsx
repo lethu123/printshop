@@ -45,8 +45,8 @@ const ServiceDetail = () => {
   }, [params?.slug]);
 
   return (
-    <Screen _className="product-page relative">
-      {/* <HeaderComponent /> */}
+    <Screen _className="product-page relative"> 
+      <div id='banner'></div>
       <BannerSingle image={banner}/>
 
       <Container>

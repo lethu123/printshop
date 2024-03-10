@@ -68,7 +68,7 @@ const CategoryComponent = () => {
                             <Image className="w-full h-full" alt="" src={service5} />
                         </div>
                         <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-                            <button onClick={() => router.push('/services/thiet-ke-an-pham', { scroll: false })} className={`follow_me uppercase text-[22px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Xem thêm
+                            <button onClick={() => router.push('/services/banner', { scroll: false })} className={`follow_me uppercase text-[22px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Xem thêm
                                 <div></div>
                             </button>
                         </div>

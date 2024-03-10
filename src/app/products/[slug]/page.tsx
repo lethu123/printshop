@@ -65,7 +65,7 @@ const ProductDetail = () => {
   return (
     <Screen _className="product-page relative">
       {/* <HeaderComponent /> */}
-
+      <div id='banner'></div>
       <BannerSingle image={banner} />
 
       <Container>
