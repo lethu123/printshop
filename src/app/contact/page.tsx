@@ -66,8 +66,9 @@ const ContactUs = () => {
 
 
                                     <div className='col-span-2 md:col-span-1 flex items-start'>
-                                        <input className='h-[20px] w-[20px] me-2' style={{ flexBasis: '30px' }} id="c-quay-ke" name="c-quay-ke" type="checkbox" value="yes" />
-                                        <label htmlFor="c-quay-ke">Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm (POSM) </label>
+                                        <input className='h-[20px] w-[20px] me-2' id="c-quay-ke" name="c-quay-ke" type="checkbox" value="yes" />
+                                        <label htmlFor="c-quay-ke">
+                                             Thiết kế - tạo mẫu quầy kệ, tủ <br className='sm:hidden md:block'/> trưng bày sản phẩm (POSM)  </label>
                                     </div>
                                 </div>
 
