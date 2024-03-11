@@ -57,7 +57,7 @@ const ServiceDetail = () => {
       <div className='mt-[7rem]'   >
         <div className='bg-banner py-8 '>
           <Container>
-            <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT BỊ QUẢNG CÁO</h3>
+            <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT KẾ ẤN PHẨM </h3>
           </Container>
         </div>
 
