@@ -92,16 +92,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
-              <div
-                className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}
-              >
-                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">
-                  Thiết kế <br /> ấn phẩm
-                </p>
-                <div
-                  className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full"
-                  style={{ background: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
+                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">CATALOG</p>
+                <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
@@ -110,16 +103,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-5  sm:col-span-4 md:col-span-3 lg:col-span-2 ">
-              <div
-                className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}
-              >
-                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">
-                  Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm (POSM)
-                </p>
-                <div
-                  className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
-                  style={{ borderColor: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
+                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">BROCHURE</p>
+                <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
@@ -138,16 +124,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2 order-6 lg:order-none">
-              <div
-                className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}
-              >
-                <p className="text-white font-avo_bold p-3 items-end mt-auto text-base xl:text-[23px]">
-                  Thiết kế <br /> tạo mẫu bao bì, hộp
-                </p>
-                <div
-                  className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
-                  style={{ borderColor: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}>
+                <p className="text-white font-avo_bold p-3 items-end mt-auto text-base xl:text-[23px]">TỜ RƠI</p>
+                <div className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
             <div className="col-span-10 sm:col-span-4 md:col-span-6 lg:col-span-4 relative">
@@ -163,16 +142,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
-              <div
-                className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}
-              >
-                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">
-                  Thiết kế <br /> ấn phẩm
-                </p>
-                <div
-                  className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full"
-                  style={{ background: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
+                <p className="text-white leading-7 p-3 text-base xl:text-[25px]">LỊCH TƯỜNG <br /> LỊCH ĐỂ BÀN <br /> LỊCH BLOC</p>
+                <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2  ">
@@ -181,16 +153,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-5  sm:col-span-4 md:col-span-3 lg:col-span-2 ">
-              <div
-                className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}
-              >
-                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">
-                  Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm (POSM)
-                </p>
-                <div
-                  className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
-                  style={{ borderColor: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
+                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">SỔ TY - TẬP VỞ</p>
+                <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
@@ -224,16 +189,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
-              <div
-                className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}
-              >
-                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">
-                  Thiết kế <br /> ấn phẩm
-                </p>
-                <div
-                  className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full"
-                  style={{ background: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
+                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px] leading-8">HỘP MỀM <br /> HỘP CỨNG</p>
+                <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
@@ -253,16 +211,9 @@ const ProductDetail = () => {
             </div>
 
             <div className="col-span-5  sm:col-span-4 md:col-span-3 lg:col-span-2 order-5 lg:order-none">
-              <div
-                className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}
-              >
-                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">
-                  Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm (POSM)
-                </p>
-                <div
-                  className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
-                  style={{ borderColor: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
+                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">HỘP IN METALIZE</p>
+                <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
@@ -281,16 +232,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
-              <div
-                className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}
-              >
-                <p className="text-white font-avo_bold p-3 items-end mt-auto text-base xl:text-[23px]">
-                  Thiết kế <br /> tạo mẫu bao bì, hộp
-                </p>
-                <div
-                  className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
-                  style={{ borderColor: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}>
+                <p className="text-white font-avo_bold p-3 items-end mt-auto text-base xl:text-[23px] leading-7">HỘP GIẤY KRAFT <br /> HỘP BỒI CARTON</p>
+                <div className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
@@ -299,16 +243,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
-              <div
-                className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}
-              >
-                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">
-                  Thiết kế <br /> ấn phẩm
-                </p>
-                <div
-                  className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full"
-                  style={{ background: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
+                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">TÚI GIẤY</p>
+                <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
@@ -380,16 +317,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
-              <div
-                className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}
-              >
-                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">
-                  SHELF TALKER
-                </p>
-                <div
-                  className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full"
-                  style={{ background: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
+                <p className="text-white p-3 text-base xl:text-[23px] leading-7">BẢNG QUẢNG CÁO <br /> TẤM LỚN - BILLBOARD <br /> HỘP ĐÈN <br /> BIỂN HIỆU <br /> SHOP SIGN</p>
+                <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
@@ -399,16 +329,9 @@ const ProductDetail = () => {
             </div>
 
             <div className=" col-span-6 sm:col-span-4 lg:col-span-2 ">
-              <div
-                className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}
-              >
-                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">
-                  STANDEE HANGER TENCARD WOBBLER
-                </p>
-                <div
-                  className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
-                  style={{ borderColor: "#FAB674" }}
-                ></div>
+              <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
+                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">STANDEE <br /> HANGER <br /> TENCARD <br /> WOBBLER</p>
+                <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
             <div className="col-span-12 sm:col-span-8 lg:col-span-4">
@@ -416,9 +339,10 @@ const ProductDetail = () => {
                 <Image className="w-full h-full" alt="" src={cc11} />
               </div>
             </div>
-            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
-              <div className={`${styles.image_hover} aspect-square`}>
-                <Image className="w-full h-full" alt="" src={cc12} />
+            <div className=" col-span-6 sm:col-span-4 lg:col-span-2 ">
+              <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
+                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">GONDOLAR HEAD  <br /> DISPLAY STANS <br /> BOOTH </p>
+                <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
@@ -426,9 +350,10 @@ const ProductDetail = () => {
                 <Image className="w-full h-full" alt="" src={cc13} />
               </div>
             </div>
-            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
-              <div className={`${styles.image_hover} aspect-square`}>
-                <Image alt="" className="w-full h-full" src={cc14} />
+            <div className=" col-span-6 sm:col-span-4 lg:col-span-2 ">
+              <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
+                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">SHELF TALKER <br /> FLAG LINE <br /> PILLAR </p>
+                <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
