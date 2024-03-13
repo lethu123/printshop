@@ -1,9 +1,13 @@
 'use client'
 import Screen from "@commons/Screen";
-import HeaderComponent from "@components/home/HeaderComponent"; 
+import HeaderComponent from "@components/home/HeaderComponent";
 import styles from '@assets/scss/home.module.scss'
 import Image from "next/image";
 import icon30 from '@assets/images/30.png'
+import certificate1 from '@assets/images/c1.jpg'
+import certificate2 from '@assets/images/c2.jpg'
+import certificate3 from '@assets/images/c3.jpg'
+import certificate4 from '@assets/images/c4.jpg'
 
 import FooterComponent from "@srccomponents/home/FooterComponent";
 import CoperatorComponent from "@srccomponents/home/CoperatorComponent";
@@ -13,13 +17,16 @@ import BannerComponentV2 from "@srccomponents/home/BannerComponentV2";
 import Slider from "react-slick";
 import Link from "next/link";
 import banner from '@assets/images/banner.png';
+import Container from "@srccommons/Container";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter()
   return (
     <Screen _className="home-page relative ">
       <HeaderComponent />
 
-      {/* BANNER */} 
+      {/* BANNER */}
       <BannerComponentV2 />
 
 
@@ -121,6 +128,41 @@ export default function Home() {
       <div className={`${styles.bg_category} py-[4rem]`}>
         <ProductComponent />
         <CategoryComponent />
+      </div>
+
+      {/* certificate */}
+      <div className="relative ">
+        <div className={`${styles.bg_certificate} pb-[120px] pt-[50px]`}>
+          <Container>
+
+            <div className="flex items-center justify-center flex-col">
+              <div className="inline-block pb-8">
+                <h1 className="text-center lg:text-[30.5px] text-2xl sm:text-3xl md:text-4xl text-white">CHỨNG NHẬN/BẰNG KHEN</h1>
+                <div className="text-center h-[2px] w-4/5 mx-auto mt-3 bg-white"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-4 gap-7 items-stretch">
+              <div className="col-span-2 sm:col-span-2 md:col-span-1">
+                <Image className="w-full h-full" alt="" src={certificate1} />
+              </div>
+              <div className="col-span-2 sm:col-span-2 md:col-span-1">
+                <Image className="w-full h-full" alt="" src={certificate2} />
+              </div>
+              <div className="col-span-2 sm:col-span-2 md:col-span-1">
+                <Image className="w-full h-full" alt="" src={certificate3} />
+              </div>
+              <div className="col-span-2 sm:col-span-2 md:col-span-1">
+                <Image className="w-full h-full" alt="" src={certificate4} />
+              </div>
+
+            </div>
+          </Container>
+        </div>
+        <div className={`z-10 absolute -bottom-16 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
+          <button onClick={() => router.push('/', { scroll: false })} className={`follow_me uppercase text-[22px] spin circle h-[150px] w-[150px] xl:h-[150px] xl:w-[150px]`}>ĐẾN VỚI CHÚNG TÔI
+            <div></div>
+          </button>
+        </div> 
       </div>
 
       {/* coperator */}

@@ -16,7 +16,7 @@ const FooterComponent = () => {
             <h1 className="custom-text-mode text-xl font-extrabold lg:text-[21.9px] mb-2">CÔNG TY TNHH QUẢNG CÁO VÀ THƯƠNG MẠI
               <br className='hidden lg:block' />
               DƯƠNG PHONG (DPA)</h1>
-            <div className="flex items-center gap-8 lg:gap-16 flex-wrap justify-center lg:justify-start">
+            <div className="flex items-center gap-8 lg:gap-16 flex-wrap  lg:justify-start">
               <div >
                 <div className="flex custom-text-mode gap-2">
                   <IconLocation color='white' className='w-[12px] custom-icon-show ' />
@@ -54,28 +54,37 @@ const FooterComponent = () => {
               </div> */}
             </div>
           </div>
-          <div className="col-span-5 md:col-span-2 lg:col-span-1 ">
-            <h1 className="custom-text-mode font-extrabold text-[20px]">OUR MENU CATAGORIES</h1>
-            <ul className={`${styles.ul} custom-text-mode`}>
-              <li className='text=[15px]'>
-                <Link href={'/'} >TRANG CHỦ</Link>
-              </li>
-              <li className='text=[15px] uppercase'><Link href={'/'} >giới thiệu</Link></li>
-              <li className='text=[15px] uppercase'> <Link href={'/'} >Thư viện</Link></li>
-              <li className='text=[15px] uppercase'> <Link href={'/'} >Thông tin</Link></li>
-              <li className='text=[15px] uppercase'><Link href={'/'} >Hỗ trợ</Link></li>
-            </ul>
+
+          <div className="col-span-5 lg:col-span-2 flex justify-between">
+            <div className="col-span-5 md:col-span-2 lg:col-span-1 ">
+              <h1 className="custom-text-mode font-extrabold text-[20px]">OUR MENU CATAGORIES</h1>
+              <div className='flex justify-between'>
+                <ul className={`${styles.ul} custom-text-mode`}>
+                  <li className='text-[15px]'>
+                    <Link href={'/'} >TTrang chủ</Link>
+                  </li>
+                  <li className='text-[15px] '><Link href={'/products/banner'} >Sản phẩm</Link></li>
+                  <li className='text-[15px] '> <Link href={'/services/banner'} >Dịch vụ</Link></li> 
+                </ul>
+                <ul className={`${styles.ul} custom-text-mode`}> 
+                  <li className='text-[15px] '><Link href={'/about-us'} >Về chúng tôi</Link></li>
+                  <li className='text-[15px] '> <Link href={'/news'} >Tin tức</Link></li>
+                  <li className='text-[15px] '> <Link href={'/contact'} >Liên hệ</Link></li> 
+                </ul>
+              </div>
+            </div>
+            <div className="col-span-5 md:col-span-2 lg:col-span-1">
+              <h1 className="custom-text-mode font-extrabold text-[20px]">LAST EVENTS</h1>
+              <ul className={`${styles.ul} custom-text-mode`}>
+                <li className='text=[15px]'>
+                  <Link href={'/'} >Chrismas</Link>
+                </li>
+                <li className='text=[15px] '><Link href={'/'} >Black Friday</Link></li>
+                <li className='text=[15px] '> <Link href={'/'} >Sunday Specia</Link></li>
+              </ul>
+            </div>
           </div>
-          <div className="col-span-5 md:col-span-2 lg:col-span-1">
-            <h1 className="custom-text-mode font-extrabold text-[20px]">LAST EVENTS</h1>
-            <ul className={`${styles.ul} custom-text-mode`}>
-              <li className='text=[15px]'>
-                <Link href={'/'} >Chrismas</Link>
-              </li>
-              <li className='text=[15px] '><Link href={'/'} >Black Friday</Link></li>
-              <li className='text=[15px] '> <Link href={'/'} >Sunday Specia</Link></li>
-            </ul>
-          </div>
+
 
           <div className="custom-text-mode col-span-5 lg:col-span-3 ">
             <div className="my-9 text=[15px]">
@@ -97,7 +106,7 @@ const FooterComponent = () => {
 
           <div className="col-span-5 lg:col-span-2 mt-5 lg:0">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.521263707445!2d106.54401639357908!3d10.867770499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b93635e7d83%3A0x7784b185f7215232!2zTmjDoCBpbiBExrDGoW5nIFBob25n!5e0!3m2!1svi!2s!4v1709973614919!5m2!1svi!2s" className='w-full lg:w-[500px] max-w-full' height="250" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            <div className=" flex items-end mt-6">
+            {/* <div className=" flex items-end mt-6">
               <div className="flex gap-3 items-center flex-wrap">
                 <h2 className="custom-text-mode text-[15.42px] font-avo_bold">New Enter</h2>
                 <div className='flex gap-3 flex-wrap'>
@@ -105,7 +114,7 @@ const FooterComponent = () => {
                   <button className={`${styles.btn} text-[15.42px] py-3 px-5 md:px-10 border-0 outline-0 rounded-full font-semibold`}>Subcribe</button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>
