@@ -34,8 +34,8 @@ import cc5 from "@assets/images/cc5.png";
 import cc6 from "@assets/images/cc6.png";
 import cc7 from "@assets/images/cc7.png";
 import cc8 from "@assets/images/cc8.png";
-import cc9 from "@assets/images/cc9.png";
-import cc10 from "@assets/images/cc10.png";
+import cc9 from "@assets/images/spx1.jpg";
+import cc10 from "@assets/images/spx2.jpg";
 import cc11 from "@assets/images/cc11.png";
 import cc12 from "@assets/images/cc12.png";
 import cc13 from "@assets/images/cc13.png";
@@ -154,7 +154,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5  sm:col-span-4 md:col-span-3 lg:col-span-2 ">
               <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
-                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">SỔ TY - TẬP VỞ</p>
+                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">SỔ TAY - TẬP VỞ</p>
                 <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>

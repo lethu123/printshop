@@ -157,11 +157,6 @@ export default function Home() {
 
             </div>
           </Container>
-        </div>
-        <div className={`z-10 absolute -bottom-16 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-          <button onClick={() => router.push('/', { scroll: false })} className={`follow_me uppercase text-[22px] spin circle h-[150px] w-[150px] xl:h-[150px] xl:w-[150px]`}>ĐẾN VỚI CHÚNG TÔI
-            <div></div>
-          </button>
         </div> 
       </div>
 

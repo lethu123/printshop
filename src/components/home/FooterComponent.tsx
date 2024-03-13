@@ -2,9 +2,7 @@ import Container from '@srccommons/Container'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import styles from '@assets/scss/home.module.scss'
-import logoBlack from '@assets/images/logo-black.svg'
-import phone2 from '@assets/images/phone-orange.svg'
+import styles from '@assets/scss/home.module.scss' 
 import { IconEmail, IconLocation, IconPhone } from '@srccommons/icons'
 
 const FooterComponent = () => {
@@ -12,7 +10,7 @@ const FooterComponent = () => {
     <footer className="pb-[6rem]">
       <Container>
         <div className="grid grid-cols-5 gap-5 items-stretch flex-wrap">
-          <div className="col-span-5 lg:col-span-3">
+          <div className="col-span-5 md:col-span-3">
             <h1 className="custom-text-mode text-xl font-extrabold lg:text-[21.9px] mb-2">CÔNG TY TNHH QUẢNG CÁO VÀ THƯƠNG MẠI
               <br className='hidden lg:block' />
               DƯƠNG PHONG (DPA)</h1>
@@ -55,8 +53,8 @@ const FooterComponent = () => {
             </div>
           </div>
 
-          <div className="col-span-5 lg:col-span-2 flex justify-between">
-            <div className="col-span-5 md:col-span-2 lg:col-span-1 ">
+          <div className="col-span-5 md:col-span-3 lg:col-span-2 flex flex-wrap justify-between">
+            <div className=" ">
               <h1 className="custom-text-mode font-extrabold text-[20px]">OUR MENU CATAGORIES</h1>
               <div className='flex justify-between'>
                 <ul className={`${styles.ul} custom-text-mode`}>
@@ -73,7 +71,7 @@ const FooterComponent = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-span-5 md:col-span-2 lg:col-span-1">
+            <div className="">
               <h1 className="custom-text-mode font-extrabold text-[20px]">LAST EVENTS</h1>
               <ul className={`${styles.ul} custom-text-mode`}>
                 <li className='text=[15px]'>
@@ -86,7 +84,7 @@ const FooterComponent = () => {
           </div>
 
 
-          <div className="custom-text-mode col-span-5 lg:col-span-3 ">
+          <div className="custom-text-mode col-span-5 md:col-span-3 ">
             <div className="my-9 text=[15px]">
               <h3 className='text=[15px] font-extrabold '>NHÀ IN DƯƠNG PHONG:</h3>
               <span>
@@ -104,8 +102,8 @@ const FooterComponent = () => {
             </div>
           </div>
 
-          <div className="col-span-5 lg:col-span-2 mt-5 lg:0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.521263707445!2d106.54401639357908!3d10.867770499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b93635e7d83%3A0x7784b185f7215232!2zTmjDoCBpbiBExrDGoW5nIFBob25n!5e0!3m2!1svi!2s!4v1709973614919!5m2!1svi!2s" className='w-full lg:w-[500px] max-w-full' height="250" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          <div className="col-span-5 md:col-span-2 mt-5 lg:0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.521263707445!2d106.54401639357908!3d10.867770499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b93635e7d83%3A0x7784b185f7215232!2zTmjDoCBpbiBExrDGoW5nIFBob25n!5e0!3m2!1svi!2s!4v1709973614919!5m2!1svi!2s" className='w-full max-w-full' height="250" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             {/* <div className=" flex items-end mt-6">
               <div className="flex gap-3 items-center flex-wrap">
                 <h2 className="custom-text-mode text-[15.42px] font-avo_bold">New Enter</h2>

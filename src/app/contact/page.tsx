@@ -96,10 +96,10 @@ const ContactUs = () => {
                                                     <IconPhone color='white' className='w-[12px] custom-icon-show' />
                                                     <IconPhone color='black' className='w-[12px] custom-icon-hidden' />
 
-                                                    <span className='text=[15px]'> 08. 38 44 1111M</span>
+                                                    <span className='text-[15px]'> 08. 38 44 1111M</span>
                                                 </div>
                                                 <div>
-                                                    <span className="custom-text-mode text=[15px]">fax: 08. 3997 1009</span>
+                                                    <span className="custom-text-mode text-[15px]">fax: 08. 3997 1009</span>
                                                 </div>
                                             </div>
                                             <div className="flex custom-text-mode gap-2">
@@ -119,7 +119,7 @@ const ContactUs = () => {
                                                 <Image width={17} alt="" src={phone2} />
                                                 <p className="font-extrabold custom-text-logo-mode text-base lg:text-lg pe-1">Gọi cho chúng tôi</p>
                                             </div>
-                                            <span className=" text-base lg:text-lg font-bold"> 08. 38 44 1111</span>
+                                            <span className=" text-base lg:text-3xl font-bold pr-2"> 08. 38 44 1111</span>
                                         </div>
                                     </div>
                                 </div>
