@@ -1,5 +1,4 @@
-import Container from '@srccommons/Container'
-import Image from 'next/image'
+import Container from '@srccommons/Container' 
 import Link from 'next/link'
 import React from 'react'
 import styles from '@assets/scss/home.module.scss' 
@@ -26,7 +25,7 @@ const FooterComponent = () => {
                     <IconPhone color='white' className='w-[12px] custom-icon-show' />
                     <IconPhone color='black' className='w-[12px] custom-icon-hidden' />
 
-                    <span className='text=[15px]'> 08. 38 44 1111M</span>
+                    <span className='text=[15px]'> 028. 38 44. 1111</span>
                   </div>
                   <div>
                     <span className="custom-text-mode text=[15px]">fax: 08. 3997 1009</span>

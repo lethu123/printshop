@@ -34,14 +34,7 @@ const CoperatorComponent = () => {
                     <Image alt="" src={logo2} className='w-[3rem] md:w-[4rem] lg:w-[6rem]' />
                     <Image alt="" src={logo3} className='w-[3rem] md:w-[4rem] lg:w-[6rem]' />
                     <Image alt="" src={logo1} className='w-[3rem] md:w-[4rem] lg:w-[6rem]' />
-                </div>
-                <div className="flex w-full justify-center items-center mt-9 -mb-[13rem]">
-                    {/* <div className="flex-1" style={{ height: 1, background: '#FF9D00' }}></div> */}
-                    <button className={`follow_me spin circle h-[150px] w-[150px] uppercase text-[22px]  mb-[4rem] text-white text-center text-[16px] px-7`}> ĐẾN VỚI CHÚNG TÔI
-                        <div></div>
-                    </button>
-                    {/* <div className="flex-1" style={{ height: 1, background: '#FF9D00' }}></div> */}
-                </div>
+                </div> 
             </Container>
         </div>
     )

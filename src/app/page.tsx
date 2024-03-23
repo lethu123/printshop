@@ -3,7 +3,7 @@ import Screen from "@commons/Screen";
 import HeaderComponent from "@components/home/HeaderComponent";
 import styles from '@assets/scss/home.module.scss'
 import Image from "next/image";
-import icon30 from '@assets/images/30.png'
+import icon30 from '@assets/images/30-01.svg'
 import certificate1 from '@assets/images/c1.jpg'
 import certificate2 from '@assets/images/c2.jpg'
 import certificate3 from '@assets/images/c3.jpg'
@@ -15,8 +15,10 @@ import ProductComponent from "@srccomponents/home/ProductComponent";
 import CategoryComponent from "@srccomponents/home/ServiceComponent";
 import BannerComponentV2 from "@srccomponents/home/BannerComponentV2";
 import Slider from "react-slick";
-import Link from "next/link";
-import banner from '@assets/images/banner.png';
+import banner from '@assets/images/bannerx1.jpg';
+import banner2 from '@assets/images/bannerx2.jpg';
+import banner3 from '@assets/images/bannerx3.jpg';
+import banner4 from '@assets/images/bannerx4.jpg';
 import Container from "@srccommons/Container";
 import { useRouter } from "next/navigation";
 
@@ -33,22 +35,14 @@ export default function Home() {
       <div className={`${styles.bg_intro} pb-[5rem] pt-5 -mt-2`}  >
 
         <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto 3xl:mx-auto max-w-screen-2xl lg:ms-auto xl:mr-0">
-          <div className="flex items-end flex-wrap">
+          <div className="flex items-center flex-wrap gap-10">
             <div className="w-[150px] lg:w-[210px]">
               <Image alt='' className="w-full" src={icon30} />
             </div>
-            {/* <div className="flex items-end"> */}
-            <div className="pb-3 ps-2 ">
-              <h1 className="text-[30px] md:text-[25.45px] font-avo_bold">NĂM</h1>
-              <h1 className="text-[22px] md:text-[17.31px] text-white font-avo_bold">ĐỂ PHÁT TRIỂN</h1>
-              <h2 className="text-[18px] md:text-[13.35px] text-white ">ĐỂ TẬN TUY</h2>
+            <div className="w-full md:mt-0 md:w-auto">
+              <h1 className="text-[25.41px] text-white font-avo">THÀNH LẬP CÔNG TY</h1>
+              <h1 className="text-[25.41px] text-white">1998 - 2028</h1>
             </div>
-            <div className={`${styles.divider_col2} mb-3 hidden md:block mx-[40px]`}></div>
-            <div className="w-full mt-4 pb-2 md:mt-0 md:w-auto">
-              <h1 className="text-[25.41px] font-avo_bold">QUÁ TRÌNH HÌNH THÀNH</h1>
-              <h1 className="text-[25.41px] text-white">VÀ PHÁT TRIỂN</h1>
-            </div>
-            {/* </div> */}
           </div>
           <div className="grid grid-cols-6 gap-10 mt-5 items-center">
             <div className="col-span-6 xl:col-span-3">
@@ -95,24 +89,22 @@ export default function Home() {
 
                 <div className={`${styles.image_hover} rounded`}>
                   <Image alt="" src={banner} className='w-full' />
-                  <div className={`${styles.view_detail} flex justify-center items-center`}>
-                    <Link href={'#'}>Xem chi tiết</Link>
-                  </div>
+
                 </div>
 
 
                 <div className={`${styles.image_hover} rounded`}>
-                  <Image alt="" src={banner} className='w-full  ' />
-                  <div className={`${styles.view_detail} flex justify-center items-center`}>
-                    <Link href={'#'}>Xem chi tiết</Link>
-                  </div>
+                  <Image alt="" src={banner2} className='w-full  ' />
+
                 </div>
 
                 <div className={`${styles.image_hover} rounded`}>
-                  <Image alt="" src={banner} className='w-full  ' />
-                  <div className={`${styles.view_detail} flex justify-center items-center`}>
-                    <Link href={'#'}>Xem chi tiết</Link>
-                  </div>
+                  <Image alt="" src={banner3} className='w-full  ' />
+
+                </div>
+                <div className={`${styles.image_hover} rounded`}>
+                  <Image alt="" src={banner4} className='w-full  ' />
+
                 </div>
 
 
@@ -141,7 +133,41 @@ export default function Home() {
                 <div className="text-center h-[2px] w-4/5 mx-auto mt-3 bg-white"></div>
               </div>
             </div>
-            <div className="grid grid-cols-4 gap-7 items-stretch">
+
+            <Slider
+                className='slide-certificate'
+                infinite={true}
+                slidesToShow={4}
+                slidesToScroll={1}
+                autoplay={true}
+                autoplaySpeed={2000}
+                speed={1500}   
+              >
+
+                {/* <div className={`rounded`}> */}
+                  <Image alt="" src={certificate1} className='w-full h-full' />
+
+                {/* </div> */}
+
+
+                {/* <div className={`rounded`}> */}
+                  <Image alt="" src={certificate2} className='w-full h-full  ' />
+
+                {/* </div> */}
+
+                {/* <div className={`rounded`}> */}
+                  <Image alt="" src={certificate3} className='w-full h-full  ' />
+
+                {/* </div> */}
+                {/* <div className={`rounded`}> */}
+                  <Image alt="" src={certificate4} className='w-full h-full  ' />
+
+                {/* </div> */}
+
+
+              </Slider>
+
+            {/* <div className="grid grid-cols-4 gap-7 items-stretch">
               <div className="col-span-2 sm:col-span-2 md:col-span-1">
                 <Image className="w-full h-full" alt="" src={certificate1} />
               </div>
@@ -155,9 +181,9 @@ export default function Home() {
                 <Image className="w-full h-full" alt="" src={certificate4} />
               </div>
 
-            </div>
+            </div> */}
           </Container>
-        </div> 
+        </div>
       </div>
 
       {/* coperator */}
