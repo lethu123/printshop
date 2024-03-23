@@ -162,6 +162,7 @@ const ProductDetail = () => {
               <div className={`${styles.image_hover} aspect-square`}>
                 <Image className="w-full h-full" alt="" src={service9} />
               </div>
+            </div>
           </div>
         </Container>
       </div>
