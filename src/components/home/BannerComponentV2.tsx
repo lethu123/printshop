@@ -13,8 +13,7 @@ import icLeft from "@assets/images/arrow_left.svg"
 import icRight from "@assets/images/arrow_right.svg"
 import banner from '@assets/images/bannerx1.jpg';
 import banner2 from '@assets/images/bannerx2.jpg';
-import banner3 from '@assets/images/bannerx3.jpg';
-import banner4 from '@assets/images/bannerx4.jpg';
+import banner3 from '@assets/images/bannerx3.jpg'; 
 import icon1 from '@assets/images/icon1.svg'
 import icon2 from '@assets/images/icon2.svg'
 import icon3 from '@assets/images/icon3.svg'
@@ -159,19 +158,19 @@ const BannerComponentV2 = () => {
                                 <div className='relative flex items-end'>
                                     <Image className='z-10 -mr-[30px]' src={icon1} width={80} height={80} alt='' />
 
-                                    <div className='bg-icon ' > 
+                                    <div className='bg-icon ' >
                                         <p className="text-white text-center text-lg md:text-xl py-3 ps-10 pe-5 lg:text-2xl 2xl:text-[25px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p>
                                     </div>
                                 </div>
                                 <div className='relative flex items-end'>
-                                <Image className='z-10 -mr-[30px]' src={icon2} width={80} height={80} alt='' />
+                                    <Image className='z-10 -mr-[30px]' src={icon2} width={80} height={80} alt='' />
 
-                                    <div className='bg-icon' > 
+                                    <div className='bg-icon' >
                                         <p className="text-white text-center text-lg md:text-xl py-3 ps-10 pe-5 lg:text-2xl 2xl:text-[25px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p>
                                     </div>
                                 </div>
                                 <div className='relative flex items-end'>
-                                <Image className='z-10 -mr-[30px]' src={icon3} width={80} height={80} alt='' />
+                                    <Image className='z-10 -mr-[30px]' src={icon3} width={80} height={80} alt='' />
 
                                     <div className='bg-icon' >
                                         <p className="text-white text-center text-lg md:text-xl py-3 ps-10 pe-5 lg:text-2xl 2xl:text-[25px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p>
@@ -192,12 +191,28 @@ const BannerComponentV2 = () => {
                                 <p className="text-white  text-2xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN  MÔI TRƯỜNG</p>
                                 <p className="text-white  text-2xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">TIẾT KIỆM  NĂNG LƯỢNG</p>
                             </div>
-                            <div className="justify-center items-center pb-8 hidden sm:flex">
-                                <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p></div>
-                                <div className={`${styles.divider_col} `}></div>
-                                <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p></div>
-                                <div className={`${styles.divider_col} `}></div>
-                                <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">TIẾT KIỆM <br className='sm:hidden' /> NĂNG LƯỢNG</p></div>
+                            <div className="justify-center items-center gap-10 flex-wrap pb-8 hidden sm:flex">
+                                <div className='relative flex items-end'>
+                                    <Image className='z-10 -mr-[30px]' src={icon1} width={80} height={80} alt='' />
+
+                                    <div className='bg-icon ' >
+                                        <p className="text-white text-center text-lg md:text-xl py-3 ps-10 pe-5 lg:text-2xl 2xl:text-[25px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p>
+                                    </div>
+                                </div>
+                                <div className='relative flex items-end'>
+                                    <Image className='z-10 -mr-[30px]' src={icon2} width={80} height={80} alt='' />
+
+                                    <div className='bg-icon' >
+                                        <p className="text-white text-center text-lg md:text-xl py-3 ps-10 pe-5 lg:text-2xl 2xl:text-[25px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p>
+                                    </div>
+                                </div>
+                                <div className='relative flex items-end'>
+                                    <Image className='z-10 -mr-[30px]' src={icon3} width={80} height={80} alt='' />
+
+                                    <div className='bg-icon' >
+                                        <p className="text-white text-center text-lg md:text-xl py-3 ps-10 pe-5 lg:text-2xl 2xl:text-[25px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p>
+                                    </div>
+                                </div>
                             </div>
                         </Container>
                     </div>
@@ -213,37 +228,33 @@ const BannerComponentV2 = () => {
                                 <p className="text-white  text-2xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN  MÔI TRƯỜNG</p>
                                 <p className="text-white  text-2xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">TIẾT KIỆM  NĂNG LƯỢNG</p>
                             </div>
-                            <div className="justify-center items-center pb-8 hidden sm:flex">
-                                <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p></div>
-                                <div className={`${styles.divider_col} `}></div>
-                                <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p></div>
-                                <div className={`${styles.divider_col} `}></div>
-                                <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">TIẾT KIỆM <br className='sm:hidden' /> NĂNG LƯỢNG</p></div>
+                            <div className="justify-center items-center gap-10 flex-wrap pb-8 hidden sm:flex">
+                                <div className='relative flex items-end'>
+                                    <Image className='z-10 -mr-[30px]' src={icon1} width={80} height={80} alt='' />
+
+                                    <div className='bg-icon ' >
+                                        <p className="text-white text-center text-lg md:text-xl py-3 ps-10 pe-5 lg:text-2xl 2xl:text-[25px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p>
+                                    </div>
+                                </div>
+                                <div className='relative flex items-end'>
+                                    <Image className='z-10 -mr-[30px]' src={icon2} width={80} height={80} alt='' />
+
+                                    <div className='bg-icon' >
+                                        <p className="text-white text-center text-lg md:text-xl py-3 ps-10 pe-5 lg:text-2xl 2xl:text-[25px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p>
+                                    </div>
+                                </div>
+                                <div className='relative flex items-end'>
+                                    <Image className='z-10 -mr-[30px]' src={icon3} width={80} height={80} alt='' />
+
+                                    <div className='bg-icon' >
+                                        <p className="text-white text-center text-lg md:text-xl py-3 ps-10 pe-5 lg:text-2xl 2xl:text-[25px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p>
+                                    </div>
+                                </div>
                             </div>
                         </Container>
                     </div>
                 </div>
-                <div className='relative'>
-                    <div className={`h-[400px] md:h-[500px] lg:h-lvh rounded`}>
-                        <Image alt="" src={banner4} className='w-full h-full' />
-                    </div>
-                    <div className='absolute bottom-0 w-full pb-10'>
-                        <Container>
-                            <div className='sm:hidden mb-5'>
-                                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT  BỀN VỮNG</p>
-                                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN  MÔI TRƯỜNG</p>
-                                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">TIẾT KIỆM  NĂNG LƯỢNG</p>
-                            </div>
-                            <div className="justify-center items-center pb-8 hidden sm:flex">
-                                <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p></div>
-                                <div className={`${styles.divider_col} `}></div>
-                                <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p></div>
-                                <div className={`${styles.divider_col} `}></div>
-                                <div><p className="text-white text-center text-lg md:text-xl lg:text-2xl 2xl:text-[34.32px] cursor-pointer">TIẾT KIỆM <br className='sm:hidden' /> NĂNG LƯỢNG</p></div>
-                            </div>
-                        </Container>
-                    </div>
-                </div>
+                
             </Slider>
         </>
 

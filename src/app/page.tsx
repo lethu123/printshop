@@ -8,6 +8,9 @@ import certificate1 from '@assets/images/c1.jpg'
 import certificate2 from '@assets/images/c2.jpg'
 import certificate3 from '@assets/images/c3.jpg'
 import certificate4 from '@assets/images/c4.jpg'
+import certificate5 from '@assets/images/c5.png'
+import certificate6 from '@assets/images/c6.png'
+import certificate7 from '@assets/images/c7.png'
 
 import FooterComponent from "@srccomponents/home/FooterComponent";
 import CoperatorComponent from "@srccomponents/home/CoperatorComponent";
@@ -18,7 +21,6 @@ import Slider from "react-slick";
 import banner from '@assets/images/bannerx1.jpg';
 import banner2 from '@assets/images/bannerx2.jpg';
 import banner3 from '@assets/images/bannerx3.jpg';
-import banner4 from '@assets/images/bannerx4.jpg';
 import Container from "@srccommons/Container";
 import { useRouter } from "next/navigation";
 
@@ -32,27 +34,27 @@ export default function Home() {
       <BannerComponentV2 />
 
 
-      <div className={`${styles.bg_intro} pb-[5rem] pt-5 -mt-2`}  >
+      <div className={`${styles.bg_intro} pb-[5rem] pt-10 -mt-2`}  >
 
         <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto 3xl:mx-auto max-w-screen-2xl lg:ms-auto xl:mr-0">
-          <div className="flex items-center flex-wrap gap-10">
+          <div className="flex items-center flex-wrap gap-6">
             <div className="w-[150px] lg:w-[210px]">
               <Image alt='' className="w-full" src={icon30} />
             </div>
             <div className="w-full md:mt-0 md:w-auto">
-              <h1 className="text-[25.41px] text-white font-avo">THÀNH LẬP CÔNG TY</h1>
-              <h1 className="text-[25.41px] text-white">1998 - 2028</h1>
+              <h1 className="text-[23px] text-white">THÀNH LẬP CÔNG TY</h1>
+              <h1 className="text-[33px] leading-9 text-white font-semibold">1998 - 2028</h1>
             </div>
           </div>
           <div className="grid grid-cols-6 gap-10 mt-5 items-center">
             <div className="col-span-6 xl:col-span-3">
               <p className="text-[18px]">
-                <span className="font-avo_bold">4-1998:</span>
+                <span className="font-avo_bold font-medium">4-1998:</span>
                 <span className="text-white "> Thành lập Trung tâm Dịch vụ Quảng cáo và tổ chức Hội chợ: chuyên cung cấp các dịch vụ thiết kế, in ấn, quảng cáo ngoài trời, tổ chức hội chợ, sự kiện, thực hiện các dịch truyền thông, sản xuất TVCs
                 </span>
               </p>
               <p className="text-[18px]">
-                <span className="font-avo_bold">4-2005:</span>
+                <span className="font-avo_bold font-medium">4-2005:</span>
                 <br />
                 <span className="text-white ">- Chuyển đổi Trung tâm thành Công ty, thành lập công ty TNHH Quảng cáo và Thương Mại Dương Phong chuyên cung cấp các dịch vụ thiết kế, in ấn, quảng cáo ngoài trời, sản xuất thiết bị quảng cáo</span>
                 <br />
@@ -61,17 +63,17 @@ export default function Home() {
                 </span>
               </p>
               <p className="text-[18px]">
-                <span className="font-avo_bold">2008: </span>
+                <span className="font-avo_bold font-medium">2008: </span>
                 <span className="text-white ">
                   Xây dựng nhà in Dương Phong với quy mô nhỏ 700m2 chuyên in ấn phẩm quảng cáo, lịch, sách
                 </span>
               </p>
               <p className="text-[18px]">
-                <span className="font-avo_bold">2012:</span>
+                <span className="font-avo_bold font-medium">2012:</span>
                 <span className="text-white"> Nâng cấp nhà in Dương Phong lên quy mô 6.000m2, bổ sung thêm các máy móc phục vụ ngành sản xuất bao bì giấy, thùng hộp carton</span>
               </p>
               <p className="text-[18px]">
-                <span className="font-avo_bold">2012-2024:</span>
+                <span className="font-avo_bold font-medium">2012-2024:</span>
                 <span className="text-white "> Liên tục nâng cấp nhà in, xưởng sản xuất thiết bị quảng cáo, trang bị máy móc hiện đại, hoàn thiện quy trình sản xuất đảm bảo tự động hoá chiếm 70% các công đoạn.</span>
               </p>
             </div>
@@ -102,11 +104,6 @@ export default function Home() {
                   <Image alt="" src={banner3} className='w-full  ' />
 
                 </div>
-                <div className={`${styles.image_hover} rounded`}>
-                  <Image alt="" src={banner4} className='w-full  ' />
-
-                </div>
-
 
               </Slider>
               {/* <Image alt="" src={bannerIntro} style={{ width: "100%" }} /> */}
@@ -135,37 +132,36 @@ export default function Home() {
             </div>
 
             <Slider
-                className='slide-certificate'
-                infinite={true}
-                slidesToShow={4}
-                slidesToScroll={1}
-                autoplay={true}
-                autoplaySpeed={2000}
-                speed={1500}   
-              >
+              className='slide-certificate'
+              infinite={true}
+              slidesToShow={5}
+              slidesToScroll={1}
+              autoplay={true}
+              autoplaySpeed={2000}
+              speed={1500}
+            >
 
-                {/* <div className={`rounded`}> */}
-                  <Image alt="" src={certificate1} className='w-full h-full' />
+              <Image alt="" src={certificate1} className='w-full h-full' />
 
-                {/* </div> */}
+              <Image alt="" src={certificate2} className='w-full h-full  ' />
+
+              <Image alt="" src={certificate3} className='w-full h-full  ' />
+
+              <Image alt="" src={certificate4} className='w-full h-full  ' />
+
+              <Image alt="" src={certificate5} className='w-full h-full  ' />
+
+              <div className="h-full">
+                <div  className="flex justify-center items-center h-full">
+                  <Image alt="" src={certificate6} className='my-auto' />
+                </div>
+              </div>
+              <div className="flex justify-center items-center">
+                <Image alt="" src={certificate7} className='h-[350px] w-auto mx-auto ' />
+              </div>
 
 
-                {/* <div className={`rounded`}> */}
-                  <Image alt="" src={certificate2} className='w-full h-full  ' />
-
-                {/* </div> */}
-
-                {/* <div className={`rounded`}> */}
-                  <Image alt="" src={certificate3} className='w-full h-full  ' />
-
-                {/* </div> */}
-                {/* <div className={`rounded`}> */}
-                  <Image alt="" src={certificate4} className='w-full h-full  ' />
-
-                {/* </div> */}
-
-
-              </Slider>
+            </Slider>
 
             {/* <div className="grid grid-cols-4 gap-7 items-stretch">
               <div className="col-span-2 sm:col-span-2 md:col-span-1">
