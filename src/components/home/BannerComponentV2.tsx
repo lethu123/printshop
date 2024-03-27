@@ -11,9 +11,9 @@ import '@assets/scss/home.scss';
 import Slider from "react-slick";
 import icLeft from "@assets/images/arrow_left.svg"
 import icRight from "@assets/images/arrow_right.svg"
-import banner from '@assets/images/bannerx1.jpg';
-import banner2 from '@assets/images/bannerx2.jpg';
-import banner3 from '@assets/images/bannerx3.jpg'; 
+import banner from '@assets/images/bannerx1.png';
+import banner2 from '@assets/images/bannerx2.png';
+import banner3 from '@assets/images/bannerx3.png'; 
 import icon1 from '@assets/images/icon1.svg'
 import icon2 from '@assets/images/icon2.svg'
 import icon3 from '@assets/images/icon3.svg'

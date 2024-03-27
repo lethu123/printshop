@@ -18,9 +18,9 @@ import ProductComponent from "@srccomponents/home/ProductComponent";
 import CategoryComponent from "@srccomponents/home/ServiceComponent";
 import BannerComponentV2 from "@srccomponents/home/BannerComponentV2";
 import Slider from "react-slick";
-import banner from '@assets/images/bannerx1.jpg';
-import banner2 from '@assets/images/bannerx2.jpg';
-import banner3 from '@assets/images/bannerx3.jpg';
+import banner from '@assets/images/bannerx1.png';
+import banner2 from '@assets/images/bannerx2.png';
+import banner3 from '@assets/images/bannerx3.png';
 import Container from "@srccommons/Container";
 import { useRouter } from "next/navigation";
 
