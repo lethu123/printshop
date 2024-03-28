@@ -63,14 +63,7 @@ const CoperatorComponent = () => {
                         <Image alt="" src={logo12} className='w-[3rem] md:w-[4rem] lg:w-[6rem] mx-auto' />
                     </div>
                 </div>
-            </Container>
-
-            <div className={`absolute -top-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-                <button onClick={() => router.push('/products/banner', { scroll: false })} style={{ border: '1px solid white', background: '#FF9D00' }}
-                    className={`follow_me uppercase text-[22px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Đến với chúng tôi
-                    <div></div>
-                </button>
-            </div>
+            </Container> 
         </div>
     )
 }

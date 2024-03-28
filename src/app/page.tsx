@@ -139,6 +139,7 @@ export default function Home() {
               autoplay={true}
               autoplaySpeed={2000}
               speed={1500}
+            // variableWidth={true}
             >
 
               <Image alt="" src={certificate1} className='w-full h-full' />
@@ -152,32 +153,15 @@ export default function Home() {
               <Image alt="" src={certificate5} className='w-full h-full  ' />
 
               <div className="h-full">
-                <div  className="flex justify-center items-center h-full">
+                <div className="flex justify-center items-center w-[370px] h-full">
                   <Image alt="" src={certificate6} className='my-auto' />
                 </div>
               </div>
-              <div className="flex justify-center items-center">
-                <Image alt="" src={certificate7} className='h-[350px] w-auto mx-auto ' />
+              <div></div>
+              <div className="flex  ">
+                <Image alt="" src={certificate7} className='h-[350px] w-auto ' />
               </div>
-
-
             </Slider>
-
-            {/* <div className="grid grid-cols-4 gap-7 items-stretch">
-              <div className="col-span-2 sm:col-span-2 md:col-span-1">
-                <Image className="w-full h-full" alt="" src={certificate1} />
-              </div>
-              <div className="col-span-2 sm:col-span-2 md:col-span-1">
-                <Image className="w-full h-full" alt="" src={certificate2} />
-              </div>
-              <div className="col-span-2 sm:col-span-2 md:col-span-1">
-                <Image className="w-full h-full" alt="" src={certificate3} />
-              </div>
-              <div className="col-span-2 sm:col-span-2 md:col-span-1">
-                <Image className="w-full h-full" alt="" src={certificate4} />
-              </div>
-
-            </div> */}
           </Container>
         </div>
       </div>
