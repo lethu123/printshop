@@ -16,7 +16,7 @@ import FooterComponent from '@srccomponents/home/FooterComponent'
 const News = () => {
     return (
         <Screen _className="product-page relative">
-            <BannerSingle image={banner} />
+            <BannerSingle image={'/_next/static/media/banner6.56e33ef9.jpg'} />
             <div className='mt-[7rem]'>
                 <div className='bg-banner py-8'>
                     <Container>

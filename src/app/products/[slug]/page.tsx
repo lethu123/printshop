@@ -66,7 +66,7 @@ const ProductDetail = () => {
     <Screen _className="product-page relative">
       {/* <HeaderComponent /> */}
       <div id="banner"></div>
-      <BannerSingle image={banner} />
+      <BannerSingle image={'/_next/static/media/p6.350f3ffb.jpg'} />
 
       <Container>
         <h1 className="border-l-4 pl-5 border-[#FF9D00] text_yellow text-[40px] md:text-[52.14px] mt-10">

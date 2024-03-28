@@ -9,13 +9,16 @@ const BannerSingle = ({ image }: { image: any }) => {
     return (
         <>
             <Navbar />
-            <div className={` h-[400px] md:h-[500px] lg:h-lvh 3xl:max-h-[900px] rounded`}>
-                <Image alt="" src={image} className='w-full h-full' />
+            <div
+                style={{ background: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                className={` h-[400px] md:h-[500px] lg:h-lvh 3xl:max-h-[900px] rounded`}>
+                {/* <Image alt="" src={image} className='w-full h-full' /> */}
             </div>
         </>
 
     )
 }
+
 
 export default BannerSingle
 

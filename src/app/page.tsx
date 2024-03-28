@@ -43,7 +43,7 @@ export default function Home() {
             </div>
             <div className="w-full md:mt-0 md:w-auto">
               <h1 className="text-[23px] text-white">THÀNH LẬP CÔNG TY</h1>
-              <h1 className="text-[33px] leading-9 text-white font-semibold">1998 - 2028</h1>
+              <h1 className="text-[45px] leading-9 text-white font-semibold">1998 - 2028</h1>
             </div>
           </div>
           <div className="grid grid-cols-6 gap-10 mt-5 items-center">
@@ -139,7 +139,33 @@ export default function Home() {
               autoplay={true}
               autoplaySpeed={2000}
               speed={1500}
-            // variableWidth={true}
+              // variableWidth={true}
+              responsive={[
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]}
             >
 
               <Image alt="" src={certificate1} className='w-full h-full' />
@@ -153,13 +179,13 @@ export default function Home() {
               <Image alt="" src={certificate5} className='w-full h-full  ' />
 
               <div className="h-full">
-                <div className="flex justify-center items-center w-[370px] h-full">
+                <div className="flex justify-center items-center w-[426px] h-full">
                   <Image alt="" src={certificate6} className='my-auto' />
                 </div>
               </div>
               <div></div>
-              <div className="flex  ">
-                <Image alt="" src={certificate7} className='h-[350px] w-auto ' />
+              <div className="flex">
+                <Image alt="" src={certificate7} className='h-[320px] w-auto' />
               </div>
             </Slider>
           </Container>

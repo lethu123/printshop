@@ -18,7 +18,7 @@ const ContactUs = () => {
     return (
         <>
             <Screen _className="product-page relative">
-                <BannerSingle image={banner} />
+                <BannerSingle image={'/_next/static/media/banner4.c684b357.jpg'} />
                 <section>
                     <Container>
                         <h1 className='border-l-4 pl-5 border-gray-800 text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 '>GỬI LỜI NHẮN</h1>

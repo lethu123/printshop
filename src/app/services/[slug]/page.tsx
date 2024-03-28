@@ -47,7 +47,7 @@ const ServiceDetail = () => {
   return (
     <Screen _className="product-page relative"> 
       <div id='banner'></div>
-      <BannerSingle image={banner}/>
+      <BannerSingle image={'/_next/static/media/banner3.a4e1bbb7.jpg'}/>
 
       <Container>
         <h1 className='border-l-4 pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10'>Dịch vụ </h1>

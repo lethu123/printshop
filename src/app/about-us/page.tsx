@@ -1,13 +1,13 @@
 
 import React from 'react'
 import Container from '@srccommons/Container'
-import Image from 'next/image' 
+import Image from 'next/image'
 import styles from '@assets/scss/home.module.scss'
-import icon30 from '@assets/images/30.png'
+import icon30 from '@assets/images/30-01-yellow.svg'
 import '@assets/scss/home.scss';
 import BannerSingle from '@srccommons/BannerSingle'
-import service1 from '@assets/images/about2.png';
-import service2 from '@assets/images/about1.png';
+import service1 from '@assets/images/about1.jpg';
+import service2 from '@assets/images/about2.jpg';
 import service3 from '@assets/images/about3.png';
 import myTeam from "@assets/images/about4.png"
 import FooterComponent from '@srccomponents/home/FooterComponent'
@@ -17,27 +17,19 @@ import banner from '@assets/images/baner1.jpg';
 const AboutUs = () => {
     return (
         <Screen _className="product-page relative">
-            <BannerSingle image={banner} />
+            <BannerSingle image={'/_next/static/media/baner1.4ea17c0f.jpg'} />
             <section className='bg-black pt-10'>
                 <Container>
                     <div className='xl:flex items-center justify-between'>
                         <h1 className='border-l-4 pl-5 border-white text-white text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 '>VỀ DƯƠNG PHONG</h1>
-                        <div className="flex items-end flex-wrap">
+                        <div className="flex items-center flex-wrap gap-6">
                             <div className="w-[150px] lg:w-[210px]">
                                 <Image alt='' className="w-full" src={icon30} />
                             </div>
-                            {/* <div className="flex items-end"> */}
-                            <div className="pb-3 ps-2 ">
-                                <h1 className="text-[30px] text_yellow lg:text-[19.2px] font-avo_bold">NĂM</h1>
-                                <h1 className="text-[20px] lg:text-[13px] text-white font-avo_bold">ĐỂ PHÁT TRIỂN</h1>
-                                <h2 className="text-[15px] lg:text-[10px] text-white ">ĐỂ TẬN TUY</h2>
+                            <div className="w-full md:mt-0 md:w-auto">
+                                <h1 className="text-[23px] text-white">THÀNH LẬP CÔNG TY</h1>
+                                <h1 className="text-[45px] leading-9 text-white font-semibold">1998 - 2028</h1>
                             </div>
-                            <div className={`h-[70px] w-[5px] bg-white mb-3 hidden md:block mx-[40px]`}></div>
-                            <div className="w-full mt-4 pb-2 lg:mt-0 md:w-auto">
-                                <h1 className="text-[19.2px] text_yellow font-avo_bold">QUÁ TRÌNH HÌNH THÀNH</h1>
-                                <h1 className="text-[19.2px] text-white font-avo_bold">VÀ PHÁT TRIỂN</h1>
-                            </div>
-                            {/* </div> */}
                         </div>
                     </div>
                     <div className="py-10 lg:pl-6">
