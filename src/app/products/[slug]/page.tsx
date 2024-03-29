@@ -42,7 +42,6 @@ import cc13 from "@assets/images/cc13.png";
 import cc14 from "@assets/images/cc14.png";
 import cc15 from "@assets/images/cc15.png";
 import cc16 from "@assets/images/cc16.png";
-import banner from "@assets/images/banner5.jpg";
 
 import { useParams } from "next/navigation";
 import FooterComponent from "@srccomponents/home/FooterComponent";
@@ -66,7 +65,7 @@ const ProductDetail = () => {
     <Screen _className="product-page relative">
       {/* <HeaderComponent /> */}
       <div id="banner"></div>
-      <BannerSingle image={'/_next/static/media/p6.350f3ffb.jpg'} />
+      <BannerSingle classImage={'bg-banner-product'} />
 
       <Container>
         <h1 className="border-l-4 pl-5 border-[#FF9D00] text_yellow text-[40px] md:text-[52.14px] mt-10">

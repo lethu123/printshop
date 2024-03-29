@@ -12,12 +12,11 @@ import service3 from '@assets/images/about3.png';
 import myTeam from "@assets/images/about4.png"
 import FooterComponent from '@srccomponents/home/FooterComponent'
 import Screen from '@srccommons/Screen'
-import banner from '@assets/images/baner1.jpg';
 
 const AboutUs = () => {
     return (
         <Screen _className="product-page relative">
-            <BannerSingle image={'/_next/static/media/baner1.4ea17c0f.jpg'} />
+            <BannerSingle classImage={'bg-banner-about'} />
             <section className='bg-black pt-10'>
                 <Container>
                     <div className='xl:flex items-center justify-between'>

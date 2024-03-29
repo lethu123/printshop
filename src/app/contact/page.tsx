@@ -6,8 +6,7 @@ import Screen from '@srccommons/Screen'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import logoBlack from '@assets/images/logo-black.svg'
-import phone2 from '@assets/images/phone1.svg'
-import banner from '@assets/images/banner4.jpg';
+import phone2 from '@assets/images/phone1.svg' 
 import { IconEmail, IconLocation, IconPhone } from '@srccommons/icons'
 import Image from 'next/image'
 
@@ -18,7 +17,7 @@ const ContactUs = () => {
     return (
         <>
             <Screen _className="product-page relative">
-                <BannerSingle image={'/_next/static/media/banner4.c684b357.jpg'} />
+                <BannerSingle classImage={'bg-banner-contact'} />
                 <section>
                     <Container>
                         <h1 className='border-l-4 pl-5 border-gray-800 text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 '>GỬI LỜI NHẮN</h1>
