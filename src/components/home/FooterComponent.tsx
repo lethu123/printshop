@@ -58,7 +58,7 @@ const FooterComponent = () => {
               <div className='flex justify-between'>
                 <ul className={`${styles.ul} custom-text-mode`}>
                   <li className='text-[15px]'>
-                    <Link href={'/'} >TTrang chủ</Link>
+                    <Link href={'/'} >Trang chủ</Link>
                   </li>
                   <li className='text-[15px] '><Link href={'/products/banner'} >Sản phẩm</Link></li>
                   <li className='text-[15px] '> <Link href={'/services/banner'} >Dịch vụ</Link></li> 
