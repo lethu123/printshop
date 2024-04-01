@@ -100,20 +100,20 @@ const MenuMobile = () => {
 
             </nav>
             <div className={`${open ? styles.menu_show : styles.menu_hidden} overflow-hidden  absolute top-16  w-full z-10`}>
-                <div className={`device-x bg-white rounded-md   mx-6 p-2  shadow-lg ring-1 ring-gray-900/5 h-full ${styles.sidebar}`}>
+                <div className={`device-x bg-white rounded-md   mx-6 p-2  shadow-lg ring-1 ring-gray-900/5  h-[80%] overflow-y-scroll  ${styles.sidebar}`}>
 
                     {menu.map((it, index) => {
                         if (it.subMenu) {
                             return <div key={it.title} className={`${index != menu.length - 1 ? 'border-b' : ''}`} >
                                 <h3 className="px-5 text-nowrap  p-3 font-semibold text-gray-900 ">{it.title}</h3>
                                 <div className='ms-7'>
-                                    {it.subMenu.map((i, idx) => (<Link onClick={() => setOpen(!open)} key={i.title} href={i.path} className={`${idx != it.subMenu.length - 1 ? 'border-b' : ''} flex  items-center px-5 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
+                                    {it.subMenu.map((i, idx) => (<Link onClick={() => setOpen(!open)} key={i.title} href={i.path} className={`${idx != it.subMenu.length - 1 ? 'border-b' : ''} flex  items-center px-5   gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
                                         {i.title}
                                     </Link>))}
                                 </div>
                             </div>
                         }
-                        return <Link onClick={() => setOpen(!open)} key={it.title} href={it.path} className={`${index != menu.length - 1 ? 'border-b' : ''} flex  items-center px-5 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
+                        return <Link onClick={() => setOpen(!open)} key={it.title} href={it.path} className={`${index != menu.length - 1 ? 'border-b' : ''} flex  items-center px-5   gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
                             {it.icon && <Image style={{ width: 20, height: 20 }} alt='' src={it.icon} />}  {it.title}
                         </Link>
                     })}

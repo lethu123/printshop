@@ -13,7 +13,7 @@ import icLeft from "@assets/images/arrow_left.svg"
 import icRight from "@assets/images/arrow_right.svg"
 import banner from '@assets/images/bannerx1.png';
 import banner2 from '@assets/images/bannerx2.png';
-import banner3 from '@assets/images/bannerx3.png'; 
+import banner3 from '@assets/images/bannerx3.png';
 import icon1 from '@assets/images/icon1.svg'
 import icon2 from '@assets/images/icon2.svg'
 import icon3 from '@assets/images/icon3.svg'
@@ -28,7 +28,7 @@ function SampleNextArrow(props: any) {
             style={{ ...style }}
             onClick={onClick}
         >
-            <div className={`h-[5rem] w-[5rem] rounded-full  bg-black flex items-center justify-center button_hover`}>
+            <div className={`h-[3.5rem] w-[3.5rem] md:h-[5rem] md:w-[5rem] rounded-full  bg-black flex items-center justify-center button_hover`}>
                 <Image alt='' src={icRight} />
             </div>
         </div>
@@ -43,7 +43,7 @@ function SamplePrevArrow(props: any) {
             style={{ ...style }}
             onClick={onClick}
         >
-            <div className={`h-[5rem] w-[5rem] rounded-full bg-black flex items-center justify-center button_hover`}>
+            <div className={`h-[3.5rem] w-[3.5rem] md:h-[5rem] md:w-[5rem] rounded-full bg-black flex items-center justify-center button_hover`}>
                 <Image alt='' src={icLeft} />
             </div>
         </div>
@@ -254,7 +254,7 @@ const BannerComponentV2 = () => {
                         </Container>
                     </div>
                 </div>
-                
+
             </Slider>
         </>
 

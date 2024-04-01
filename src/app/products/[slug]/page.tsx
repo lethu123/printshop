@@ -128,9 +128,9 @@ const ProductDetail = () => {
                 <div className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
-            <div className="col-span-10 sm:col-span-4 md:col-span-6 lg:col-span-4 relative">
+            <div className="col-span-10 sm:col-span-8 md:col-span-6 lg:col-span-4 relative">
               <div
-                className={`${styles.image_hover} aspect-[2/1] sm:aspect-square md:aspect-[2/1]`}
+                className={`${styles.image_hover} aspect-[2/1]`}
               >
                 <Image className="w-full h-full" alt="" src={service6} />
               </div>

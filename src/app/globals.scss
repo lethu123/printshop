@@ -63,7 +63,7 @@ body.light-mode .home-page {
   html {
     font-family: ATM-Avo;
   }
-} 
+}
 
 
 .slick-slide {
@@ -77,7 +77,7 @@ body.light-mode .home-page {
 
 
 .slick-arrow.slick-prev {
-  left: 50px !important;
+  left: 10% !important;
   z-index: 1;
 
 }
@@ -88,7 +88,7 @@ body.light-mode .home-page {
 }
 
 .slick-arrow.slick-next {
-  right: 100px !important;
+  right: 15% !important;
   z-index: 1;
 }
 
@@ -241,7 +241,7 @@ body.light-mode .home-page {
   /* the slides */
   .slick-slide {
     margin: 0 10px;
-    height: inherit; 
+    height: inherit;
 
     >div {
       height: 100%;

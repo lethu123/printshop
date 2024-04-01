@@ -201,7 +201,7 @@
      }
 
      .menu_show {
-         height: auto;
+         height: 100lvh;
          transform: scaleY(1);
          transform-origin: top;
          transition: transform 0.3s linear;

@@ -22,7 +22,7 @@ function SampleNextArrow(props: any) {
       style={{ ...style }}
       onClick={onClick}
     >
-      <div className={`h-[5rem] w-[5rem] rounded-full  bg-black flex items-center justify-center button_hover`}>
+      <div className={`h-[3.5rem] w-[3.5rem] md:h-[5rem] md:w-[5rem] rounded-full  bg-black flex items-center justify-center button_hover`}>
         <Image alt='' src={icRight} />
       </div>
     </div>
@@ -37,7 +37,7 @@ function SamplePrevArrow(props: any) {
       style={{ ...style }}
       onClick={onClick}
     >
-      <div className={`h-[5rem] w-[5rem] rounded-full  bg-black flex items-center justify-center button_hover`}>
+      <div className={`h-[3.5rem] w-[3.5rem] md:h-[5rem] md:w-[5rem] rounded-full  bg-black flex items-center justify-center button_hover`}>
         <Image alt='' src={icLeft} />
       </div>
     </div>
