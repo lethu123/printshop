@@ -12,6 +12,7 @@ import sp2 from '@assets/images/sp2.jpg';
 import sp3 from '@assets/images/sp.jpg';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
+import HoverImage from '@srccommons/HoverImage';
 
 
 function SampleNextArrow(props: any) {
@@ -63,7 +64,7 @@ const ProductComponent = () => {
         speed={1500}
         nextArrow={<SampleNextArrow />}
         prevArrow={<SamplePrevArrow />}
-        responsive={[ 
+        responsive={[
           {
             breakpoint: 1024,
             settings: {
@@ -91,8 +92,9 @@ const ProductComponent = () => {
         ]}
       >
         <div className='pt-3'>
+          {/* <HoverImage classImage='' /> */}
           <div className={`${styles.image_hover} rounded`}>
-            <Image alt="" src={sp} className='w-full' />
+            <Image alt=""  src={sp} className='w-full object-cover' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
             </div>
@@ -103,7 +105,7 @@ const ProductComponent = () => {
           <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 mb-5`}>Bao bì - hộp giấy</h3>
 
           <div className={`${styles.image_hover} rounded mb-7`}>
-            <Image alt="" src={sp2} className='w-full md:h-[400px] lg:h-[450px] xl:h-[560px]' />
+            <Image alt=""  src={sp2} className='object-cover w-full md:h-[400px] lg:h-[450px] xl:h-[560px]' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
             </div>
@@ -113,7 +115,7 @@ const ProductComponent = () => {
         <div className='pt-3'>
 
           <div className={`${styles.image_hover} rounded`}>
-            <Image alt="" src={sp3} className='w-full ' />
+            <Image className='object-cover'  alt="" src={sp3}   />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
             </div>
