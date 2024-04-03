@@ -11,8 +11,7 @@ import sp from '@assets/images/sp1.1.jpg';
 import sp2 from '@assets/images/sp2.jpg';
 import sp3 from '@assets/images/sp.jpg';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation'
-import HoverImage from '@srccommons/HoverImage';
+import { useRouter } from 'next/navigation' 
 
 
 function SampleNextArrow(props: any) {
