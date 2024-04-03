@@ -27,42 +27,42 @@ const News = () => {
                     <div className="grid grid-cols-12 lg:grid-cols-8 items-stretch gap-1 mt-5 order-first">
                         <div className="col-span-6 sm:col-span-4 lg:col-span-2">
                             <div className={`${styles.image_hover} aspect-square`}>
-                                <Image alt="" className="w-full h-full" src={service1} />
+                                <Image alt="" className="w-full h-full object-cover" src={service1} />
                             </div>
                         </div>
                         <div className="col-span-6 sm:col-span-4 lg:col-span-2">
                             <div className={`${styles.image_hover} aspect-square`}>
-                                <Image alt="" className="w-full h-full" src={service2} />
+                                <Image alt="" className="w-full h-full object-cover" src={service2} />
                             </div>
                         </div>
                         <div className="col-span-6 sm:col-span-4 lg:col-span-2">
                             <div className={`${styles.image_hover} aspect-square`}>
-                                <Image alt="" className="w-full h-full" src={service3} />
+                                <Image alt="" className="w-full h-full object-cover" src={service3} />
                             </div>
                         </div>
                         <div className="col-span-6 sm:col-span-4 lg:col-span-2 ">
                             <div className={`${styles.image_hover} aspect-square`}>
-                                <Image alt="" className="w-full h-full" src={service4} />
+                                <Image alt="" className="w-full h-full object-cover" src={service4} />
                             </div>
                         </div>
                         <div className="col-span-6 sm:col-span-4 lg:col-span-2">
                             <div className={`${styles.image_hover} aspect-square`}>
-                                <Image alt="" className="w-full h-full" src={service5} />
+                                <Image alt="" className="w-full h-full object-cover" src={service5} />
                             </div>
                         </div>
                         <div className="col-span-6 sm:col-span-4 lg:col-span-2">
                             <div className={`${styles.image_hover} aspect-square`}>
-                                <Image alt="" className="w-full h-full" src={service6} />
+                                <Image alt="" className="w-full h-full object-cover" src={service6} />
                             </div>
                         </div>
                         <div className="hidden lg:block lg:col-span-2">
                             <div className={`${styles.image_hover} aspect-square`}>
-                                <Image alt="" className="w-full h-full" src={service1} />
+                                <Image alt="" className="w-full h-full object-cover" src={service1} />
                             </div>
                         </div>
                         <div className="hidden lg:block lg:col-span-2">
                             <div className={`${styles.image_hover} aspect-square`}>
-                                <Image alt="" className="w-full h-full" src={service3} />
+                                <Image alt="" className="w-full h-full object-cover" src={service3} />
                             </div>
                         </div>
 

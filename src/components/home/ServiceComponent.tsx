@@ -22,7 +22,7 @@ const CategoryComponent = () => {
                 <div className="grid grid-cols-10 md:grid-cols-12 lg:grid-cols-10 items-stretch gap-1 mt-5 order-first">
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.image_hover} aspect-square`}>
-                            <Image alt="" className="w-full h-full" src={service1} />
+                            <Image alt="" className="w-full h-full  object-cover" src={service1} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
@@ -34,7 +34,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2 order-6 md:order-none">
                         <div className={`${styles.image_hover} aspect-square`}>
-                            <Image className="w-full h-full" alt="" src={service2} />
+                            <Image className="w-full h-full  object-cover" alt="" src={service2} />
                         </div>
                     </div>
                     <div className="col-span-5  md:col-span-4 lg:col-span-2 order-0 md:order-none">
@@ -44,17 +44,17 @@ const CategoryComponent = () => {
                         </div>
                     </div> <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.image_hover} aspect-square`}>
-                            <Image className="w-full h-full" alt="" src={service6} />
+                            <Image className="w-full h-full  object-cover" alt="" src={service6} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.image_hover} aspect-square`}>
-                            <Image className="w-full h-full" alt="" src={service3} />
+                            <Image className="w-full h-full  object-cover" alt="" src={service3} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.image_hover} aspect-square`}>
-                            <Image className="w-full h-full" alt="" src={service4} />
+                            <Image className="w-full h-full  object-cover" alt="" src={service4} />
                         </div>
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
@@ -65,7 +65,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-10 md:col-span-12 lg:col-span-4 relative order-last">
                         <div className={`${styles.image_hover} aspect-[2/1]`}>
-                            <Image className="w-full h-full" alt="" src={service5} />
+                            <Image className="w-full h-full  object-cover" alt="" src={service5} />
                         </div>
                         <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
                             <button onClick={() => router.push('/services/banner', { scroll: false })} className={`follow_me uppercase text-[22px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Xem thêm

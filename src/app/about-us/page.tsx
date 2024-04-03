@@ -68,17 +68,17 @@ const AboutUs = () => {
                     <div className='grid grid-cols-3 gap-3 py-20'>
                         <div className="col-span-3 md:col-span-1  ">
                             <div className={`${styles.image_hover} aspect-[6/5]`}>
-                                <Image alt="" className="w-full h-full" src={service1} />
+                                <Image alt="" className="w-full h-full object-cover" src={service1} />
                             </div>
                         </div>
                         <div className="col-span-3 md:col-span-1  ">
                             <div className={`${styles.image_hover} aspect-[6/5]`}>
-                                <Image alt="" className="w-full h-full" src={service2} />
+                                <Image alt="" className="w-full h-full object-cover" src={service2} />
                             </div>
                         </div>
                         <div className="col-span-3 md:col-span-1  ">
                             <div className={`${styles.image_hover} aspect-[6/5]`}>
-                                <Image alt="" className="w-full h-full" src={service3} />
+                                <Image alt="" className="w-full h-full object-cover" src={service3} />
                             </div>
                         </div>
                     </div>
