@@ -21,13 +21,22 @@ const AboutUs = () => {
                 <Container>
                     <div className='xl:flex items-center justify-between'>
                         <h1 className='border-l-4 pl-5 border-white text-white text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 '>VỀ DƯƠNG PHONG</h1>
-                        <div className="flex items-center flex-wrap gap-6">
+                        <div className="hidden md:flex items-center flex-wrap gap-6">
                             <div className="w-[150px] lg:w-[210px]">
                                 <Image alt='' className="w-full" src={icon30} />
                             </div>
                             <div className="w-full md:mt-0 md:w-auto">
                                 <h1 className="text-[23px] text-white">THÀNH LẬP CÔNG TY</h1>
-                                <h1 className="text-[45px] leading-9 text-white font-semibold">1998 - 2028</h1>
+                                <h1 className="text-[23px] leading-7 text-white ">1998 - 2028</h1>
+                            </div>
+                        </div>
+                        <div className="md:hidden flex  flex-wrap gap-6">
+                            <div className="flex flex-col items-center justify-center">
+                                <div className="w-[150px] lg:w-[210px]">
+                                    <Image alt='' className="w-full" src={icon30} />
+                                </div>
+                                <h1 className="text-[24px] text-white">THÀNH LẬP CÔNG TY</h1>
+                                <h1 className="text-[24px] leading-7 text-white  ">1998 - 2028</h1>
                             </div>
                         </div>
                     </div>
