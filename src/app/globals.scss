@@ -214,6 +214,13 @@ body.light-mode .home-page {
   }
 }
 
+@mixin backgroundItem() {
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 .banner-slide {
   .bg-icon {
     position: relative;
@@ -233,6 +240,18 @@ body.light-mode .home-page {
       border: white 4px solid;
       border-left: 0;
     }
+  }
+  .slide1 {
+    background-image: url(../assets/images/bannerx1.png);
+    @include backgroundItem();
+  }
+  .slide2 {
+    background-image: url(../assets/images/bannerx2.png);
+    @include backgroundItem();
+  }
+  .slide3 {
+    background-image: url(../assets/images/bannerx3.png);
+    @include backgroundItem();
   }
 }
 
