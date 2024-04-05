@@ -21,11 +21,9 @@ import Slider from "react-slick";
 import banner from '@assets/images/bannerx1.png';
 import banner2 from '@assets/images/bannerx2.png';
 import banner3 from '@assets/images/bannerx3.png';
-import Container from "@srccommons/Container";
-import { useRouter } from "next/navigation";
+import Container from "@srccommons/Container"; 
 
-export default function Home() {
-  const router = useRouter()
+export default function Home() { 
   return (
     <Screen _className="home-page relative ">
       <HeaderComponent />
@@ -46,7 +44,7 @@ export default function Home() {
               <h1 className="text-[24px] leading-7 text-white  ">1998 - 2028</h1>
             </div>
           </div>
-          <div className="md:hidden flex  flex-wrap gap-6">
+          <div className="md:hidden flex justify-center flex-wrap gap-6">
             <div className="flex flex-col items-center justify-center">
               <div className="w-[150px] lg:w-[210px]">
                 <Image alt='' className="w-full" src={icon30} />

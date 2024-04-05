@@ -25,42 +25,42 @@ const CoperatorComponent = () => {
         <div className={`coperator mb-[8rem] flex flex-col px-3 border-y py-[6rem] pb-3 lg:py-[6rem] relative `} style={{ borderTopColor: '#FF9D00', borderBottomColor: '#FF9D00' }}>
             <Container >
                 <h1 className="text-white text-center tracking-[5px] text-2xl md:text-3xl lg:text-[30.48px] sm:px-3 md:px-0">CÁC QUÝ ĐỐI TÁC CỦA CHÚNG TÔI</h1>
-                <div className="grid grid-cols-6 gap-x-[2rem] gap-y-[1rem] items-center md:px-[5rem] pt-6 flex-wrap justify-center">
+                <div className="grid grid-cols-4 sm:grid-cols-6 gap-x-[2rem] gap-y-[1rem] items-center md:px-[5rem] pt-6 flex-wrap justify-center">
                     <div className='col-span-1'>
-                        <Image alt="" src={logo1} className='w-[3rem] md:w-[4rem] lg:w-[6rem] mx-auto' />
+                        <Image alt="" src={logo1} className='w-full  md:w-[4rem] lg:w-[6rem] mx-auto' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo2} className='w-[3rem] md:w-[4rem] lg:w-full' />
+                        <Image alt="" src={logo2} className='w-full  md:w-[4rem] lg:w-full' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo3} className='w-[3rem] md:w-[4rem] lg:w-[6rem] mx-auto' />
+                        <Image alt="" src={logo3} className='w-full  md:w-[4rem] lg:w-[6rem] mx-auto' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo5} className='w-[3rem] md:w-[4rem] lg:w-full mx-auto' />
+                        <Image alt="" src={logo5} className='w-full  md:w-[4rem] lg:w-full mx-auto' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo6} className='w-[3rem] md:w-[4rem] lg:w-[6rem] mx-auto' />
+                        <Image alt="" src={logo6} className='w-full  md:w-[4rem] lg:w-[6rem] mx-auto' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo7} className='w-[3rem] md:w-[4rem] lg:w-[6rem] mx-auto' />
+                        <Image alt="" src={logo7} className='w-full  md:w-[4rem] lg:w-[6rem] mx-auto' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo8} className='w-[3rem] md:w-[4rem] lg:w-[6rem] mx-auto' />
+                        <Image alt="" src={logo8} className='w-full  md:w-[4rem] lg:w-[6rem] mx-auto' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo9} className='w-[3rem] md:w-[4rem] lg:w-full' />
+                        <Image alt="" src={logo9} className='w-full  md:w-[4rem] lg:w-full' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo10} className='w-[3rem] md:w-[4rem] lg:w-[6rem] mx-auto' />
+                        <Image alt="" src={logo10} className='w-full  md:w-[4rem] lg:w-[6rem] mx-auto' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo11} className='w-[3rem] md:w-[4rem] lg:w-full mx-auto' />
+                        <Image alt="" src={logo11} className='w-full  md:w-[4rem] lg:w-full mx-auto' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo4} className='w-[3rem] md:w-[4rem] lg:w-full mx-auto' />
+                        <Image alt="" src={logo4} className='w-full  md:w-[4rem] lg:w-full mx-auto' />
                     </div>
                     <div className='col-span-1'>
-                        <Image alt="" src={logo12} className='w-[3rem] md:w-[4rem] lg:w-[6rem] mx-auto' />
+                        <Image alt="" src={logo12} className='w-full  md:w-[4rem] lg:w-[6rem] mx-auto' />
                     </div>
                 </div>
             </Container> 

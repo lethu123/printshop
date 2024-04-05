@@ -58,7 +58,7 @@ const ProductComponent = () => {
         infinite={true}
         slidesToShow={3}
         slidesToScroll={3}
-        autoplay={true}
+        // autoplay={true}
         autoplaySpeed={3000}
         speed={1500}
         nextArrow={<SampleNextArrow />}
@@ -74,7 +74,7 @@ const ProductComponent = () => {
             }
           },
           {
-            breakpoint: 768,
+            breakpoint: 992,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -90,20 +90,21 @@ const ProductComponent = () => {
           }
         ]}
       >
-        <div className='pt-3'>
+        <div className='md:pt-3'>
           {/* <HoverImage classImage='' /> */}
+          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] md:hidden uppercase px-5`}>ấn phẩm</h3>
           <div className={`${styles.image_hover} rounded`}>
-            <Image alt=""  src={sp} className='w-full object-cover' />
+            <Image alt=""  src={sp} className='h-full object-cover' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
             </div>
           </div>
-          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 mt-5`}>ấn phẩm</h3>
+          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] hidden md:block uppercase px-5 mt-5`}>ấn phẩm</h3>
         </div>
         <div >
-          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 mb-5`}>Bao bì - hộp giấy</h3>
+          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 md:mb-5`}>Bao bì - hộp giấy</h3>
 
-          <div className={`${styles.image_hover} rounded mb-7`}>
+          <div className={`${styles.image_hover} rounded md:mb-7`}>
             <Image alt=""  src={sp2} className='object-cover w-full md:h-[400px] lg:h-[450px] xl:h-[560px]' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
@@ -112,14 +113,14 @@ const ProductComponent = () => {
 
         </div>
         <div className='pt-3'>
-
+        <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center md:hidden uppercase px-5 `}>thiết bị quảng cáo</h3>
           <div className={`${styles.image_hover} rounded`}>
             <Image className='object-cover'  alt="" src={sp3}   />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}>Xem chi tiết</Link>
             </div>
           </div>
-          <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center uppercase px-5  mt-5`}>thiết bị quảng cáo</h3>
+          <h3 className={`${styles.text_custom_yellow} text-[21.42px] hidden md:block text-center uppercase px-5  mt-5`}>thiết bị quảng cáo</h3>
 
         </div>
 

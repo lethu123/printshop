@@ -11,9 +11,6 @@ import "@assets/scss/home.scss";
 import Slider from "react-slick";
 import icLeft from "@assets/images/arrow_left.svg";
 import icRight from "@assets/images/arrow_right.svg";
-import banner from "@assets/images/bannerx1.png";
-import banner2 from "@assets/images/bannerx2.png";
-import banner3 from "@assets/images/bannerx3.png";
 import icon1 from "@assets/images/icon1.svg";
 import icon2 from "@assets/images/icon2.svg";
 import icon3 from "@assets/images/icon3.svg";
@@ -23,7 +20,7 @@ function SampleNextArrow(props: any) {
   return (
     <div className={className} style={{ ...style }} onClick={onClick}>
       <div
-        className={`h-[3.5rem] w-[3.5rem] md:h-[5rem] md:w-[5rem] rounded-full  bg-black flex items-center justify-center button_hover`}
+        className={`hidden h-[3.5rem] w-[3.5rem] md:h-[5rem] md:w-[5rem] rounded-full  bg-black md:flex items-center justify-center button_hover`}
       >
         <Image alt="" src={icRight} />
       </div>
@@ -36,7 +33,7 @@ function SamplePrevArrow(props: any) {
   return (
     <div className={className} style={{ ...style }} onClick={onClick}>
       <div
-        className={`h-[3.5rem] w-[3.5rem] md:h-[5rem] md:w-[5rem] rounded-full bg-black flex items-center justify-center button_hover`}
+        className={`hidden h-[3.5rem] w-[3.5rem] md:h-[5rem] md:w-[5rem] rounded-full bg-black md:flex items-center justify-center button_hover`}
       >
         <Image alt="" src={icLeft} />
       </div>
@@ -65,9 +62,8 @@ const BannerComponentV2 = () => {
   return (
     <>
       <div
-        className={`header-v2  top-0 z-40 w-full  ${
-          !scrolled ? "absolute top-10 duration-500" : "sticky-header shadow"
-        }`}
+        className={`header-v2  top-0 z-40 w-full  ${!scrolled ? "absolute top-10 duration-500" : "sticky-header shadow"
+          }`}
       >
         <Container>
           <MenuMobile />
@@ -185,7 +181,7 @@ const BannerComponentV2 = () => {
         infinite={true}
         slidesToShow={1}
         slidesToScroll={1}
-        // autoplay={true}
+        autoplay={true}
         adaptiveHeight={false}
         autoplaySpeed={3000}
         speed={1000}
@@ -198,54 +194,43 @@ const BannerComponentV2 = () => {
           </div>
           <div className="absolute bottom-0 w-full pb-10">
             <Container>
-              <div className="md:hidden mb-5">
-                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[34.32px] cursor-pointer">
-                  SẢN XUẤT BỀN VỮNG
-                </p>
-                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[34.32px] cursor-pointer">
-                  THÂN THIỆN MÔI TRƯỜNG
-                </p>
-                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[34.32px] cursor-pointer">
-                  TIẾT KIỆM NĂNG LƯỢNG
-                </p>
-              </div>
-              <div className="justify-center items-center gap-10 flex-wrap pb-8 hidden md:flex">
+              <div className="md:justify-center md:items-center gap-1 md:gap-10 flex-wrap md:pb-8 flex-col md:flex-row flex">
                 <div className="relative flex items-end">
                   <Image
-                    className="z-10 -mr-[8%] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
+                    className="z-10 -mr-[4%] md:-mr-[8%] w-[50px] h-[50px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
                     src={icon1}
                     alt=""
                   />
 
                   <div className="bg-icon ">
-                    <p className="text-white text-center text-lg  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
-                      SẢN XUẤT <br className="md:hidden" /> BỀN VỮNG
+                    <p className="text-white text-center ps-9 text-[1rem] py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
+                      SẢN XUẤT  BỀN VỮNG
                     </p>
                   </div>
                 </div>
                 <div className="relative flex items-end">
                   <Image
-                    className="z-10 -mr-[8%] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
+                    className="z-10 -mr-[4%] md:-mr-[8%] w-[50px] h-[50px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
                     src={icon2}
                     alt=""
                   />
 
                   <div className="bg-icon">
-                    <p className="text-white text-center text-lg  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
-                      THÂN THIỆN <br className="md:hidden" /> MÔI TRƯỜNG
+                    <p className="text-white text-center  ps-9 text-[1rem]  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
+                      THÂN THIỆN  MÔI TRƯỜNG
                     </p>
                   </div>
                 </div>
                 <div className="relative flex items-end">
                   <Image
-                    className="z-10 -mr-[8%] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
+                    className="z-10 -mr-[4%] md:-mr-[8%] w-[50px] h-[50px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
                     src={icon3}
                     alt=""
                   />
 
                   <div className="bg-icon">
-                    <p className="text-white text-center text-lg  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
-                      TIẾT KIỆM <br className="md:hidden" /> NĂNG LƯỢNG
+                    <p className="text-white text-center text-[1rem] ps-9  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
+                      TIẾT KIỆM NĂNG LƯỢNG
                     </p>
                   </div>
                 </div>
@@ -259,54 +244,43 @@ const BannerComponentV2 = () => {
           </div>
           <div className="absolute bottom-0 w-full pb-10">
             <Container>
-              <div className="md:hidden mb-5">
-                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[34.32px] cursor-pointer">
-                  SẢN XUẤT BỀN VỮNG
-                </p>
-                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[34.32px] cursor-pointer">
-                  THÂN THIỆN MÔI TRƯỜNG
-                </p>
-                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[34.32px] cursor-pointer">
-                  TIẾT KIỆM NĂNG LƯỢNG
-                </p>
-              </div>
-              <div className="justify-center items-center gap-10 flex-wrap pb-8 hidden md:flex">
+              <div className="md:justify-center md:items-center gap-1 md:gap-10 flex-wrap md:pb-8 flex-col md:flex-row flex">
                 <div className="relative flex items-end">
                   <Image
-                    className="z-10 -mr-[8%] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
+                    className="z-10 -mr-[4%] md:-mr-[8%] w-[50px] h-[50px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
                     src={icon1}
                     alt=""
                   />
 
                   <div className="bg-icon ">
-                    <p className="text-white text-center text-lg  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
-                      SẢN XUẤT <br className="md:hidden" /> BỀN VỮNG
+                    <p className="text-white text-center ps-9 text-[1rem] py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
+                      SẢN XUẤT  BỀN VỮNG
                     </p>
                   </div>
                 </div>
                 <div className="relative flex items-end">
                   <Image
-                    className="z-10 -mr-[8%] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
+                    className="z-10 -mr-[4%] md:-mr-[8%] w-[50px] h-[50px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
                     src={icon2}
                     alt=""
                   />
 
                   <div className="bg-icon">
-                    <p className="text-white text-center text-lg  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
-                      THÂN THIỆN <br className="md:hidden" /> MÔI TRƯỜNG
+                    <p className="text-white text-center  ps-9 text-[1rem]  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
+                      THÂN THIỆN  MÔI TRƯỜNG
                     </p>
                   </div>
                 </div>
                 <div className="relative flex items-end">
                   <Image
-                    className="z-10 -mr-[8%] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
+                    className="z-10 -mr-[4%] md:-mr-[8%] w-[50px] h-[50px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
                     src={icon3}
                     alt=""
                   />
 
                   <div className="bg-icon">
-                    <p className="text-white text-center text-lg  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
-                      TIẾT KIỆM <br className="md:hidden" /> NĂNG LƯỢNG
+                    <p className="text-white text-center text-[1rem] ps-9  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
+                      TIẾT KIỆM NĂNG LƯỢNG
                     </p>
                   </div>
                 </div>
@@ -320,54 +294,43 @@ const BannerComponentV2 = () => {
           </div>
           <div className="absolute bottom-0 w-full pb-10">
             <Container>
-              <div className="md:hidden mb-5">
-                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[34.32px] cursor-pointer">
-                  SẢN XUẤT BỀN VỮNG
-                </p>
-                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[34.32px] cursor-pointer">
-                  THÂN THIỆN MÔI TRƯỜNG
-                </p>
-                <p className="text-white  text-2xl mb-1 md:mb-0 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[34.32px] cursor-pointer">
-                  TIẾT KIỆM NĂNG LƯỢNG
-                </p>
-              </div>
-              <div className="justify-center items-center gap-10 flex-wrap pb-8 hidden md:flex">
+              <div className="md:justify-center md:items-center gap-1 md:gap-10 flex-wrap md:pb-8 flex-col md:flex-row flex">
                 <div className="relative flex items-end">
                   <Image
-                    className="z-10 -mr-[8%] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
+                    className="z-10 -mr-[4%] md:-mr-[8%] w-[50px] h-[50px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
                     src={icon1}
                     alt=""
                   />
 
                   <div className="bg-icon ">
-                    <p className="text-white text-center text-lg  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
-                      SẢN XUẤT <br className="md:hidden" /> BỀN VỮNG
+                    <p className="text-white text-center ps-9 text-[1rem] py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
+                      SẢN XUẤT  BỀN VỮNG
                     </p>
                   </div>
                 </div>
                 <div className="relative flex items-end">
                   <Image
-                    className="z-10 -mr-[8%] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
+                    className="z-10 -mr-[4%] md:-mr-[8%] w-[50px] h-[50px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
                     src={icon2}
                     alt=""
                   />
 
                   <div className="bg-icon">
-                    <p className="text-white text-center text-lg  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
-                      THÂN THIỆN <br className="md:hidden" /> MÔI TRƯỜNG
+                    <p className="text-white text-center  ps-9 text-[1rem]  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
+                      THÂN THIỆN  MÔI TRƯỜNG
                     </p>
                   </div>
                 </div>
                 <div className="relative flex items-end">
                   <Image
-                    className="z-10 -mr-[8%] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
+                    className="z-10 -mr-[4%] md:-mr-[8%] w-[50px] h-[50px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px]"
                     src={icon3}
                     alt=""
                   />
 
                   <div className="bg-icon">
-                    <p className="text-white text-center text-lg  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
-                      TIẾT KIỆM <br className="md:hidden" /> NĂNG LƯỢNG
+                    <p className="text-white text-center text-[1rem] ps-9  py-3 lg:ps-7 2xl:ps-9 md:text-[0.5rem] lg:text-base xl:text-lg 2xl:text-[23px] px-4 cursor-pointer">
+                      TIẾT KIỆM NĂNG LƯỢNG
                     </p>
                   </div>
                 </div>

@@ -316,9 +316,9 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
-              <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
+              <div className={`${styles.bg_custom_yellow} h-full z-0 relative overflow-hidden`}>
                 <p className="text-white p-3 text-base xl:text-[23px] leading-7">BẢNG QUẢNG CÁO <br /> TẤM LỚN - BILLBOARD <br /> HỘP ĐÈN <br /> BIỂN HIỆU <br /> SHOP SIGN</p>
-                <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
+                <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] -z-[1] rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
