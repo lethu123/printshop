@@ -40,8 +40,8 @@ export default function Home() {
               <Image alt='' className="w-full" src={icon30} />
             </div>
             <div className="w-full md:mt-0 md:w-auto">
-              <h1 className="text-[24px] text-white">THÀNH LẬP CÔNG TY</h1>
-              <h1 className="text-[24px] leading-7 text-white  ">1998 - 2028</h1>
+              <h1 className="text-[24px] text-white font-avo_bold">THÀNH LẬP CÔNG TY</h1>
+              <h1 className="text-[24px] leading-7 text-white font-avo_bold ">1998 - 2028</h1>
             </div>
           </div>
           <div className="md:hidden flex justify-center flex-wrap gap-6">
@@ -128,13 +128,12 @@ export default function Home() {
 
       {/* certificate */}
       <div className="relative ">
-        <div className={`${styles.bg_certificate} pb-[120px] pt-[50px]`}>
+        <div className={`${styles.bg_certificate} pb-[70px] pt-[50px]`}>
           <Container>
 
             <div className="flex items-center justify-center flex-col">
-              <div className="inline-block pb-8">
-                <h1 className="text-center lg:text-[30.5px] text-2xl sm:text-3xl md:text-4xl text-white">CHỨNG NHẬN/BẰNG KHEN</h1>
-                <div className="text-center h-[2px] w-4/5 mx-auto mt-3 bg-white"></div>
+              <div className="inline-block pb-[50px]">
+                <h1 className="text-center   text-2xl md:text-3xl lg:text-[30.48px] text-white">CHỨNG NHẬN / BẰNG KHEN</h1>
               </div>
             </div>
 

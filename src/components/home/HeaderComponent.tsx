@@ -17,7 +17,7 @@ const HeaderComponent = () => {
                     </div>
                     <div className='flex items-center'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={icPhone} />
-                        <span className="text-white ml-2 text-[16.5px]">(+84) 28 3844 111</span>
+                        <span className="text-white ml-2 text-[16.5px]">(+84) 28 3844 1111</span>
                     </div>
                     <div className='flex items-center flex-wrap'>
                         <div className='flex items-center mr-3'> <Image style={{ width: 20, height: 20 }}   alt='' src={flagVN} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]">TIẾNG VIỆT</span> </div>

@@ -92,7 +92,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
               <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
-                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">CATALOG</p>
+                <p className="text-white p-3 text-base xl:text-[21.42px]">CATALOG</p>
                 <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
@@ -103,7 +103,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5  sm:col-span-4 md:col-span-3 lg:col-span-2 ">
               <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
-                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">BROCHURE</p>
+                <p className="text-white w-full  ml-auto p-3 text-right xl:w-[14rem] text-base xl:text-[21.42px]">BROCHURE</p>
                 <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
@@ -124,7 +124,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2 order-6 lg:order-none">
               <div className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}>
-                <p className="text-white font-avo_bold p-3 items-end mt-auto text-base xl:text-[23px]">TỜ RƠI</p>
+                <p className="text-white   p-3 items-end mt-auto text-base xl:text-[21.42px]">TỜ RƠI</p>
                 <div className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
@@ -142,7 +142,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
               <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
-                <p className="text-white leading-7 p-3 text-base xl:text-[25px]">LỊCH TƯỜNG <br /> LỊCH ĐỂ BÀN <br /> LỊCH BLOC</p>
+                <p className="text-white leading-7 p-3 text-base xl:text-[21.42px]">LỊCH TƯỜNG <br /> LỊCH ĐỂ BÀN <br /> LỊCH BLOC</p>
                 <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
@@ -189,7 +189,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
               <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
-                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px] leading-8">HỘP MỀM <br /> HỘP CỨNG</p>
+                <p className="text-white   p-3 text-base xl:text-[21.42px] leading-7">HỘP MỀM <br /> HỘP CỨNG</p>
                 <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
@@ -232,7 +232,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
               <div className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}>
-                <p className="text-white font-avo_bold p-3 items-end mt-auto text-base xl:text-[23px] leading-7">HỘP GIẤY KRAFT <br /> HỘP BỒI CARTON</p>
+                <p className="text-white   p-3 items-end mt-auto text-base xl:text-[21.42px] leading-7">HỘP GIẤY KRAFT <br /> HỘP BỒI CARTON</p>
                 <div className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
               </div>
             </div>
@@ -243,7 +243,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
               <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
-                <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">TÚI GIẤY</p>
+                <p className="text-white   p-3 text-base xl:text-[21.42px]">TÚI GIẤY</p>
                 <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>
@@ -317,7 +317,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.bg_custom_yellow} h-full z-0 relative overflow-hidden`}>
-                <p className="text-white p-3 text-base xl:text-[23px] leading-7">BẢNG QUẢNG CÁO <br /> TẤM LỚN - BILLBOARD <br /> HỘP ĐÈN <br /> BIỂN HIỆU <br /> SHOP SIGN</p>
+                <p className="text-white p-3 text-base xl:text-[21.42px] leading-7">BẢNG QUẢNG CÁO <br /> TẤM LỚN - BILLBOARD <br /> HỘP ĐÈN <br /> BIỂN HIỆU <br /> SHOP SIGN</p>
                 <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] -z-[1] rounded-full" style={{ background: '#FAB674' }} ></div>
               </div>
             </div>

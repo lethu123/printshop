@@ -26,8 +26,8 @@ const AboutUs = () => {
                                 <Image alt='' className="w-full" src={icon30} />
                             </div>
                             <div className="w-full md:mt-0 md:w-auto">
-                                <h1 className="text-[23px] text-white">THÀNH LẬP CÔNG TY</h1>
-                                <h1 className="text-[23px] leading-7 text-white ">1998 - 2028</h1>
+                                <h1 className="text-[23px] font-avo_bold text-white">THÀNH LẬP CÔNG TY</h1>
+                                <h1 className="text-[23px] font-avo_bold leading-7 text-white ">1998 - 2028</h1>
                             </div>
                         </div>
                         <div className="md:hidden flex  flex-wrap gap-6">
@@ -35,8 +35,8 @@ const AboutUs = () => {
                                 <div className="w-[150px] lg:w-[210px]">
                                     <Image alt='' className="w-full" src={icon30} />
                                 </div>
-                                <h1 className="text-[24px] text-white">THÀNH LẬP CÔNG TY</h1>
-                                <h1 className="text-[24px] leading-7 text-white  ">1998 - 2028</h1>
+                                <h1 className="text-[24px] font-avo_bold text-white">THÀNH LẬP CÔNG TY</h1>
+                                <h1 className="text-[24px] font-avo_bold leading-7 text-white  ">1998 - 2028</h1>
                             </div>
                         </div>
                     </div>

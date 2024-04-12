@@ -6,7 +6,7 @@ import { IconEmail, IconLocation, IconPhone } from '@srccommons/icons'
 
 const FooterComponent = () => {
   return (
-    <footer className="pb-[6rem]">
+    <footer className="pb-[5rem]">
       <Container>
         <div className="grid grid-cols-5 gap-5 items-stretch flex-wrap">
           <div className="col-span-5 md:col-span-3">

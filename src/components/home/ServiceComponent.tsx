@@ -27,7 +27,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
-                            <p className="text-white font-avo_bold p-3 text-base xl:text-[25px]">Thiết kế <br /> ấn phẩm</p>
+                            <p className="text-white p-3 text-base xl:text-[25px]">Thiết kế <br /> ấn phẩm</p>
                             <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
                         </div>
 
@@ -59,7 +59,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}>
-                            <p className="text-white font-avo_bold p-3 items-end mt-auto text-base xl:text-[23px]">Thiết kế <br /> tạo mẫu bao bì, hộp</p>
+                            <p className="text-white p-3 items-end mt-auto text-base xl:text-[23px]">Thiết kế <br /> tạo mẫu bao bì, hộp</p>
                             <div className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
                         </div>
                     </div>
