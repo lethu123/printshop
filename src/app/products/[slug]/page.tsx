@@ -37,9 +37,7 @@ import cc8 from "@assets/images/cc8.png";
 import cc9 from "@assets/images/spx1.jpg";
 import cc10 from "@assets/images/spx2.jpg";
 import cc11 from "@assets/images/cc11.png";
-import cc12 from "@assets/images/cc12.png";
 import cc13 from "@assets/images/cc13.png";
-import cc14 from "@assets/images/cc14.png";
 import cc15 from "@assets/images/cc15.png";
 import cc16 from "@assets/images/cc16.png";
 
@@ -74,10 +72,10 @@ const ProductDetail = () => {
       </Container>
 
       <div id="an-pham"></div>
-      <div className="mt-[7rem]">
+      <div className="mt-[6rem]">
         <div className="bg-banner py-8">
           <Container>
-            <h3 className="text-center text-white text-[30px] md:text-[40px]">
+            <h3 className="text-center text-white text-[30px] md:text-[35px]">
               ẤN PHẨM
             </h3>
           </Container>
@@ -166,10 +164,10 @@ const ProductDetail = () => {
         </Container>
       </div>
       <div id="bao-bi-hop-giay"></div>
-      <div className="mt-[7rem]">
+      <div className="mt-[6rem]">
         <div className="bg-banner py-8">
           <Container>
-            <h3 className="text-center text-white  text-[30px] md:text-[40px]">
+            <h3 className="text-center text-white  text-[30px] md:text-[35px]">
               BAO BÌ – HỘP GIẤY{" "}
             </h3>
           </Container>
@@ -257,10 +255,10 @@ const ProductDetail = () => {
       </div>
 
       <div id="thiet-bi-quang-cao"></div>
-      <div className="mt-[7rem] mb-10">
+      <div className="mt-[6rem] mb-10">
         <div className="bg-banner py-8">
           <Container>
-            <h3 className="text-center text-white text-[30px] md:text-[40px]">
+            <h3 className="text-center text-white text-[30px] md:text-[35px]">
               THIẾT BỊ QUẢNG CÁO
             </h3>
           </Container>

@@ -16,10 +16,10 @@ const News = () => {
     return (
         <Screen _className="product-page relative">
             <BannerSingle classImage={'bg-banner-news'} />
-            <div className='mt-[7rem]'>
+            <div className='mt-[6rem]'>
                 <div className='bg-banner py-8'>
                     <Container>
-                        <h3 className='text-center text-white text-[30px] md:text-[40px]'>TIN TỨC - XU HƯỚNG </h3>
+                        <h3 className='text-center text-white text-[30px] md:text-[35px]'>TIN TỨC - XU HƯỚNG </h3>
                     </Container>
                 </div>
 

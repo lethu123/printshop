@@ -53,10 +53,10 @@ const ServiceDetail = () => {
       </Container>
 
       <div id='thiet-ke-an-pham' ></div>
-      <div className='mt-[7rem]'   >
+      <div className='mt-[6rem]'   >
         <div className='bg-banner py-8 '>
           <Container>
-            <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT KẾ ẤN PHẨM </h3>
+            <h3 className='text-center text-white text-[30px] md:text-[35px]'>THIẾT KẾ ẤN PHẨM </h3>
           </Container>
         </div>
 
@@ -108,10 +108,10 @@ const ServiceDetail = () => {
       </div>
 
       <div id='thiet-ke-tao-mau-bao-bi'   ></div>
-      <div className='mt-[7rem]' >
+      <div className='mt-[6rem]' >
         <div className='bg-banner py-8'>
           <Container>
-            <h3 className='text-center text-white text-[30px] md:text-[40px]'>THIẾT KẾ TẠO MẪU BAO BÌ, HỘP</h3>
+            <h3 className='text-center text-white text-[30px] md:text-[35px]'>THIẾT KẾ TẠO MẪU BAO BÌ, HỘP</h3>
           </Container>
         </div>
 
@@ -163,10 +163,10 @@ const ServiceDetail = () => {
       </div>
 
       <div id='thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham' > </div>
-      <div className=' mb-10 mt-[7rem]'>
+      <div className=' mb-10 mt-[6rem]'>
         <div className='bg-banner py-8'>
           <Container>
-            <h3 className='text-center text-white text-[30px] md:text-[40px]'>
+            <h3 className='text-center text-white text-[30px] md:text-[35px]'>
 
               THIẾT KẾ - TẠO MẪU QUẦY KỆ, <br />
               TỦ TRƯNG BÀY SẢN PHẨM (POSM)
