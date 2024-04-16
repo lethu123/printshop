@@ -63,7 +63,7 @@ export default function Home() {
               <p className="text-[18px]">
                 <span className="font-avo_bold font-medium">4-2005:</span>
                 <br />
-                <span className="text-white ">- Chuyển đổi Trung tâm thành Công ty, thành lập công ty TNHH Quảng cáo và Thương Mại Dương Phong chuyên cung cấp các dịch vụ thiết kế, in ấn, quảng cáo ngoài trời, sản xuất thiết bị quảng cáo</span>
+                <span className="text-white ">- Chuyển đổi Trung tâm thành Công ty, thành lập Công ty TNHH Quảng cáo và Thương Mại Dương Phong chuyên cung cấp các dịch vụ thiết kế, in ấn, quảng cáo ngoài trời, sản xuất thiết bị quảng cáo</span>
                 <br />
                 <span className="text-white ">
                   - Xây dựng xưởng cơ khí chuyên xây lắp dàn dựng bảng biển quảng cáo tấm lớn, sản xuất thiết bị quảng cáo

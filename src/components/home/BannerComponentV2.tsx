@@ -222,7 +222,7 @@ const BannerComponentV2 = () => {
                                     <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon1} alt='' />
                                 </div>
                                 <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon3} alt='' />
+                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon2} alt='' />
                                 </div>
                                 <div className='z-10  md:grow'>
                                     <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon3} alt='' />

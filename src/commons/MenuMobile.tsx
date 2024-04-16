@@ -75,7 +75,7 @@ const menu = [
 const MenuMobile = () => {
     const [open, setOpen] = useState(false)
     return (
-        <div className={`${styles.mobile_menu} mobile-menu xl:hidden relative mt-5`}>
+        <div className={`${styles.mobile_menu} mobile-menu xl:hidden relative mt-10`}>
 
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-3 " aria-label="Global">
                 <div className="flex lg:flex-1">

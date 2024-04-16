@@ -28,7 +28,7 @@ const FooterComponent = () => {
                     <span className='text=[15px]'> 028. 38 44. 1111</span>
                   </div>
                   <div>
-                    <span className="custom-text-mode text=[15px]">fax: 08. 3997 1009</span>
+                    <span className="custom-text-mode text=[15px]">fax: 028.39971009</span>
                   </div>
                 </div>
                 <div className="flex custom-text-mode gap-2">
