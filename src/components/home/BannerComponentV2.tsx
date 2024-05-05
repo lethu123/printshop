@@ -44,6 +44,30 @@ function SamplePrevArrow(props: any) {
     );
 }
 
+
+const BannerTemplate = ({ slide }: { slide: string }) => {
+    return <div className="relative w-full">
+        <div className={`${slide} h-[300px] md:h-[500px] lg:h-lvh rounded`}>
+            {/* <Image alt="" src={banner} className='w-full h-full' /> */}
+        </div>
+        <div className="absolute bottom-0 w-full pb-10">
+            <Container>
+                <div className="md:justify-center md:items-center gap-1 md:gap-5 lg:gap-10 md:pb-8 flex-col md:flex-row flex">
+                    <div className='z-10  md:grow'>
+                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon1} alt='' />
+                    </div>
+                    <div className='z-10  md:grow'>
+                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon2} alt='' />
+                    </div>
+                    <div className='z-10  md:grow'>
+                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon3} alt='' />
+                    </div>
+                </div>
+            </Container>
+        </div>
+    </div>
+}
+
 const BannerComponentV2 = () => {
     const [scrolled, setScrolled] = React.useState(false);
 
@@ -191,66 +215,18 @@ const BannerComponentV2 = () => {
                 nextArrow={<SampleNextArrow />}
                 prevArrow={<SamplePrevArrow />}
             >
-                <div className="relative w-full">
-                    <div className={`slide1 h-[300px] md:h-[500px] lg:h-lvh rounded`}>
-                        {/* <Image alt="" src={banner} className='w-full h-full' /> */}
-                    </div>
-                    <div className="absolute bottom-0 w-full pb-10">
-                        <Container>
-                            <div className="md:justify-center md:items-center gap-1 md:gap-5 lg:gap-10 md:pb-8 flex-col md:flex-row flex">
-                                <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon1} alt='' />
-                                </div>
-                                <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon2} alt='' />
-                                </div>
-                                <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon3} alt='' />
-                                </div>
-                            </div>
-                        </Container>
-                    </div>
-                </div>
-                <div className="relative">
-                    <div className={`h-[300px] slide2 md:h-[500px] lg:h-lvh rounded`}>
-                        {/* <Image alt="" src={banner2} className='w-full h-full' /> */}
-                    </div>
-                    <div className="absolute bottom-0 w-full pb-10">
-                        <Container>
-                            <div className="md:justify-center md:items-center gap-1 md:gap-5 lg:gap-10 md:pb-8 flex-col md:flex-row flex">
-                                <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon1} alt='' />
-                                </div>
-                                <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon2} alt='' />
-                                </div>
-                                <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon3} alt='' />
-                                </div>
-                            </div>
-                        </Container>
-                    </div>
-                </div>
-                <div className="relative">
-                    <div className={`h-[300px] slide3 md:h-[500px] lg:h-lvh rounded`}>
-                        {/* <Image alt="" src={banner3} className='w-full h-full' /> */}
-                    </div>
-                    <div className="absolute bottom-0 w-full pb-10">
-                        <Container>
-                            <div className="md:justify-center md:items-center gap-1 md:gap-5 lg:gap-10 md:pb-8 flex-col md:flex-row flex">
-                                <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon1} alt='' />
-                                </div>
-                                <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon2} alt='' />
-                                </div>
-                                <div className='z-10  md:grow'>
-                                    <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon3} alt='' />
-                                </div>
-                            </div>
-                        </Container>
-                    </div>
-                </div>
+
+                <BannerTemplate slide="slide1" />
+                <BannerTemplate slide="slide2" />
+                <BannerTemplate slide="slide3" />
+                <BannerTemplate slide="slide4" />
+                <BannerTemplate slide="slide5" />
+                <BannerTemplate slide="slide6" />
+                <BannerTemplate slide="slide7" />
+                <BannerTemplate slide="slide8" />
+                <BannerTemplate slide="slide9" />
+                <BannerTemplate slide="slide10" />
+
             </Slider>
         </>
     );
