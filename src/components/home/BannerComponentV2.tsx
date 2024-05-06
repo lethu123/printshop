@@ -98,16 +98,16 @@ const BannerComponentV2 = () => {
                         <div className="flex items-center gap-14 justify-center py-3">
                             <Link
                                 href={"/"}
-                                className={`${styles.menu_single} ${styles.active} menu_single font-avo_bold text-white text-[18px] py-3`}
+                                className={`${styles.menu_single} ${styles.active} menu_single font-avo_bold text-[#6D6E71] text-[18px] py-3`}
                             >
                                 Trang chủ
                             </Link>
                             <div className={`${styles.submenu} relative`}>
-                                <h3 className={`font-avo_bold  text-white text-[18px] cursor-pointer py-3`}>
+                                <h3 className={`font-avo_bold  text-[#6D6E71] text-[18px] cursor-pointer py-3`}>
                                     Sản phẩm{" "}
                                     <i
                                         className="fa fa-angle-down"
-                                        style={{ color: "#f8dfa9" }}
+                                        style={{ color: "#6D6E71" }}
                                     ></i>
                                 </h3>
                                 <div
@@ -138,11 +138,11 @@ const BannerComponentV2 = () => {
                                 </div>
                             </div>
                             <div className={`${styles.submenu} relative`}>
-                                <h3 className="text-white font-avo_bold text-[18px] cursor-pointer py-3">
+                                <h3 className="text-[#6D6E71] font-avo_bold text-[18px] cursor-pointer py-3">
                                     Dịch vụ{" "}
                                     <i
                                         className="fa fa-angle-down"
-                                        style={{ color: "#f8dfa9" }}
+                                        style={{ color: "#6D6E71" }}
                                     ></i>
                                 </h3>
                                 <div
@@ -178,7 +178,7 @@ const BannerComponentV2 = () => {
                             <div>
                                 <Link
                                     href={"/about-us"}
-                                    className={`${styles.menu_single} font-avo_bold text-white text-[18px] py-3`}
+                                    className={`${styles.menu_single} font-avo_bold text-[#6D6E71] text-[18px] py-3`}
                                 >
                                     Về chúng tôi
                                 </Link>
@@ -186,7 +186,7 @@ const BannerComponentV2 = () => {
                             <div>
                                 <Link
                                     href={"/"}
-                                    className={`${styles.menu_single} font-avo_bold text-white text-[18px] py-3`}
+                                    className={`${styles.menu_single} font-avo_bold text-[#6D6E71] text-[18px] py-3`}
                                 >
                                     Tin tức
                                 </Link>
@@ -194,7 +194,7 @@ const BannerComponentV2 = () => {
                             <div>
                                 <Link
                                     href={"/contact"}
-                                    className={`${styles.menu_single} font-avo_bold text-white text-[18px] py-3`}
+                                    className={`${styles.menu_single} font-avo_bold text-[#6D6E71] text-[18px] py-3`}
                                 >
                                     Liên hệ
                                 </Link>
@@ -215,7 +215,6 @@ const BannerComponentV2 = () => {
                 nextArrow={<SampleNextArrow />}
                 prevArrow={<SamplePrevArrow />}
             >
-
                 <BannerTemplate slide="slide1" />
                 <BannerTemplate slide="slide2" />
                 <BannerTemplate slide="slide3" />
