@@ -125,19 +125,19 @@ const BannerComponentV2 = () => {
                                         <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
                                             <Link
                                                 href="/products/an-pham"
-                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
+                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100"
                                             >
                                                 <Translations text="Ấn Phẩm" />
                                             </Link>
                                             <Link
                                                 href="/products/bao-bi-hop-giay"
-                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
+                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100"
                                             >
                                                 <Translations text="Bao bì - hộp giấy" />
                                             </Link>
                                             <Link
                                                 href="/products/thiet-bi-quang-cao"
-                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
+                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100"
                                             >
                                                 <Translations text="Thiết bị quảng cáo" />
                                             </Link>
@@ -160,19 +160,19 @@ const BannerComponentV2 = () => {
                                         <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
                                             <Link
                                                 href="/services/thiet-ke-an-pham"
-                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
+                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100"
                                             >
                                                 <Translations text="Thiết kế ấn phẩm" />
                                             </Link>
                                             <a
                                                 href="/services/thiet-ke-tao-mau-bao-bi"
-                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
+                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100"
                                             >
                                                 <Translations text="Thiết kế - tạo mẫu bao bì" />
                                             </a>
                                             <a
                                                 href="/services/thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham"
-                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
+                                                className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100"
                                             >
                                                 <Translations text="Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm" />
                                             </a>

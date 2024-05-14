@@ -29,16 +29,16 @@ const ContactUs = () => {
                         <div className='md:w-4/5 lg:w-3/5 mx-auto '>
                             {/* <form className='relative  pt-10 pb-[200px]'>
                                 <div className='form-group'>
-                                    <input className='placeholder:text-black w-full' placeholder='Tên*' />
+                                    <input className='placeholder:text-[#6D6E71] w-full' placeholder='Tên*' />
                                 </div>
                                 <div className='form-group'>
-                                    <input className='placeholder:text-black w-full' placeholder='Email*' />
+                                    <input className='placeholder:text-[#6D6E71] w-full' placeholder='Email*' />
                                 </div>
                                 <div className='form-group'>
-                                    <input className='placeholder:text-black w-full' placeholder='Số điện thoại*' />
+                                    <input className='placeholder:text-[#6D6E71] w-full' placeholder='Số điện thoại*' />
                                 </div>
                                 <div className='form-group'>
-                                    <textarea className='placeholder:text-black w-full' rows={4} placeholder='Lời nhắn gửi*' ></textarea>
+                                    <textarea className='placeholder:text-[#6D6E71] w-full' rows={4} placeholder='Lời nhắn gửi*' ></textarea>
                                 </div>
                                 <h3 className='text-[17px] lg:text-[26px] font-avo_bold'>SẢN PHẨM VÀ DỊCH VỤ QUÝ KHÁCH HÀNG QUAN TÂM</h3>
                                 <div className='grid grid-cols-2 mt-3'>

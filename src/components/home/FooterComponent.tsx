@@ -97,7 +97,7 @@ const FooterComponent = () => {
               <div className="flex gap-3 items-center flex-wrap">
                 <h2 className="custom-text-mode text-[15.42px] font-avo_bold">New Enter</h2>
                 <div className='flex gap-3 flex-wrap'>
-                  <input className={`${styles.input} text-base md:text-[15.42px] p-2 xl:p-3 border-0 outline-0 rounded-full font-semibold placeholder:text-black`} placeholder="enter your email address" />
+                  <input className={`${styles.input} text-base md:text-[15.42px] p-2 xl:p-3 border-0 outline-0 rounded-full font-semibold placeholder:text-[#6D6E71]`} placeholder="enter your email address" />
                   <button className={`${styles.btn} text-[15.42px] py-3 px-5 md:px-10 border-0 outline-0 rounded-full font-semibold`}>Subcribe</button>
                 </div>
               </div>

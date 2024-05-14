@@ -25,7 +25,7 @@ const CoperatorComponent = () => {
     return (
         <div className={`coperator mb-[5rem] flex flex-col px-3 border-y py-[50px] relative `} style={{ borderTopColor: '#FF9D00', borderBottomColor: '#FF9D00' }}>
             <Container >
-                <h1 className="text-white text-center tracking-[5px] text-2xl md:text-3xl lg:text-[30.48px] pb-[50px] sm:px-3 md:px-0 uppercase"> <Translations text='Đối tác của chúng tôi' /></h1>
+                <h1 className="text-white font-semibold text-center tracking-[5px] text-2xl md:text-3xl lg:text-[30.48px] pb-[50px] sm:px-3 md:px-0 uppercase"> <Translations text='Đối tác của chúng tôi' /></h1>
                 <div className="grid grid-cols-4 sm:grid-cols-6 gap-x-[2rem] gap-y-[1rem] items-center md:px-[5rem]  flex-wrap justify-center">
                     <div className='col-span-1'>
                         <Image alt="" src={logo1} className='w-full  md:w-[4rem] lg:w-[6rem] mx-auto' />

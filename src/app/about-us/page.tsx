@@ -28,7 +28,7 @@ const AboutUs = () => {
             <section className='bg-[#808080] pt-10'>
                 <Container>
                     <div className='xl:flex items-center justify-between'>
-                        <h1 className='border-l-4 pl-5 border-white text-white text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 uppercase'>
+                        <h1 className='border-l-4 pl-5 border-white text-white text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 uppercase text-shadown'>
                             <Translations text='Về dương phong' />
                         </h1>
                         <div className="hidden md:flex items-center flex-wrap gap-6">
@@ -120,7 +120,7 @@ const AboutUs = () => {
             </section>
             <section>
                 <div className='bg-header1 py-6 '>
-                    <h1 className='text-[33px] md:text-[40px] text-center font-avo_bold uppercase'>
+                    <h1 className='text-[33px] text-shadown md:text-[40px] text-center font-avo_bold uppercase'>
                         <Translations text='Tầm nhìn' /></h1>
                 </div>
                 <Container className="py-5">
@@ -139,11 +139,11 @@ const AboutUs = () => {
                         </p>
                     </div>
                     <div className="items-center pb-8 hidden sm:flex mt-3">
-                        <div><p className="text-[#145629] font-avo_bold text-center text-lg md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer">SẢN XUẤT <br className='sm:hidden' /> BỀN VỮNG</p></div>
+                        <div><p className="text-[#145629] font-avo_bold text-center text-lg md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer uppercase"> <Translations text='Sản xuất' /> <br className='sm:hidden' /> <Translations text='Bền vững' /> </p></div>
                         <div className={`h-[35px] w-[3px] bg-[#145629] hidden md:block mx-[40px]`}></div>
-                        <div><p className="text-[#145629] font-avo_bold text-center text-lg md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer">THÂN THIỆN <br className='sm:hidden' /> MÔI TRƯỜNG</p></div>
+                        <div><p className="text-[#145629] font-avo_bold text-center text-lg md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer uppercase"> <Translations text='Thân thiện' /> <br className='sm:hidden' /> <Translations text='Môi trường' /></p></div>
                         <div className={`h-[35px] w-[3px] bg-[#145629] hidden md:block mx-[40px]`}></div>
-                        <div><p className="text-[#145629] font-avo_bold text-center text-lg md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer">TIẾT KIỆM <br className='sm:hidden' /> NĂNG LƯỢNG</p></div>
+                        <div><p className="text-[#145629] font-avo_bold text-center text-lg md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer uppercase  "> <Translations text='Tiết kiệm' /><br className='sm:hidden' />  <Translations text='Năng lượng' /></p></div>
                     </div>
                     <div>
                         <p className='mb-3'>
@@ -166,7 +166,7 @@ const AboutUs = () => {
             </section>
             <section className='mb-20'>
                 <div className='bg-header1 py-6 '>
-                    <h1 className='text-[31px] md:text-[40px] text-center font-avo_bold'>ĐỘI NGŨ CỦA <br className='sm:hidden' /> CHÚNG TÔI</h1>
+                    <h1 className='text-[31px] md:text-[40px] text-center font-avo_bold text-shadown'>ĐỘI NGŨ CỦA <br className='sm:hidden' /> CHÚNG TÔI</h1>
                 </div>
                 <Container>
                     <div className=' '>

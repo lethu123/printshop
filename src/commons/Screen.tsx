@@ -17,10 +17,10 @@ const Screen = ({ _className, children }: { children: React.ReactNode; _classNam
         <div className={`${styles.submenu_show} absolute right-1 -bottom-[100px] z-10 flex  max-w-max`}>
           <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
             <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
-              <button id='dark-mode' className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+              <button id='dark-mode' className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100">
                 Dark mode
               </button>
-              <button id='light-mode' className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+              <button id='light-mode' className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100">
                 Light mode
               </button>
             </div>

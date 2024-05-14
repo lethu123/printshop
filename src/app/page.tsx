@@ -188,7 +188,7 @@ export default function Home() {
 
             <div className="flex items-center justify-center flex-col">
               <div className="inline-block pb-[50px]">
-                <h1 className="text-center   text-2xl md:text-3xl lg:text-[30.48px] text-white uppercase">
+                <h1 className="text-center font-semibold  text-2xl md:text-3xl lg:text-[30.48px] text-white uppercase">
                   <Translations text="Chứng nhận/ Bằng khen" />
                 </h1>
               </div>

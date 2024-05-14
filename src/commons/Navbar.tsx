@@ -24,18 +24,18 @@ const Navbar = () => {
                     <div className="flex items-center gap-14 justify-center py-3 bg-white">
                         <Link href={'/'} className={`${styles.menu_single} font-avo_bold  text-[18px] py-3`}><Translations text='Trang chủ'/></Link>
                         <div className={`${styles.submenu} relative`}>
-                            <h3 className={`  text-[18px] cursor-pointer py-3 font-avo_bold`}><Translations text='Sản phẩm'/> <i className="fa fa-angle-down text-black"  ></i></h3>
+                            <h3 className={`  text-[18px] cursor-pointer py-3 font-avo_bold`}><Translations text='Sản phẩm'/> <i className="fa fa-angle-down text-[#6D6E71]"  ></i></h3>
                             <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                                 <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
-                                        <Link href="/products/an-pham" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <Link href="/products/an-pham" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100">
                                           <Translations text='Ấn Phẩm'/>  
                                         </Link>
-                                        <Link href="/products/bao-bi-hop-giay" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <Link href="/products/bao-bi-hop-giay" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100">
                                           <Translations text=' Bao bì - hộp giấy'/>  
                                            
                                         </Link>
-                                        <Link href="/products/thiet-bi-quang-cao" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <Link href="/products/thiet-bi-quang-cao" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100">
                                           <Translations text='Thiết bị quảng cáo'/>  
                                             
                                         </Link>
@@ -45,17 +45,17 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className={`${styles.submenu} relative`}>
-                            <h3 className=" text-[18px] cursor-pointer font-avo_bold py-3"><Translations text='Dịch vụ'/> <i className="fa fa-angle-down text-black" ></i></h3>
+                            <h3 className=" text-[18px] cursor-pointer font-avo_bold py-3"><Translations text='Dịch vụ'/> <i className="fa fa-angle-down text-[#6D6E71]" ></i></h3>
                             <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
                                 <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                     <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
-                                        <Link href="/services/thiet-ke-an-pham" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <Link href="/services/thiet-ke-an-pham" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100">
                                         <Translations text='Thiết kế ấn phẩm'/> 
                                         </Link>
-                                        <a href="/services/thiet-ke-tao-mau-bao-bi" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <a href="/services/thiet-ke-tao-mau-bao-bi" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100">
                                         <Translations text='Thiết kế - tạo mẫu bao bì'/>
                                         </a>
-                                        <a href="/services/thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <a href="/services/thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham" className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100">
                                         <Translations text='Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm'/>
                                         </a>
                                     </div>

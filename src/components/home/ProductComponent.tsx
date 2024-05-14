@@ -52,7 +52,7 @@ const ProductComponent = () => {
   return (
     <div className="relative product  max-w-screen-2xl mx-auto">
       <div className="w-5/6 mx-auto">
-        <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>
+        <h1 className={`${styles.text_custom_yellow} text-shadown text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>
           <Translations text='Sản phẩm' />
         </h1>
       </div>
@@ -95,7 +95,7 @@ const ProductComponent = () => {
       >
         <div className='md:pt-3'>
           {/* <HoverImage classImage='' /> */}
-          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] md:hidden uppercase px-5`}>
+          <h3 className={`${styles.text_custom_yellow} text-center font-semibold text-[21.42px] md:hidden uppercase px-5`}>
             <Translations text='Ấn Phẩm' />
           </h3>
           <div className={`${styles.image_hover} rounded`}>
@@ -104,10 +104,10 @@ const ProductComponent = () => {
               <Link href={'#'}><Translations text='Xem chi tiết' /></Link>
             </div>
           </div>
-          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] hidden md:block uppercase px-5 mt-5`}> <Translations text='Ấn Phẩm' /></h3>
+          <h3 className={`${styles.text_custom_yellow} font-semibold text-center text-[21.42px] hidden md:block uppercase px-5 mt-5`}> <Translations text='Ấn Phẩm' /></h3>
         </div>
         <div >
-          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 md:mb-5`}><Translations text='Bao bì - hộp giấy' /> </h3>
+          <h3 className={`${styles.text_custom_yellow} font-semibold text-center text-[21.42px] uppercase px-5 md:mb-5`}><Translations text='Bao bì - hộp giấy' /> </h3>
 
           <div className={`${styles.image_hover} rounded md:mb-7`}>
             <Image alt="" src={sp2} className='object-cover w-full md:h-[400px] lg:h-[450px] xl:h-[560px]' />
@@ -118,14 +118,14 @@ const ProductComponent = () => {
 
         </div>
         <div className='pt-3'>
-          <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center md:hidden uppercase px-5 `}><Translations text='Thiết bị quảng cáo' /></h3>
+          <h3 className={`${styles.text_custom_yellow} font-semibold text-[21.42px] text-center md:hidden uppercase px-5 `}><Translations text='Thiết bị quảng cáo' /></h3>
           <div className={`${styles.image_hover} rounded`}>
             <Image className='object-cover' alt="" src={sp3} />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
               <Link href={'#'}><Translations text='Xem chi tiết' /></Link>
             </div>
           </div>
-          <h3 className={`${styles.text_custom_yellow} text-[21.42px] hidden md:block text-center uppercase px-5  mt-5`}><Translations text='Thiết bị quảng cáo' /></h3>
+          <h3 className={`${styles.text_custom_yellow} font-semibold text-[21.42px] hidden md:block text-center uppercase px-5  mt-5`}><Translations text='Thiết bị quảng cáo' /></h3>
 
         </div>
 

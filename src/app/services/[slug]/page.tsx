@@ -51,7 +51,7 @@ const ServiceDetail = () => {
       <BannerSingle classImage={'bg-banner-service'} />
 
       <Container>
-        <h1 className='border-l-4 uppercase pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10'>
+        <h1 className='text-shadown border-l-4 uppercase pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10'>
           <Translations text='Dịch vụ' /> </h1>
       </Container>
 
@@ -59,7 +59,7 @@ const ServiceDetail = () => {
       <div className='mt-[6rem]'   >
         <div className='bg-banner py-8 '>
           <Container>
-            <h3 className='text-center uppercase text-white text-[30px] md:text-[35px]'>
+            <h3 className='text-shadown text-center uppercase text-white text-[30px] md:text-[35px]'>
               <Translations text='Thiết kế ấn phẩm' /> </h3>
           </Container>
         </div>
@@ -115,7 +115,7 @@ const ServiceDetail = () => {
       <div className='mt-[6rem]' >
         <div className='bg-banner py-8'>
           <Container>
-            <h3 className='text-center uppercase text-white text-[30px] md:text-[35px]'>
+            <h3 className='text-shadown text-center uppercase text-white text-[30px] md:text-[35px]'>
               <Translations text='Thiết kế - tạo mẫu bao bì' />
             </h3>
           </Container>
@@ -172,10 +172,10 @@ const ServiceDetail = () => {
       <div className=' mb-10 mt-[6rem]'>
         <div className='bg-banner py-8'>
           <Container>
-            <h3 className='text-center text-white text-[30px] md:text-[35px]'>
+            <h3 className='text-shadown text-center text-white text-[30px] md:text-[35px]'>
 
-              THIẾT KẾ - TẠO MẪU QUẦY KỆ, <br />
-              TỦ TRƯNG BÀY SẢN PHẨM (POSM)
+              <Translations text='THIẾT KẾ - TẠO MẪU QUẦY KỆ,' /> <br />
+              <Translations text='TỦ TRƯNG BÀY SẢN PHẨM (POSM)' />
 
             </h3>
           </Container>
