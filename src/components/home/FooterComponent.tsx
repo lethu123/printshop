@@ -69,17 +69,7 @@ const FooterComponent = () => {
                   <li className='text-[15px] '> <Link href={'/contact'} >Liên hệ</Link></li> 
                 </ul>
               </div>
-            </div>
-            <div className="">
-              <h1 className="custom-text-mode font-extrabold text-[20px]">LAST EVENTS</h1>
-              <ul className={`${styles.ul} custom-text-mode`}>
-                <li className='text=[15px]'>
-                  <Link href={'/'} >Chrismas</Link>
-                </li>
-                <li className='text=[15px] '><Link href={'/'} >Black Friday</Link></li>
-                <li className='text=[15px] '> <Link href={'/'} >Sunday Specia</Link></li>
-              </ul>
-            </div>
+            </div> 
           </div>
 
 
