@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import './globals.scss';
 import type { Viewport } from 'next'
+import '../../i18n'
 
 export const metadata: Metadata = {
   title: "Nhà in Dương Phong",
@@ -17,17 +18,18 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false, 
+  userScalable: false,
 }
 
+
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
 
   return (
-    <html lang="en">
+    <html lang='vi'>
       <body className="light-mode relative" >{children}</body>
     </html>
   );

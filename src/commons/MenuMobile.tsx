@@ -2,11 +2,12 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '@assets/scss/home.module.scss'
 import logo2 from '@assets/images/logo-black.svg'
 import flagVN from '@assets/images/vietnam.png'
 import flagUK from '@assets/images/UK.png'
+import { useTranslation } from 'react-i18next'
 
 const menu = [
     {
@@ -63,17 +64,31 @@ const menu = [
     },
     {
         title: 'Tiếng anh',
-        path: '/',
-        icon: flagVN
+        path: '#',
+        icon: flagUK,
+        language: 'en' as const
     },
     {
         title: 'Tiếng việt',
-        path: '/',
-        icon: flagUK
+        path: '#',
+        icon: flagVN,
+        language: 'vi' as const
     },
 ]
 const MenuMobile = () => {
     const [open, setOpen] = useState(false)
+    const { i18n } = useTranslation()
+
+    const handleLangItemClick = (lang: 'en' | 'vi') => {
+        i18n.changeLanguage(lang)
+    }
+
+    // ** Change html `lang` attribute when changing locale
+    useEffect(() => {
+        document.documentElement.setAttribute('lang', i18n.language)
+    }, [i18n.language])
+
+
     return (
         <div className={`${styles.mobile_menu} mobile-menu xl:hidden relative mt-10`}>
 
@@ -113,7 +128,14 @@ const MenuMobile = () => {
                                 </div>
                             </div>
                         }
-                        return <Link onClick={() => setOpen(!open)} key={it.title} href={it.path} className={`${index != menu.length - 1 ? 'border-b' : ''} flex font-avo_bold  items-center px-5   gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
+                        return <Link onClick={() => {
+                            if (it.language) {
+                                console.log('134');
+                                
+                                handleLangItemClick(it.language)
+                            }
+                            setOpen(!open)
+                        }} key={it.title} href={it.path} className={`${index != menu.length - 1 ? 'border-b' : ''} flex font-avo_bold  items-center px-5   gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
                             {it.icon && <Image style={{ width: 20, height: 20 }} alt='' src={it.icon} />}  {it.title}
                         </Link>
                     })}

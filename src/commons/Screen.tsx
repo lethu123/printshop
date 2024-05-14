@@ -28,7 +28,7 @@ const Screen = ({ _className, children }: { children: React.ReactNode; _classNam
         </div>
       </div> */}
 
-      <Script id='main-script'>
+      {/* <Script id='main-script'>
         {`
         let body = document.querySelector('body');
         document.querySelector('#dark-mode').addEventListener('click', () => {
@@ -38,7 +38,7 @@ const Screen = ({ _className, children }: { children: React.ReactNode; _classNam
           body.classList.add('light-mode');
         }); 
         `}
-      </Script>
+      </Script> */}
     </main>
   )
 }

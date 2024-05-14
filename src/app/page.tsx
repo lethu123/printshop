@@ -22,6 +22,17 @@ import banner from '@assets/images/bannerx1.png';
 import banner2 from '@assets/images/bannerx2.png';
 import banner3 from '@assets/images/bannerx3.png';
 import Container from "@srccommons/Container"; 
+import '../../i18n'
+// import { GetStaticProps } from "next";
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+// or getServerSideProps: GetServerSideProps<Props> = async ({ locale })
+// export const getStaticProps: GetStaticProps = async ({
+//   locale,
+// }) => ({
+//   props: {
+//     ...(await serverSideTranslations(locale ?? 'vi', [ ])),
+//   },
+// })
 
 export default function Home() { 
   return (
