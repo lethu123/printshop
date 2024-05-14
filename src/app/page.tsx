@@ -4,6 +4,8 @@ import HeaderComponent from "@components/home/HeaderComponent";
 import styles from '@assets/scss/home.module.scss'
 import Image from "next/image";
 import icon30 from '@assets/images/30-01.svg'
+import icon302 from '@assets/images/30-01-en.svg'
+
 import certificate1 from '@assets/images/c1.jpg'
 import certificate2 from '@assets/images/c2.jpg'
 import certificate3 from '@assets/images/c3.jpg'
@@ -21,21 +23,22 @@ import Slider from "react-slick";
 import banner from '@assets/images/bannerx1.png';
 import banner2 from '@assets/images/bannerx2.png';
 import banner3 from '@assets/images/bannerx3.png';
+import banner4 from '@assets/images/bannerx4.jpg';
+import banner5 from '@assets/images/bannerx5.jpg';
+import banner6 from '@assets/images/bannerx6.jpg';
+import banner7 from '@assets/images/bannerx7.jpg';
+import banner8 from '@assets/images/bannerx8.jpg';
+import banner9 from '@assets/images/bannerx9.jpg';
+import banner10 from '@assets/images/bannerx10.jpg';
+
 import Container from "@srccommons/Container";
 import '../../i18n'
 import Translations from "@srccommons/Translations";
-// import { GetStaticProps } from "next";
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-// or getServerSideProps: GetServerSideProps<Props> = async ({ locale })
-// export const getStaticProps: GetStaticProps = async ({
-//   locale,
-// }) => ({
-//   props: {
-//     ...(await serverSideTranslations(locale ?? 'vi', [ ])),
-//   },
-// })
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
   return (
     <Screen _className="home-page relative ">
       <HeaderComponent />
@@ -49,7 +52,7 @@ export default function Home() {
         <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto 3xl:mx-auto max-w-screen-2xl lg:ms-auto xl:mr-0">
           <div className="hidden md:flex items-center flex-wrap gap-6">
             <div className="w-[150px] lg:w-[210px]">
-              <Image alt='' className="w-full" src={icon30} />
+              <Image alt='' className="w-full" src={lang === 'en' ? icon302 : icon30} />
             </div>
             <div className="w-full md:mt-0 md:w-auto">
               <h1 className="text-[24px] text-white font-avo_bold"><Translations text="THÀNH LẬP CÔNG TY" /></h1>
@@ -59,7 +62,7 @@ export default function Home() {
           <div className="md:hidden flex justify-center flex-wrap gap-6">
             <div className="flex flex-col items-center justify-center">
               <div className="w-[150px] lg:w-[210px]">
-                <Image alt='' className="w-full" src={icon30} />
+                <Image alt='' className="w-full" src={lang === 'en' ? icon302 : icon30} />
               </div>
               <h1 className="text-[24px] text-white"><Translations text="THÀNH LẬP CÔNG TY" /></h1>
               <h1 className="text-[24px] leading-7 text-white  ">1998 - 2028</h1>
@@ -129,6 +132,40 @@ export default function Home() {
                   <Image alt="" src={banner3} className='w-full  ' />
 
                 </div>
+                <div className={`${styles.image_hover} rounded`}>
+                  <Image alt="" src={banner4} className='w-full' />
+
+                </div>
+
+
+                <div className={`${styles.image_hover} rounded`}>
+                  <Image alt="" src={banner5} className='w-full  ' />
+
+                </div>
+
+                <div className={`${styles.image_hover} rounded`}>
+                  <Image alt="" src={banner6} className='w-full  ' />
+
+                </div>
+                <div className={`${styles.image_hover} rounded`}>
+                  <Image alt="" src={banner7} className='w-full' />
+
+                </div>
+
+
+                <div className={`${styles.image_hover} rounded`}>
+                  <Image alt="" src={banner8} className='w-full  ' />
+
+                </div>
+
+                <div className={`${styles.image_hover} rounded`}>
+                  <Image alt="" src={banner9} className='w-full  ' />
+
+                </div>
+                <div className={`${styles.image_hover} rounded`}>
+                  <Image alt="" src={banner10} className='w-full  ' />
+
+                </div>
 
               </Slider>
               {/* <Image alt="" src={bannerIntro} style={{ width: "100%" }} /> */}
@@ -151,7 +188,9 @@ export default function Home() {
 
             <div className="flex items-center justify-center flex-col">
               <div className="inline-block pb-[50px]">
-                <h1 className="text-center   text-2xl md:text-3xl lg:text-[30.48px] text-white">CHỨNG NHẬN / BẰNG KHEN</h1>
+                <h1 className="text-center   text-2xl md:text-3xl lg:text-[30.48px] text-white uppercase">
+                  <Translations text="Chứng nhận/ Bằng khen" />
+                </h1>
               </div>
             </div>
 

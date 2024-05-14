@@ -17,7 +17,12 @@ import icRight from "@assets/images/arrow_right.svg";
 import icon1 from '@assets/images/ic_banner1.svg'
 import icon2 from '@assets/images/ic_banner2.svg'
 import icon3 from '@assets/images/ic_banner3.svg'
+import icon4 from '@assets/images/ic_banner1_en.svg'
+import icon5 from '@assets/images/ic_banner2_en.svg'
+import icon6 from '@assets/images/ic_banner3_en.svg'
+
 import Translations from "@srccommons/Translations";
+import { useTranslation } from "react-i18next";
 
 function SampleNextArrow(props: any) {
     const { className, style, onClick } = props;
@@ -47,6 +52,8 @@ function SamplePrevArrow(props: any) {
 
 
 const BannerTemplate = ({ slide }: { slide: string }) => {
+    const { i18n } = useTranslation();
+    const lang = i18n.language;
     return <div className="relative w-full">
         <div className={`${slide} h-[300px] md:h-[500px] lg:h-lvh rounded`}>
             {/* <Image alt="" src={banner} className='w-full h-full' /> */}
@@ -55,13 +62,13 @@ const BannerTemplate = ({ slide }: { slide: string }) => {
             <Container>
                 <div className="md:justify-center md:items-center gap-1 md:gap-5 lg:gap-10 md:pb-8 flex-col md:flex-row flex">
                     <div className='z-10  md:grow'>
-                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon1} alt='' />
+                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={lang === 'en' ? icon4 : icon1} alt='' />
                     </div>
                     <div className='z-10  md:grow'>
-                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon2} alt='' />
+                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={lang === 'en' ? icon5 : icon2} alt='' />
                     </div>
                     <div className='z-10  md:grow'>
-                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={icon3} alt='' />
+                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={lang === 'en' ? icon6 : icon3} alt='' />
                     </div>
                 </div>
             </Container>

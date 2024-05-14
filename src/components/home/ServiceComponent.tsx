@@ -30,7 +30,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}>
-                            <p className="text-white p-3 text-base xl:text-[21.42px]">THIẾT KẾ <br /> ẤN PHẨM</p>
+                            <p className="text-white p-3 text-base xl:text-[21.42px] uppercase"> <Translations text='Thiết kế' /> <br /> <Translations text='Ấn Phẩm' /> </p>
                             <div className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full" style={{ background: '#FAB674' }} ></div>
                         </div>
 
@@ -42,7 +42,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-5  md:col-span-4 lg:col-span-2 order-0 md:order-none">
                         <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
-                            <p className="text-white w-full  ml-auto p-3 text-right text-base xl:text-[21.42px]">THIẾT KẾ - TẠO MẪU <br /> QUẦY KỆ, TỦ TRƯNG BÀY   SẢN PHẨM (POSM)</p>
+                            <p className="text-white w-full  ml-auto p-3 text-right text-base xl:text-[21.42px] uppercase"><Translations text='THIẾT KẾ - TẠO MẪU' /> <br /> <Translations text='QUẦY KỆ, TỦ TRƯNG BÀY   SẢN PHẨM (POSM)' /></p>
                             <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
                         </div>
                     </div> <div className="col-span-5 md:col-span-4 lg:col-span-2">
@@ -62,7 +62,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
                         <div className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}>
-                            <p className="text-white p-3 items-end mt-auto text-base xl:text-[21.42px]">THIẾT KẾ <br /> TẠO MẪU BAO BÌ, HỘP</p>
+                            <p className="text-white p-3 items-end mt-auto text-base xl:text-[21.42px] uppercase"> <Translations text='Thiết kế' /> <br /> <Translations text='TẠO MẪU BAO BÌ, HỘP' /> </p>
                             <div className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const CategoryComponent = () => {
                             <Image className="w-full h-full  object-cover" alt="" src={service5} />
                         </div>
                         <div className={`absolute -bottom-20 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-                            <button onClick={() => router.push('/services/banner', { scroll: false })} className={`follow_me uppercase text-[22px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Xem thêm
+                            <button onClick={() => router.push('/services/banner', { scroll: false })} className={`follow_me uppercase text-[22px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}> <Translations text='Xem thêm'/>
                                 <div></div>
                             </button>
                         </div>
