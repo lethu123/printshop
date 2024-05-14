@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang='vi'>
+    <html lang='en'>
       <body className="light-mode relative" >{children}</body>
     </html>
   );

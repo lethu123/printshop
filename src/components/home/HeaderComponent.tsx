@@ -19,7 +19,7 @@ const HeaderComponent = () => {
 
     // ** Change html `lang` attribute when changing locale
     useEffect(() => {
-        document.documentElement.setAttribute('lang', i18n.language)
+        document.documentElement.setAttribute('lang', i18n.language) 
     }, [i18n.language])
 
     return (
@@ -29,7 +29,7 @@ const HeaderComponent = () => {
                     <div className='items-center hidden md:flex'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={location} />
                         <span className="text-white ml-2 text-[16.5px]">
-                            <Translations text='test' />
+                            <Translations text='66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh' />
                         </span>
                     </div>
                     <div className='flex items-center'>
@@ -37,12 +37,12 @@ const HeaderComponent = () => {
                         <span className="text-white ml-2 text-[16.5px]">(+84) 28 3844 1111</span>
                     </div>
                     <div className='flex items-center flex-wrap'>
-                        <div onClick={() => handleLangItemClick('vi')} className='cursor-pointer flex items-center mr-3'> <Image style={{ width: 20, height: 20 }} alt='' src={flagVN} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]">TIẾNG VIỆT</span> </div>
-                        <div onClick={() => handleLangItemClick('en')} className='cursor-pointer flex items-center'> <Image style={{ width: 20, height: 20 }} alt='' src={flagUK} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]">TIẾNG ANH</span> </div>
+                        <div onClick={() => handleLangItemClick('vi')} className='cursor-pointer flex items-center mr-3'> <Image style={{ width: 20, height: 20 }} alt='' src={flagVN} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]"> <Translations text='TIẾNG VIỆT' /></span> </div>
+                        <div onClick={() => handleLangItemClick('en')} className='cursor-pointer flex items-center'> <Image style={{ width: 20, height: 20 }} alt='' src={flagUK} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]"><Translations text='TIẾNG ANH' /></span> </div>
                     </div>
                     <div className=' md:hidden flex'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={location} />
-                        <span className="text-white ml-2 text-[15px] sm:text-[16.5px]"> <Translations text='test' /></span>
+                        <span className="text-white ml-2 text-[15px] sm:text-[16.5px]"> <Translations text='66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh' /></span>
                     </div>
                 </div>
             </Container>

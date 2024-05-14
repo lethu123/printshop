@@ -10,6 +10,7 @@ import service6 from '@assets/images/sv1.jpg';
 import '@assets/scss/home.scss';
 import { useRouter } from 'next/navigation'
 import Container from '@srccommons/Container';
+import Translations from '@srccommons/Translations';
 
 const CategoryComponent = () => {
     const router = useRouter()
@@ -17,7 +18,9 @@ const CategoryComponent = () => {
         <div className='max-w-screen-2xl mx-auto'>
             <div className="px-4 xl:px-0  my-[8rem]">
                 <Container>
-                    <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>DỊCH VỤ</h1>
+                    <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>
+                        <Translations text='Dịch vụ' />
+                    </h1>
                 </Container>
                 <div className="grid grid-cols-10 md:grid-cols-12 lg:grid-cols-10 items-stretch gap-1 mt-5 order-first">
                     <div className="col-span-5 md:col-span-4 lg:col-span-2">
@@ -39,7 +42,7 @@ const CategoryComponent = () => {
                     </div>
                     <div className="col-span-5  md:col-span-4 lg:col-span-2 order-0 md:order-none">
                         <div className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}>
-                            <p className="text-white w-full  ml-auto p-3 text-right text-base xl:text-[21.42px]">THIẾT KẾ - TẠO MẪU <br/> QUẦY KỆ, TỦ TRƯNG BÀY   SẢN PHẨM (POSM)</p>
+                            <p className="text-white w-full  ml-auto p-3 text-right text-base xl:text-[21.42px]">THIẾT KẾ - TẠO MẪU <br /> QUẦY KỆ, TỦ TRƯNG BÀY   SẢN PHẨM (POSM)</p>
                             <div className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]" style={{ borderColor: '#FAB674' }}   ></div>
                         </div>
                     </div> <div className="col-span-5 md:col-span-4 lg:col-span-2">

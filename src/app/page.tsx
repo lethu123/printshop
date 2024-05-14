@@ -21,8 +21,9 @@ import Slider from "react-slick";
 import banner from '@assets/images/bannerx1.png';
 import banner2 from '@assets/images/bannerx2.png';
 import banner3 from '@assets/images/bannerx3.png';
-import Container from "@srccommons/Container"; 
+import Container from "@srccommons/Container";
 import '../../i18n'
+import Translations from "@srccommons/Translations";
 // import { GetStaticProps } from "next";
 // import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // or getServerSideProps: GetServerSideProps<Props> = async ({ locale })
@@ -34,7 +35,7 @@ import '../../i18n'
 //   },
 // })
 
-export default function Home() { 
+export default function Home() {
   return (
     <Screen _className="home-page relative ">
       <HeaderComponent />
@@ -51,7 +52,7 @@ export default function Home() {
               <Image alt='' className="w-full" src={icon30} />
             </div>
             <div className="w-full md:mt-0 md:w-auto">
-              <h1 className="text-[24px] text-white font-avo_bold">THÀNH LẬP CÔNG TY</h1>
+              <h1 className="text-[24px] text-white font-avo_bold"><Translations text="THÀNH LẬP CÔNG TY" /></h1>
               <h1 className="text-[24px] leading-7 text-white font-avo_bold ">1998 - 2028</h1>
             </div>
           </div>
@@ -60,7 +61,7 @@ export default function Home() {
               <div className="w-[150px] lg:w-[210px]">
                 <Image alt='' className="w-full" src={icon30} />
               </div>
-              <h1 className="text-[24px] text-white">THÀNH LẬP CÔNG TY</h1>
+              <h1 className="text-[24px] text-white"><Translations text="THÀNH LẬP CÔNG TY" /></h1>
               <h1 className="text-[24px] leading-7 text-white  ">1998 - 2028</h1>
             </div>
           </div>
@@ -68,31 +69,37 @@ export default function Home() {
             <div className="col-span-6 xl:col-span-3">
               <p className="text-[18px]">
                 <span className="font-avo_bold font-medium">4-1998:</span>
-                <span className="text-white "> Thành lập Trung tâm Dịch vụ Quảng cáo và tổ chức Hội chợ: chuyên cung cấp các dịch vụ thiết kế, in ấn, quảng cáo ngoài trời, tổ chức hội chợ, sự kiện, thực hiện các dịch truyền thông, sản xuất TVCs
+                <span className="text-white ">  <Translations text="30year-line1" />
                 </span>
               </p>
               <p className="text-[18px]">
                 <span className="font-avo_bold font-medium">4-2005:</span>
                 <br />
-                <span className="text-white ">- Chuyển đổi Trung tâm thành Công ty, thành lập Công ty TNHH Quảng cáo và Thương Mại Dương Phong chuyên cung cấp các dịch vụ thiết kế, in ấn, quảng cáo ngoài trời, sản xuất thiết bị quảng cáo</span>
+                <span className="text-white ">
+                  <Translations text="30year-line2.1" />
+                </span>
                 <br />
                 <span className="text-white ">
-                  - Xây dựng xưởng cơ khí chuyên xây lắp dàn dựng bảng biển quảng cáo tấm lớn, sản xuất thiết bị quảng cáo
+                  <Translations text="30year-line2.2" />
                 </span>
               </p>
               <p className="text-[18px]">
                 <span className="font-avo_bold font-medium">2008: </span>
                 <span className="text-white ">
-                  Xây dựng nhà in Dương Phong với quy mô nhỏ 700m2 chuyên in ấn phẩm quảng cáo, lịch, sách
+                  <Translations text="30year-line3" />
                 </span>
               </p>
               <p className="text-[18px]">
                 <span className="font-avo_bold font-medium">2012:</span>
-                <span className="text-white"> Nâng cấp nhà in Dương Phong lên quy mô 6.000m2, bổ sung thêm các máy móc phục vụ ngành sản xuất bao bì giấy, thùng hộp carton</span>
+                <span className="text-white"> <Translations text="30year-line4" /></span>
               </p>
               <p className="text-[18px]">
                 <span className="font-avo_bold font-medium">2012-2024:</span>
-                <span className="text-white "> Liên tục nâng cấp nhà in, xưởng sản xuất thiết bị quảng cáo, trang bị máy móc hiện đại, hoàn thiện quy trình sản xuất đảm bảo tự động hoá chiếm 70% các công đoạn.</span>
+                <span className="text-white "><Translations text="30year-line5" /></span>
+              </p>
+              <p className="text-[18px]">
+                <span className="font-avo_bold font-medium"><Translations text="2024-2028" />:</span>
+                <span className="text-white "><Translations text="30year-line6" /></span>
               </p>
             </div>
             <div className=" lg:col-start-2 col-span-6 lg:col-span-4  xl:col-span-3">

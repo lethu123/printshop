@@ -4,6 +4,7 @@ import Container from "@srccommons/Container";
 import Screen from "@srccommons/Screen";
 import Image from "next/image";
 import React, { useEffect } from "react";
+import '../../../../i18n'
 import styles from "@assets/scss/home.module.scss";
 import service1 from "@assets/images/p1.png";
 import service2 from "@assets/images/p2.png";
@@ -44,6 +45,7 @@ import cc16 from "@assets/images/cc16.png";
 import { useParams } from "next/navigation";
 import FooterComponent from "@srccomponents/home/FooterComponent";
 import BannerSingle from "@srccommons/BannerSingle";
+import Translations from "@srccommons/Translations";
 
 const ProductDetail = () => {
   const params = useParams<{ slug: string }>();
@@ -66,8 +68,8 @@ const ProductDetail = () => {
       <BannerSingle classImage={'bg-banner-product'} />
 
       <Container>
-        <h1 className="border-l-4 pl-5 border-[#FF9D00] text_yellow text-[40px] md:text-[52.14px] mt-10">
-          SẢN PHẨM{" "}
+        <h1 className="border-l-4 uppercase pl-5 border-[#FF9D00] text_yellow text-[40px] md:text-[52.14px] mt-10">
+          <Translations text="Sản phẩm" />{" "}
         </h1>
       </Container>
 
@@ -75,8 +77,8 @@ const ProductDetail = () => {
       <div className="mt-[6rem]">
         <div className="bg-banner py-8">
           <Container>
-            <h3 className="text-center text-white text-[30px] md:text-[35px]">
-              ẤN PHẨM
+            <h3 className="text-center uppercase text-white text-[30px] md:text-[35px]">
+              <Translations text="Ấn Phẩm" />
             </h3>
           </Container>
         </div>
@@ -167,8 +169,8 @@ const ProductDetail = () => {
       <div className="mt-[6rem]">
         <div className="bg-banner py-8">
           <Container>
-            <h3 className="text-center text-white  text-[30px] md:text-[35px]">
-              BAO BÌ – HỘP GIẤY{" "}
+            <h3 className="text-center uppercase text-white  text-[30px] md:text-[35px]">
+              <Translations text="Bao bì - hộp giấy" /> {" "}
             </h3>
           </Container>
         </div>
@@ -258,8 +260,8 @@ const ProductDetail = () => {
       <div className="mt-[6rem] mb-10">
         <div className="bg-banner py-8">
           <Container>
-            <h3 className="text-center text-white text-[30px] md:text-[35px]">
-              THIẾT BỊ QUẢNG CÁO
+            <h3 className="text-center uppercase text-white text-[30px] md:text-[35px]">
+              <Translations text="Thiết bị quảng cáo" />
             </h3>
           </Container>
         </div>

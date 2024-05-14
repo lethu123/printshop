@@ -8,6 +8,7 @@ import logo2 from '@assets/images/logo-black.svg'
 import flagVN from '@assets/images/vietnam.png'
 import flagUK from '@assets/images/UK.png'
 import { useTranslation } from 'react-i18next'
+import Translations from './Translations'
 
 const menu = [
     {
@@ -123,20 +124,18 @@ const MenuMobile = () => {
                                 <h3 className="px-5 text-nowrap font-avo_bold p-3 font-semibold text-gray-900 ">{it.title}</h3>
                                 <div className='ms-7'>
                                     {it.subMenu.map((i, idx) => (<Link onClick={() => setOpen(!open)} key={i.title} href={i.path} className={`${idx != it.subMenu.length - 1 ? 'border-b' : ''} flex  items-center px-5   gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
-                                        {i.title}
+                                        <Translations text={i.title} />
                                     </Link>))}
                                 </div>
                             </div>
                         }
                         return <Link onClick={() => {
                             if (it.language) {
-                                console.log('134');
-                                
                                 handleLangItemClick(it.language)
                             }
                             setOpen(!open)
                         }} key={it.title} href={it.path} className={`${index != menu.length - 1 ? 'border-b' : ''} flex font-avo_bold  items-center px-5   gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
-                            {it.icon && <Image style={{ width: 20, height: 20 }} alt='' src={it.icon} />}  {it.title}
+                            {it.icon && <Image style={{ width: 20, height: 20 }} alt='' src={it.icon} />} <Translations text={it.title} />
                         </Link>
                     })}
                 </div>

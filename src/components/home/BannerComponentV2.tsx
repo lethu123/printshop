@@ -17,6 +17,7 @@ import icRight from "@assets/images/arrow_right.svg";
 import icon1 from '@assets/images/ic_banner1.svg'
 import icon2 from '@assets/images/ic_banner2.svg'
 import icon3 from '@assets/images/ic_banner3.svg'
+import Translations from "@srccommons/Translations";
 
 function SampleNextArrow(props: any) {
     const { className, style, onClick } = props;
@@ -100,11 +101,11 @@ const BannerComponentV2 = () => {
                                 href={"/"}
                                 className={`${styles.menu_single} ${styles.active} menu_single font-avo_bold text-[#6D6E71] text-[18px] py-3`}
                             >
-                                Trang chủ
+                                <Translations text="Trang chủ" />
                             </Link>
                             <div className={`${styles.submenu} relative`}>
                                 <h3 className={`font-avo_bold  text-[#6D6E71] text-[18px] cursor-pointer py-3`}>
-                                    Sản phẩm{" "}
+                                    <Translations text="Sản phẩm" />  {" "}
                                     <i
                                         className="fa fa-angle-down"
                                         style={{ color: "#6D6E71" }}
@@ -119,19 +120,19 @@ const BannerComponentV2 = () => {
                                                 href="/products/an-pham"
                                                 className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
                                             >
-                                                Ấn Phẩm
+                                                <Translations text="Ấn Phẩm" />
                                             </Link>
                                             <Link
                                                 href="/products/bao-bi-hop-giay"
                                                 className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
                                             >
-                                                Bao bì - hộp giấy
+                                                <Translations text="Bao bì - hộp giấy" />
                                             </Link>
                                             <Link
                                                 href="/products/thiet-bi-quang-cao"
                                                 className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
                                             >
-                                                Thiết bị quảng cáo
+                                                <Translations text="Thiết bị quảng cáo" />
                                             </Link>
                                         </div>
                                     </div>
@@ -139,7 +140,7 @@ const BannerComponentV2 = () => {
                             </div>
                             <div className={`${styles.submenu} relative`}>
                                 <h3 className="text-[#6D6E71] font-avo_bold text-[18px] cursor-pointer py-3">
-                                    Dịch vụ{" "}
+                                    <Translations text="Dịch vụ" /> {" "}
                                     <i
                                         className="fa fa-angle-down"
                                         style={{ color: "#6D6E71" }}
@@ -154,19 +155,19 @@ const BannerComponentV2 = () => {
                                                 href="/services/thiet-ke-an-pham"
                                                 className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
                                             >
-                                                Thiết kế ấn phẩm
+                                                <Translations text="Thiết kế ấn phẩm" />
                                             </Link>
                                             <a
                                                 href="/services/thiet-ke-tao-mau-bao-bi"
                                                 className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
                                             >
-                                                Thiết kế - tạo mẫu bao bì
+                                                <Translations text="Thiết kế - tạo mẫu bao bì" />
                                             </a>
                                             <a
                                                 href="/services/thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham"
                                                 className="flex font-avo_bold items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
                                             >
-                                                Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm
+                                                <Translations text="Thiết kế - tạo mẫu quầy kệ, tủ trưng bày sản phẩm" />
                                             </a>
                                         </div>
                                     </div>
@@ -180,7 +181,7 @@ const BannerComponentV2 = () => {
                                     href={"/about-us"}
                                     className={`${styles.menu_single} font-avo_bold text-[#6D6E71] text-[18px] py-3`}
                                 >
-                                    Về chúng tôi
+                                    <Translations text="Về chúng tôi" />
                                 </Link>
                             </div>
                             <div>
@@ -188,7 +189,7 @@ const BannerComponentV2 = () => {
                                     href={"/"}
                                     className={`${styles.menu_single} font-avo_bold text-[#6D6E71] text-[18px] py-3`}
                                 >
-                                    Tin tức
+                                    <Translations text="Tin tức" />
                                 </Link>
                             </div>
                             <div>
@@ -196,7 +197,7 @@ const BannerComponentV2 = () => {
                                     href={"/contact"}
                                     className={`${styles.menu_single} font-avo_bold text-[#6D6E71] text-[18px] py-3`}
                                 >
-                                    Liên hệ
+                                    <Translations text="Liên hệ" />
                                 </Link>
                             </div>
                         </div>

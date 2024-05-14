@@ -11,7 +11,8 @@ import sp from '@assets/images/sp1.1.jpg';
 import sp2 from '@assets/images/sp2.jpg';
 import sp3 from '@assets/images/sp.jpg';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation' 
+import { useRouter } from 'next/navigation'
+import Translations from '@srccommons/Translations';
 
 
 function SampleNextArrow(props: any) {
@@ -51,7 +52,9 @@ const ProductComponent = () => {
   return (
     <div className="relative product  max-w-screen-2xl mx-auto">
       <div className="w-5/6 mx-auto">
-        <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>sản phẩm</h1>
+        <h1 className={`${styles.text_custom_yellow} text-[2.5rem] lg:text-[52.14px] uppercase ps-10`} style={{ borderLeft: '0.5rem solid #F77E0B' }}>
+          <Translations text='Sản phẩm' />
+        </h1>
       </div>
       <Slider
         className='center'
@@ -92,42 +95,44 @@ const ProductComponent = () => {
       >
         <div className='md:pt-3'>
           {/* <HoverImage classImage='' /> */}
-          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] md:hidden uppercase px-5`}>ấn phẩm</h3>
+          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] md:hidden uppercase px-5`}>
+            <Translations text='Ấn Phẩm' />
+          </h3>
           <div className={`${styles.image_hover} rounded`}>
-            <Image alt=""  src={sp} className='h-full object-cover' />
+            <Image alt="" src={sp} className='h-full object-cover' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
-              <Link href={'#'}>Xem chi tiết</Link>
+              <Link href={'#'}><Translations text='Xem chi tiết' /></Link>
             </div>
           </div>
-          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] hidden md:block uppercase px-5 mt-5`}>ấn phẩm</h3>
+          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] hidden md:block uppercase px-5 mt-5`}> <Translations text='Ấn Phẩm' /></h3>
         </div>
         <div >
-          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 md:mb-5`}>Bao bì - hộp giấy</h3>
+          <h3 className={`${styles.text_custom_yellow} text-center text-[21.42px] uppercase px-5 md:mb-5`}><Translations text='Bao bì - hộp giấy' /> </h3>
 
           <div className={`${styles.image_hover} rounded md:mb-7`}>
-            <Image alt=""  src={sp2} className='object-cover w-full md:h-[400px] lg:h-[450px] xl:h-[560px]' />
+            <Image alt="" src={sp2} className='object-cover w-full md:h-[400px] lg:h-[450px] xl:h-[560px]' />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
-              <Link href={'#'}>Xem chi tiết</Link>
+              <Link href={'#'}><Translations text='Xem chi tiết' /></Link>
             </div>
           </div>
 
         </div>
         <div className='pt-3'>
-        <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center md:hidden uppercase px-5 `}>thiết bị quảng cáo</h3>
+          <h3 className={`${styles.text_custom_yellow} text-[21.42px] text-center md:hidden uppercase px-5 `}><Translations text='Thiết bị quảng cáo' /></h3>
           <div className={`${styles.image_hover} rounded`}>
-            <Image className='object-cover'  alt="" src={sp3}   />
+            <Image className='object-cover' alt="" src={sp3} />
             <div className={`${styles.view_detail} flex justify-center items-center`}>
-              <Link href={'#'}>Xem chi tiết</Link>
+              <Link href={'#'}><Translations text='Xem chi tiết' /></Link>
             </div>
           </div>
-          <h3 className={`${styles.text_custom_yellow} text-[21.42px] hidden md:block text-center uppercase px-5  mt-5`}>thiết bị quảng cáo</h3>
+          <h3 className={`${styles.text_custom_yellow} text-[21.42px] hidden md:block text-center uppercase px-5  mt-5`}><Translations text='Thiết bị quảng cáo' /></h3>
 
         </div>
 
 
       </Slider>
       <div className={`absolute -bottom-12 right-[50%]`} style={{ transform: 'translateX(50%)' }} >
-        <button onClick={() => router.push('/products/banner', { scroll: false })} className={`follow_me uppercase text-[22px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}>Xem thêm
+        <button onClick={() => router.push('/products/banner', { scroll: false })} className={`follow_me uppercase text-[22px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}> <Translations text='Xem thêm' />
           <div></div>
         </button>
       </div>

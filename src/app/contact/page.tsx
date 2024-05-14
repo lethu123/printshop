@@ -9,6 +9,7 @@ import logoBlack from '@assets/images/logo-black.svg'
 import phone2 from '@assets/images/phone1.svg' 
 import { IconEmail, IconLocation, IconPhone } from '@srccommons/icons'
 import Image from 'next/image'
+import '../../../i18n'
 
 
 const ContactUs = () => {
@@ -20,13 +21,13 @@ const ContactUs = () => {
                 <BannerSingle classImage={'bg-banner-contact'} />
                 <section>
                     <Container>
-                        <h1 className='border-l-4 pl-5 border-gray-800 text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 '>GỬI LỜI NHẮN</h1>
+                        {/* <h1 className='border-l-4 pl-5 border-gray-800 text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 '>GỬI LỜI NHẮN</h1>
                         <div className='ps-3 pt-5'>
                             <p className='mb-3 font-avo_bold'>Nếu bạn muốn đặt hàng với yêu cầu đặc biệt, góp ý, nhắn nhủ hay đơn giản là một ý nghĩ bất chợt tới chúng tôi, xin đừng ngần ngại. </p>
                             <p className='font-avo_bold'>Mọi lời nhắn của bạn đều rất có giá trị với chúng tôi. Và ngược lại, chúng tôi sẽ cố gắng phản hồi nhanh nhất có thể vì không điều gì tệ hơn việc để khách quý của mình phải chờ đợi quá lâu.</p>
-                        </div>
+                        </div> */}
                         <div className='md:w-4/5 lg:w-3/5 mx-auto '>
-                            <form className='relative  pt-10 pb-[200px]'>
+                            {/* <form className='relative  pt-10 pb-[200px]'>
                                 <div className='form-group'>
                                     <input className='placeholder:text-black w-full' placeholder='Tên*' />
                                 </div>
@@ -76,8 +77,8 @@ const ContactUs = () => {
                                         <div></div>
                                     </button>
                                 </div>
-                            </form>
-                            <div className='w-full my-10 h-[1px] border'></div>
+                            </form> */}
+                            <div className='w-full my-10 h-[1px] '></div>
                             <div className="pb-6 lg:pb-[6rem]">
                                 <div className="flex gap-5 flex-wrap items-start justify-between">
                                     <div className="">
@@ -126,7 +127,7 @@ const ContactUs = () => {
                             </div>
                         </div>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.521263707445!2d106.54401639357908!3d10.867770499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b93635e7d83%3A0x7784b185f7215232!2zTmjDoCBpbiBExrDGoW5nIFBob25n!5e0!3m2!1svi!2s!4v1709973614919!5m2!1svi!2s" className='w-full max-w-full pb-10' height="400" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.521263707445!2d106.54401639357908!3d10.867770499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b93635e7d83%3A0x7784b185f7215232!2zTmjDoCBpbiBExrDGoW5nIFBob25n!5e0!3m2!1svi!2s!4v1709973614919!5m2!1svi!2s" className='w-full max-w-full pb-10 h-lvh'  style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
                     </Container>
                 </section>

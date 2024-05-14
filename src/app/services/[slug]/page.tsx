@@ -24,12 +24,14 @@ import service14 from '@assets/images/sv14.png';
 import service15 from '@assets/images/sv15.png';
 import service16 from '@assets/images/sp.jpg';
 import service17 from '@assets/images/sv17.png';
-import service18 from '@assets/images/sp.jpg'; 
+import service18 from '@assets/images/sp.jpg';
 
 import { useParams } from 'next/navigation'
 import FooterComponent from '@srccomponents/home/FooterComponent'
 import BannerSingle from '@srccommons/BannerSingle'
+import Translations from '@srccommons/Translations'
 
+import '../../../../i18n'
 const ServiceDetail = () => {
   const params = useParams<{ slug: string }>();
   useEffect(() => {
@@ -49,14 +51,16 @@ const ServiceDetail = () => {
       <BannerSingle classImage={'bg-banner-service'} />
 
       <Container>
-        <h1 className='border-l-4 pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10'>Dịch vụ </h1>
+        <h1 className='border-l-4 uppercase pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10'>
+          <Translations text='Dịch vụ' /> </h1>
       </Container>
 
       <div id='thiet-ke-an-pham' ></div>
       <div className='mt-[6rem]'   >
         <div className='bg-banner py-8 '>
           <Container>
-            <h3 className='text-center text-white text-[30px] md:text-[35px]'>THIẾT KẾ ẤN PHẨM </h3>
+            <h3 className='text-center uppercase text-white text-[30px] md:text-[35px]'>
+              <Translations text='Thiết kế ấn phẩm' /> </h3>
           </Container>
         </div>
 
@@ -111,7 +115,9 @@ const ServiceDetail = () => {
       <div className='mt-[6rem]' >
         <div className='bg-banner py-8'>
           <Container>
-            <h3 className='text-center text-white text-[30px] md:text-[35px]'>THIẾT KẾ TẠO MẪU BAO BÌ, HỘP</h3>
+            <h3 className='text-center uppercase text-white text-[30px] md:text-[35px]'>
+              <Translations text='Thiết kế - tạo mẫu bao bì' />
+            </h3>
           </Container>
         </div>
 
