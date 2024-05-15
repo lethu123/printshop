@@ -1,37 +1,37 @@
-'use client'
+"use client";
 
-import Container from '@srccommons/Container'
-import Screen from '@srccommons/Screen'
-import Image from 'next/image'
-import React, { useEffect } from 'react'
-import styles from '@assets/scss/home.module.scss'
-import service1 from '@assets/images/sv1.png';
-import service2 from '@assets/images/sv2.png';
-import service3 from '@assets/images/sv3.png';
-import service4 from '@assets/images/p4.png';
-import service5 from '@assets/images/sv5.png';
-import service6 from '@assets/images/sv6.png';
+import Container from "@srccommons/Container";
+import Screen from "@srccommons/Screen";
+import Image from "next/image";
+import React, { useEffect } from "react";
+import styles from "@assets/scss/home.module.scss";
+import service1 from "@assets/images/sv1.png";
+import service2 from "@assets/images/sv2.png";
+import service3 from "@assets/images/sv3.png";
+import service4 from "@assets/images/p4.png";
+import service5 from "@assets/images/sv5.png";
+import service6 from "@assets/images/sv6.png";
 
-import service7 from '@assets/images/sv7.png';
-import service8 from '@assets/images/sv8.png';
-import service9 from '@assets/images/sv9.png';
-import service10 from '@assets/images/sv10.png';
-import service11 from '@assets/images/sv11.png';
-import service12 from '@assets/images/sv12.png';
+import service7 from "@assets/images/sv7.png";
+import service8 from "@assets/images/sv8.png";
+import service9 from "@assets/images/sv9.png";
+import service10 from "@assets/images/sv10.png";
+import service11 from "@assets/images/sv11.png";
+import service12 from "@assets/images/sv12.png";
 
-import service13 from '@assets/images/sv13.png';
-import service14 from '@assets/images/sv14.png';
-import service15 from '@assets/images/sv15.png';
-import service16 from '@assets/images/sp.jpg';
-import service17 from '@assets/images/sv17.png';
-import service18 from '@assets/images/sp.jpg';
+import service13 from "@assets/images/sv13.png";
+import service14 from "@assets/images/sv14.png";
+import service15 from "@assets/images/sv15.png";
+import service16 from "@assets/images/sp.jpg";
+import service17 from "@assets/images/sv17.png";
+import service18 from "@assets/images/sp.jpg";
 
-import { useParams } from 'next/navigation'
-import FooterComponent from '@srccomponents/home/FooterComponent'
-import BannerSingle from '@srccommons/BannerSingle'
-import Translations from '@srccommons/Translations'
+import { useParams } from "next/navigation";
+import FooterComponent from "@srccomponents/home/FooterComponent";
+import BannerSingle from "@srccommons/BannerSingle";
+import Translations from "@srccommons/Translations";
 
-import '../../../../i18n'
+import "../../../../i18n";
 const ServiceDetail = () => {
   const params = useParams<{ slug: string }>();
   useEffect(() => {
@@ -40,83 +40,28 @@ const ServiceDetail = () => {
     } else {
       const sectionToScrollTo = document.getElementById(params?.slug);
       if (sectionToScrollTo) {
-        sectionToScrollTo.scrollIntoView({ behavior: 'smooth' });
+        sectionToScrollTo.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [params?.slug]);
 
   return (
     <Screen _className="product-page relative">
-      <div id='banner'></div>
-      <BannerSingle classImage={'bg-banner-service'} />
+      <div id="banner"></div>
+      <BannerSingle classImage={"bg-banner-service"} />
 
       <Container>
-        <h1 className='text-shadown border-l-4 uppercase pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10'>
-          <Translations text='Dịch vụ' /> </h1>
+        <h1 className="border-l-4 uppercase pl-5 border-[#FF9D00] text_yellow text-[40px] uppercase  md:text-[52.14px] mt-10">
+          <Translations text="Dịch vụ" />{" "}
+        </h1>
       </Container>
 
-      <div id='thiet-ke-an-pham' ></div>
-      <div className='mt-[6rem]'   >
-        <div className='bg-banner py-8 '>
+      <div id="thiet-ke-an-pham"></div>
+      <div className="mt-[6rem]">
+        <div className="bg-banner py-8 ">
           <Container>
-            <h3 className='text-shadown text-center uppercase text-white text-[30px] md:text-[35px]'>
-              <Translations text='Thiết kế ấn phẩm' /> </h3>
-          </Container>
-        </div>
-
-        <Container>
-          <div className="grid grid-cols-12 lg:grid-cols-8 items-stretch gap-1 mt-5 order-first">
-            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
-              <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service1} />
-              </div>
-            </div>
-            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
-              <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service2} />
-              </div>
-            </div>
-            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
-              <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service3} />
-              </div>
-            </div>
-            <div className="col-span-6 sm:col-span-4 lg:col-span-2 ">
-              <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service4} />
-              </div>
-            </div>
-            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
-              <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service5} />
-              </div>
-            </div>
-            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
-              <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service6} />
-              </div>
-            </div>
-            <div className="hidden lg:block lg:col-span-2">
-              <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service1} />
-              </div>
-            </div>
-            <div className="hidden lg:block lg:col-span-2">
-              <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service3} />
-              </div>
-            </div>
-
-          </div>
-        </Container>
-      </div>
-
-      <div id='thiet-ke-tao-mau-bao-bi'   ></div>
-      <div className='mt-[6rem]' >
-        <div className='bg-banner py-8'>
-          <Container>
-            <h3 className='text-shadown text-center uppercase text-white text-[30px] md:text-[35px]'>
-              <Translations text='Thiết kế - tạo mẫu bao bì' />
+            <h3 className="text-shadown text-center uppercase text-white text-[30px] md:text-[35px]">
+              <Translations text="Thiết kế ấn phẩm" />{" "}
             </h3>
           </Container>
         </div>
@@ -125,58 +70,86 @@ const ServiceDetail = () => {
           <div className="grid grid-cols-12 lg:grid-cols-8 items-stretch gap-1 mt-5 order-first">
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service7} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service1}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service8} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service2}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service9} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service3}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2 ">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service10} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service4}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service11} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service5}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service12} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service6}
+                />
               </div>
             </div>
             <div className="hidden lg:block lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service5} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service1}
+                />
               </div>
             </div>
             <div className="hidden lg:block lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service7} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service3}
+                />
               </div>
             </div>
-
           </div>
         </Container>
       </div>
 
-      <div id='thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham' > </div>
-      <div className=' mb-10 mt-[6rem]'>
-        <div className='bg-banner py-8'>
+      <div id="thiet-ke-tao-mau-bao-bi"></div>
+      <div className="mt-[6rem]">
+        <div className="bg-banner py-8">
           <Container>
-            <h3 className='text-shadown text-center text-white text-[30px] md:text-[35px]'>
-
-              <Translations text='THIẾT KẾ - TẠO MẪU QUẦY KỆ,' /> <br />
-              <Translations text='TỦ TRƯNG BÀY SẢN PHẨM (POSM)' />
-
+            <h3 className="text-shadown text-center uppercase text-white text-[30px] md:text-[35px]">
+              <Translations text="Thiết kế - tạo mẫu bao bì" />
             </h3>
           </Container>
         </div>
@@ -185,54 +158,174 @@ const ServiceDetail = () => {
           <div className="grid grid-cols-12 lg:grid-cols-8 items-stretch gap-1 mt-5 order-first">
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service13} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service7}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service14} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service8}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service15} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service9}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2 ">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service16} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service10}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service17} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service11}
+                />
               </div>
             </div>
             <div className="col-span-6 sm:col-span-4 lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service18} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service12}
+                />
               </div>
             </div>
             <div className="hidden lg:block lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service14} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service5}
+                />
               </div>
             </div>
             <div className="hidden lg:block lg:col-span-2">
               <div className={`${styles.image_hover} aspect-[5/4]`}>
-                <Image alt="" className="w-full h-full object-cover" src={service15} />
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service7}
+                />
               </div>
             </div>
-
           </div>
         </Container>
       </div>
 
-      <div className='mt-20'>
+      <div id="thiet-ke-tao-mau-quay-ke-tu-trung-bay-san-pham"> </div>
+      <div className=" mb-10 mt-[6rem]">
+        <div className="bg-banner py-8">
+          <Container>
+            <h3 className="text-shadown text-center text-white text-[30px] md:text-[35px]">
+              <Translations text="THIẾT KẾ - TẠO MẪU QUẦY KỆ," /> <br />
+              <Translations text="TỦ TRƯNG BÀY SẢN PHẨM (POSM)" />
+            </h3>
+          </Container>
+        </div>
+
+        <Container>
+          <div className="grid grid-cols-12 lg:grid-cols-8 items-stretch gap-1 mt-5 order-first">
+            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
+              <div className={`${styles.image_hover} aspect-[5/4]`}>
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service13}
+                />
+              </div>
+            </div>
+            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
+              <div className={`${styles.image_hover} aspect-[5/4]`}>
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service14}
+                />
+              </div>
+            </div>
+            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
+              <div className={`${styles.image_hover} aspect-[5/4]`}>
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service15}
+                />
+              </div>
+            </div>
+            <div className="col-span-6 sm:col-span-4 lg:col-span-2 ">
+              <div className={`${styles.image_hover} aspect-[5/4]`}>
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service16}
+                />
+              </div>
+            </div>
+            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
+              <div className={`${styles.image_hover} aspect-[5/4]`}>
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service17}
+                />
+              </div>
+            </div>
+            <div className="col-span-6 sm:col-span-4 lg:col-span-2">
+              <div className={`${styles.image_hover} aspect-[5/4]`}>
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service18}
+                />
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-2">
+              <div className={`${styles.image_hover} aspect-[5/4]`}>
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service14}
+                />
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-2">
+              <div className={`${styles.image_hover} aspect-[5/4]`}>
+                <Image
+                  alt=""
+                  className="w-full h-full object-cover"
+                  src={service15}
+                />
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      <div className="mt-20">
         <FooterComponent />
       </div>
     </Screen>
-  )
-}
+  );
+};
 
-export default ServiceDetail
+export default ServiceDetail;
