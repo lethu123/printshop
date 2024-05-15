@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import logoBlack from "@assets/images/logo-black.svg";
 import phone2 from "@assets/images/phone1.svg";
-import { IconEmail, IconLocation, IconPhone } from "@srccommons/icons";
+import { IconEmail, IconFax, IconLocation, IconPhone } from "@srccommons/icons";
 import Image from "next/image";
 import "../../../i18n";
 import Translations from "@srccommons/Translations";
@@ -114,11 +114,14 @@ const ContactUs = () => {
 
                           <span className="text-[15px]"> 028. 38 44. 1111</span>
                         </div>
-                        <div>
+                        <div className="flex items-center custom-text-mode gap-2">
+                          <IconFax
+                            className="w-[15px] custom-icon-hidden"
+                          />
                           <span className="custom-text-mode text-[15px]">
-                            fax: 028.39971009
+                            028.39971009
                           </span>
-                        </div>
+                        </div> 
                       </div>
                       <div className="flex custom-text-mode gap-2">
                         <IconEmail

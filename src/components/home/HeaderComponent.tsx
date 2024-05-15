@@ -28,21 +28,21 @@ const HeaderComponent = () => {
                 <div className='flex lg:justify-around justify-between items-center py-[9px] flex-wrap sm:px-6' >
                     <div className='items-center hidden md:flex'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={location} />
-                        <span className="text-white ml-2 text-[16.5px]">
+                        <span className="text-white ml-2 font-semibold text-[16.5px]">
                             <Translations text='66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh' />
                         </span>
                     </div>
                     <div className='flex items-center'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={icPhone} />
-                        <span className="text-white ml-2 text-[16.5px]">(+84) 28 3844 1111</span>
+                        <span className="text-white ml-2 font-semibold text-[16.5px]">(+84) 28 3844 1111</span>
                     </div>
                     <div className='flex items-center flex-wrap'>
-                        <div onClick={() => handleLangItemClick('vi')} className='cursor-pointer flex items-center mr-3'> <Image style={{ width: 20, height: 20 }} alt='' src={flagVN} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]"> <Translations text='Tiếng việt' /></span> </div>
-                        <div onClick={() => handleLangItemClick('en')} className='cursor-pointer flex items-center'> <Image style={{ width: 20, height: 20 }} alt='' src={flagUK} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]"><Translations text='Tiếng anh' /></span> </div>
+                        <div onClick={() => handleLangItemClick('vi')} className='cursor-pointer font-semibold flex items-center mr-3'> <Image style={{ width: 20, height: 20 }} alt='' src={flagVN} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]"> <Translations text='Tiếng việt' /></span> </div>
+                        <div onClick={() => handleLangItemClick('en')} className='cursor-pointer font-semibold flex items-center'> <Image style={{ width: 20, height: 20 }} alt='' src={flagUK} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]"><Translations text='Tiếng anh' /></span> </div>
                     </div>
                     <div className=' md:hidden flex'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={location} />
-                        <span className="text-white ml-2 text-[15px] sm:text-[16.5px]"> <Translations text='66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh' /></span>
+                        <span className="text-white ml-2 font-semibold text-[15px] sm:text-[16.5px]"> <Translations text='66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh' /></span>
                     </div>
                 </div>
             </Container>

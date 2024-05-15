@@ -11,6 +11,7 @@ import service4 from '@assets/images/p4.png';
 import service5 from '@assets/images/p5.png';
 import service6 from '@assets/images/p6.jpg';
 import FooterComponent from '@srccomponents/home/FooterComponent'
+import Translations from '@srccommons/Translations'
 
 const News = () => {
     return (
@@ -19,7 +20,9 @@ const News = () => {
             <div className='mt-[6rem]'>
                 <div className='bg-banner py-8'>
                     <Container>
-                        <h3 className='text-shadown text-center text-white text-[30px] md:text-[35px]'>TIN TỨC - XU HƯỚNG </h3>
+                        <h3 className='text-shadown text-center text-white text-[30px] md:text-[35px] uppercase'>
+                            <Translations text='Tin tức - Xu hướng' />
+                        </h3>
                     </Container>
                 </div>
 

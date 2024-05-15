@@ -226,8 +226,8 @@ const AboutUs = () => {
       </section>
       <section className="mb-20">
         <div className="bg-header1 py-6 ">
-          <h1 className="text-white text-[31px] md:text-[40px] text-center font-avo_bold text-shadown">
-            ĐỘI NGŨ CỦA <br className="sm:hidden" /> CHÚNG TÔI
+          <h1 className="text-white text-[31px] md:text-[40px] text-center font-avo_bold text-shadown uppercase">
+            <Translations text="Đội ngũ của" /> <br className="sm:hidden" /> <Translations text="Chúng tôi" />
           </h1>
         </div>
         <Container>

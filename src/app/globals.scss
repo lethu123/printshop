@@ -115,7 +115,7 @@ body.light-mode .home-page {
 
 .light-mode {
   .custom-text-mode {
-    color: black !important;
+    color: var(--foreground-rgb) !important;
   }
 
   .bg-header1 {

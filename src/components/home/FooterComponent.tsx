@@ -2,7 +2,7 @@ import Container from "@srccommons/Container";
 import Link from "next/link";
 import React from "react";
 import styles from "@assets/scss/home.module.scss";
-import { IconEmail, IconLocation, IconPhone } from "@srccommons/icons";
+import { IconEmail, IconLocation, IconPhone, IconFax } from "@srccommons/icons";
 import Translations from "@srccommons/Translations";
 
 const FooterComponent = () => {
@@ -44,9 +44,12 @@ const FooterComponent = () => {
 
                     <span className="text=[15px]"> 028. 38 44. 1111</span>
                   </div>
-                  <div>
-                    <span className="custom-text-mode text=[15px]">
-                      fax: 028.39971009
+                  <div className="flex items-center custom-text-mode gap-2">
+                    <IconFax 
+                      className="w-[15px] custom-icon-hidden"
+                    />
+                    <span className="custom-text-mode text-[15px]">
+                      028.39971009
                     </span>
                   </div>
                 </div>
