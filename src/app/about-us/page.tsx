@@ -28,7 +28,7 @@ const AboutUs = () => {
         <Container>
           <div className="xl:flex items-center justify-between">
             <h1 className="border-l-4 pl-5 border-white text-white text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 uppercase text-shadown">
-              <Translations text="Về dương phong" />
+              <Translations text="Hành trình của chúng tôi" />
             </h1>
             <div className="hidden md:flex items-center flex-wrap gap-6">
               <div className="w-[150px] lg:w-[210px]">
@@ -227,7 +227,8 @@ const AboutUs = () => {
       <section className="mb-20">
         <div className="bg-header1 py-6 ">
           <h1 className="text-white text-[31px] md:text-[40px] text-center font-avo_bold text-shadown uppercase">
-            <Translations text="Đội ngũ của" /> <br className="sm:hidden" /> <Translations text="Chúng tôi" />
+            <Translations text="Đội ngũ của" /> <br className="sm:hidden" />{" "}
+            <Translations text="Chúng tôi" />
           </h1>
         </div>
         <Container>

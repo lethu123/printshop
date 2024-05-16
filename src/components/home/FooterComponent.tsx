@@ -45,9 +45,7 @@ const FooterComponent = () => {
                     <span className="text=[15px]"> 028. 38 44. 1111</span>
                   </div>
                   <div className="flex items-center custom-text-mode gap-2">
-                    <IconFax 
-                      className="w-[15px] custom-icon-hidden"
-                    />
+                    <IconFax className="w-[15px] custom-icon-hidden" />
                     <span className="custom-text-mode text-[15px]">
                       028.39971009
                     </span>
@@ -82,10 +80,10 @@ const FooterComponent = () => {
 
           <div className="col-span-5 md:col-span-3 lg:col-span-2 flex flex-wrap justify-between">
             <div className=" ">
-              <h1 className="custom-text-mode font-extrabold text-[20px]">
-                OUR MENU CATAGORIES
+              <h1 className="custom-text-mode font-extrabold text-[20px] uppercase">
+                <Translations text="Danh mục" />
               </h1>
-              <div className="flex justify-between">
+              <div className="flex gap-20 justify-between">
                 <ul className={`${styles.ul} custom-text-mode`}>
                   <li className="text-[15px]">
                     <Link href={"/"}>
