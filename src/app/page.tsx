@@ -85,9 +85,8 @@ export default function Home() {
           <div className="grid grid-cols-6 gap-10 mt-5 items-center">
             <div className="col-span-6 xl:col-span-3">
               <p className="text-[18px] mb-3">
-                <span className="font-avo_bold font-medium">4-1998:</span>
-                <span className="text-white ">
-                  {" "}
+                <span className="font-avo_bold font-medium">4-1998: </span>
+                <span className="text-white "> 
                   <Translations text="30year-line1" />
                 </span>
               </p>
@@ -109,21 +108,20 @@ export default function Home() {
                 </span>
               </p>
               <p className="text-[18px] mb-3">
-                <span className="font-avo_bold font-medium">2012:</span>
-                <span className="text-white">
-                  {" "}
+                <span className="font-avo_bold font-medium">2012: </span>
+                <span className="text-white"> 
                   <Translations text="30year-line4" />
                 </span>
               </p>
               <p className="text-[18px] mb-3">
-                <span className="font-avo_bold font-medium">2012-2024:</span>
+                <span className="font-avo_bold font-medium">2012-2024: </span>
                 <span className="text-white ">
                   <Translations text="30year-line5" />
                 </span>
               </p>
               <p className="text-[18px] mb-3">
                 <span className="font-avo_bold font-medium">
-                  <Translations text="2024-2028" />:
+                  <Translations text="2024-2028" />: {' '}
                 </span>
                 <span className="text-white ">
                   <Translations text="30year-line6" />

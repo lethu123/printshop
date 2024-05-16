@@ -64,13 +64,13 @@ const menu = [
         path: '/contact'
     },
     {
-        title: 'Tiếng anh',
+        title: 'Tiếng Anh',
         path: '#',
         icon: flagUK,
         language: 'en' as const
     },
     {
-        title: 'Tiếng việt',
+        title: 'Tiếng Việt',
         path: '#',
         icon: flagVN,
         language: 'vi' as const

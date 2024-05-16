@@ -67,7 +67,7 @@ const AboutUs = () => {
           </div>
           <div className="py-10 lg:pl-6">
             <p className="text-[18px] text-white mb-3">
-              <span className="font-avo_bold">4-1998:</span>
+              <span className="font-avo_bold">4-1998: </span>
               <span className="text-white ">
                 <Translations text="30year-line1" />
               </span>
