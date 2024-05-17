@@ -546,7 +546,7 @@ const ProductDetail = () => {
                 className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}
               >
                 <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">
-                  GONDOLAR HEAD <br /> DISPLAY STANS <br /> BOOTH{" "}
+                  GONDOLAR HEAD <br /> DISPLAY STANDS <br /> BOOTH{" "}
                 </p>
                 <div
                   className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
