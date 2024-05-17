@@ -236,7 +236,7 @@ const ServiceDetail = () => {
       <div className=" mb-10 mt-[6rem]">
         <div className="bg-banner py-8">
           <Container>
-            <h3 className="text-shadown text-center text-white text-[30px] md:text-[35px]">
+            <h3 className="text-shadown uppercase text-center text-white text-[30px] md:text-[35px]">
               <Translations text="THIẾT KẾ - TẠO MẪU QUẦY KỆ," /> <br />
               <Translations text="TỦ TRƯNG BÀY SẢN PHẨM (POSM)" />
             </h3>

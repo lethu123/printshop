@@ -160,8 +160,8 @@ const ProductDetail = () => {
               <div
                 className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}
               >
-                <p className="text-white   p-3 items-end mt-auto text-base xl:text-[21.42px]">
-                  TỜ RƠI
+                <p className="text-white  uppercase p-3 items-end mt-auto text-base xl:text-[21.42px]">
+                  <Translations text="Tờ rơi" />
                 </p>
                 <div
                   className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
@@ -191,8 +191,10 @@ const ProductDetail = () => {
               <div
                 className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}
               >
-                <p className="text-white leading-7 p-3 text-base xl:text-[21.42px]">
-                  LỊCH TƯỜNG <br /> LỊCH ĐỂ BÀN <br /> LỊCH BLOC
+                <p className="text-white leading-7 uppercase p-3 text-base xl:text-[21.42px]">
+                  <Translations text="Lịch tường" /> <br />{" "}
+                  <Translations text="Lịch để bàn" /> <br />{" "}
+                  <Translations text="Lịch bloc" />
                 </p>
                 <div
                   className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full"
@@ -213,8 +215,8 @@ const ProductDetail = () => {
               <div
                 className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}
               >
-                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">
-                  SỔ TAY - TẬP VỞ
+                <p className="text-white uppercase w-full  ml-auto p-3 text-right text-base xl:text-[21.42px]">
+                  <Translations text="Sổ tay - tập vở" />
                 </p>
                 <div
                   className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
@@ -268,8 +270,9 @@ const ProductDetail = () => {
               <div
                 className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}
               >
-                <p className="text-white   p-3 text-base xl:text-[21.42px] leading-7">
-                  HỘP MỀM <br /> HỘP CỨNG
+                <p className="text-white uppercase   p-3 text-base xl:text-[21.42px] leading-7">
+                  <Translations text="Hộp mềm" /> <br />{" "}
+                  <Translations text="Hộp cứng" />
                 </p>
                 <div
                   className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full"
@@ -309,8 +312,8 @@ const ProductDetail = () => {
               <div
                 className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}
               >
-                <p className="text-white w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">
-                  HỘP IN METALIZE
+                <p className="text-white uppercase w-full xl:w-[14rem] ml-auto p-3 text-right text-base xl:text-[21.42px]">
+                  <Translations text="Hộp in Metalize" />
                 </p>
                 <div
                   className="absolute bottom-10 right-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
@@ -349,8 +352,9 @@ const ProductDetail = () => {
               <div
                 className={`${styles.bg_custom_yellow} h-full flex relative z-0 overflow-hidden`}
               >
-                <p className="text-white   p-3 items-end mt-auto text-base xl:text-[21.42px] leading-7">
-                  HỘP GIẤY KRAFT <br /> HỘP BỒI CARTON
+                <p className="text-white uppercase  p-3 items-end mt-auto text-base xl:text-[21.42px] leading-7">
+                  <Translations text="Hộp giấy Kraft" /> <br />{" "}
+                  <Translations text="Hộp bồi Carton" />
                 </p>
                 <div
                   className="absolute bottom-10 left-10 h-[80%] w-[80%] -z-10 rounded-full border-[0.5px]"
@@ -371,8 +375,8 @@ const ProductDetail = () => {
               <div
                 className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}
               >
-                <p className="text-white   p-3 text-base xl:text-[21.42px]">
-                  TÚI GIẤY
+                <p className="text-white uppercase  p-3 text-base xl:text-[21.42px]">
+                  <Translations text="TÚI GIẤY" />
                 </p>
                 <div
                   className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full"
@@ -492,9 +496,12 @@ const ProductDetail = () => {
               <div
                 className={`${styles.bg_custom_yellow} h-full z-0 relative overflow-hidden`}
               >
-                <p className="text-white p-3 text-base xl:text-[21.42px] leading-7">
-                  BẢNG QUẢNG CÁO <br /> TẤM LỚN - BILLBOARD <br /> HỘP ĐÈN{" "}
-                  <br /> BIỂN HIỆU <br /> SHOP SIGN
+                <p className="text-white p-3 uppercase text-base xl:text-[21.42px] leading-7">
+                  <Translations text="BẢNG QUẢNG CÁO" /> <br />{" "}
+                  <Translations text="TẤM LỚN - BILLBOARD" /> <br />{" "}
+                  <Translations text="HỘP ĐÈN" /> <br />{" "}
+                  <Translations text="BIỂN HIỆU" /> <br />
+                  SHOP SIGN
                 </p>
                 <div
                   className="absolute -bottom-10 -right-10 h-[80%] w-[80%] -z-[1] rounded-full"
