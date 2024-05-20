@@ -47,7 +47,7 @@ const AboutUs = () => {
                 </h1>
               </div>
             </div>
-            <div className="md:hidden flex  flex-wrap gap-6">
+            <div className="md:hidden justify-center flex  flex-wrap gap-6">
               <div className="flex flex-col items-center justify-center">
                 <div className="w-[150px] lg:w-[210px]">
                   <Image
