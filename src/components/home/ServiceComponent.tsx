@@ -63,7 +63,7 @@ const CategoryComponent = () => {
             <div
               className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}
             >
-              <p className="text-white w-full  ml-auto p-3 text-right text-base xl:text-[21.42px] uppercase">
+              <p className="text-white w-full  ml-auto p-2 md:p-3 text-right text-base xl:text-[21.42px] uppercase">
                 <Translations text="THIẾT KẾ - TẠO MẪU" /> <br />{" "}
                 <Translations text="QUẦY KỆ, TỦ TRƯNG BÀY   SẢN PHẨM (POSM)" />
               </p>

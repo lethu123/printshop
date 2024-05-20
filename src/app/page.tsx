@@ -86,7 +86,7 @@ export default function Home() {
             <div className="col-span-6 xl:col-span-3">
               <p className="text-[18px] mb-3">
                 <span className="font-avo_bold font-medium">4-1998: </span>
-                <span className="text-white "> 
+                <span className="text-white ">
                   <Translations text="30year-line1" />
                 </span>
               </p>
@@ -109,7 +109,7 @@ export default function Home() {
               </p>
               <p className="text-[18px] mb-3">
                 <span className="font-avo_bold font-medium">2012: </span>
-                <span className="text-white"> 
+                <span className="text-white">
                   <Translations text="30year-line4" />
                 </span>
               </p>
@@ -203,11 +203,11 @@ export default function Home() {
               className="slide-certificate"
               infinite={true}
               slidesToShow={5}
-              slidesToScroll={1}
+              slidesToScroll={1} 
               autoplay={true}
               autoplaySpeed={2000}
               speed={1500}
-              // variableWidth={true}
+              variableWidth={true}
               responsive={[
                 {
                   breakpoint: 1536,
@@ -253,25 +253,18 @@ export default function Home() {
                 },
               ]}
             >
-              <Image alt="" src={certificate1} className="w-full h-full" />
+              <Image alt="" src={certificate1} className="aspect-[3/4] h-[290px]" />
 
-              <Image alt="" src={certificate2} className="w-full h-full  " />
+              <Image alt="" src={certificate2} className="aspect-[3/4] h-[290px] " />
 
-              <Image alt="" src={certificate3} className="w-full h-full  " />
+              <Image alt="" src={certificate3} className="aspect-[3/4] h-[290px] " />
 
-              <Image alt="" src={certificate4} className="w-full h-full  " />
+              <Image alt="" src={certificate4} className="aspect-[3/4] h-[290px] " />
 
-              <Image alt="" src={certificate5} className="w-full h-full  " />
-
-              <div className="h-full">
-                <div className="flex justify-center items-center w-[426px] h-full">
-                  <Image alt="" src={certificate6} className="my-auto" />
-                </div>
-              </div>
-              <div></div>
-              <div className="flex">
-                <Image alt="" src={certificate7} className="h-[320px] w-auto" />
-              </div>
+              <Image alt="" src={certificate5} className="aspect-[3/4] h-[290px] " />
+              <Image alt="" src={certificate6} className="aspect-[3/2] h-[290px] " /> 
+              <Image alt="" src={certificate7} className="aspect-[1/2] h-[290px]  " />
+             
             </Slider>
           </Container>
         </div>

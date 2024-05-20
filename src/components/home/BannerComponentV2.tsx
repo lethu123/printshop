@@ -60,9 +60,9 @@ const BannerTemplate = ({ slide }: { slide: string }) => {
         </div>
         <div className="absolute bottom-0 w-full pb-10">
             <Container>
-                <div className="md:justify-center md:items-center gap-1 md:gap-5 lg:gap-10 md:pb-8 flex-col md:flex-row flex">
+                <div className="md:justify-center md:items-center   md:gap-5 lg:gap-10 md:pb-8 flex-col md:flex-row flex">
                     <div className='z-10  md:grow'>
-                        <Image className="w-1/2 sm:w-1/3 md:w-full" src={lang === 'en' ? icon4 : icon1} alt='' />
+                        <Image className={`${lang === 'en' ? 'w-3/5' : 'w-1/2'} sm:w-1/3 md:w-full`} src={lang === 'en' ? icon4 : icon1} alt='' />
                     </div>
                     <div className='z-10  md:grow'>
                         <Image className="w-1/2 sm:w-1/3 md:w-full" src={lang === 'en' ? icon5 : icon2} alt='' />
@@ -216,7 +216,7 @@ const BannerComponentV2 = () => {
                 infinite={true}
                 slidesToShow={1}
                 slidesToScroll={1}
-                autoplay={true}
+                // autoplay={true}
                 adaptiveHeight={false}
                 autoplaySpeed={3000}
                 speed={1000}
