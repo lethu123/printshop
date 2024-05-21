@@ -216,7 +216,7 @@ const BannerComponentV2 = () => {
                 infinite={true}
                 slidesToShow={1}
                 slidesToScroll={1}
-                // autoplay={true}
+                autoplay={true}
                 adaptiveHeight={false}
                 autoplaySpeed={3000}
                 speed={1000}

@@ -131,7 +131,7 @@ const CategoryComponent = () => {
                 onClick={() =>
                   router.push("/services/banner", { scroll: false })
                 }
-                className={`follow_me uppercase text-[22px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}
+                className={`follow_me uppercase text-[12px] md:text-[19px] spin circle h-[130px] w-[130px] xl:h-[150px] xl:w-[150px]`}
               >
                 {" "}
                 <Translations text="Xem thêm" />

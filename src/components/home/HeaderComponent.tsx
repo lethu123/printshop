@@ -14,12 +14,12 @@ const HeaderComponent = () => {
     const { i18n } = useTranslation()
 
     const handleLangItemClick = (lang: 'en' | 'vi') => {
-        i18n.changeLanguage(lang) 
+        i18n.changeLanguage(lang)
     }
 
     // ** Change html `lang` attribute when changing locale
     useEffect(() => {
-        document.documentElement.setAttribute('lang', i18n.language) 
+        document.documentElement.setAttribute('lang', i18n.language)
     }, [i18n.language])
 
     return (
@@ -29,7 +29,9 @@ const HeaderComponent = () => {
                     <div className='items-center hidden md:flex'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={location} />
                         <span className="text-white ml-2 font-semibold text-[16.5px]">
-                            <Translations text='66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh' />
+                            <Translations text='66/52 Phổ Quang, P.2,' />
+                            <br className="sm:hidden" /> {' '}
+                            <Translations text="Q. Tân Bình, TP. Hồ Chí Minh" />
                         </span>
                     </div>
                     <div className='flex items-center'>
@@ -42,7 +44,11 @@ const HeaderComponent = () => {
                     </div>
                     <div className=' md:hidden flex'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={location} />
-                        <span className="text-white ml-2 font-semibold text-[15px] sm:text-[16.5px]"> <Translations text='66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh' /></span>
+                        <span className="text-white ml-2 font-semibold text-[15px] sm:text-[16.5px]">
+                            <Translations text='66/52 Phổ Quang, P.2,' />
+                            <br className="sm:hidden" /> {' '}
+                            <Translations text="Q. Tân Bình, TP. Hồ Chí Minh" />
+                        </span>
                     </div>
                 </div>
             </Container>

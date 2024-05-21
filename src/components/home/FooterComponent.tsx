@@ -12,7 +12,7 @@ const FooterComponent = () => {
         <div className="grid grid-cols-5 gap-5 items-stretch flex-wrap">
           <div className="col-span-5 md:col-span-3">
             <h1 className="custom-text-mode text-xl font-extrabold lg:text-[21.9px] mb-2 uppercase">
-              <Translations text="company" />
+              <Translations text="company" /> {' '}
               <br className="hidden lg:block" />
               <Translations text="Dương Phong" />
             </h1>
@@ -28,7 +28,8 @@ const FooterComponent = () => {
                     className="w-[12px] custom-icon-hidden"
                   />
                   <span className="text=[15px] font-medium">
-                    <Translations text="66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh" />
+                    <Translations text="66/52 Phổ Quang, P.2," />  {' '}
+                    <Translations text="Q. Tân Bình, TP. Hồ Chí Minh" />
                   </span>
                 </div>
                 <div className="flex justify-between">
@@ -91,6 +92,14 @@ const FooterComponent = () => {
                     </Link>
                   </li>
                   <li className="text-[15px] ">
+                    <Link href={"/about-us"}>
+                      <Translations text="Về chúng tôi" />
+                    </Link>
+                  </li>
+
+                </ul>
+                <ul className={`${styles.ul} custom-text-mode`}>
+                  <li className="text-[15px] ">
                     <Link href={"/products/banner"}>
                       <Translations text="Sản phẩm" />
                     </Link>
@@ -101,13 +110,10 @@ const FooterComponent = () => {
                       <Translations text="Dịch vụ" />
                     </Link>
                   </li>
+
                 </ul>
+
                 <ul className={`${styles.ul} custom-text-mode`}>
-                  <li className="text-[15px] ">
-                    <Link href={"/about-us"}>
-                      <Translations text="Về chúng tôi" />
-                    </Link>
-                  </li>
                   <li className="text-[15px] ">
                     {" "}
                     <Link href={"/news"}>

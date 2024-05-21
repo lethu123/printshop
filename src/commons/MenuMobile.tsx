@@ -60,7 +60,7 @@ const menu = [
         path: '/news'
     },
     {
-        title: ' Liên hệ',
+        title: 'Liên hệ',
         path: '/contact'
     },
     {
@@ -121,7 +121,7 @@ const MenuMobile = () => {
                     {menu.map((it, index) => {
                         if (it.subMenu) {
                             return <div key={it.title} className={`${index != menu.length - 1 ? 'border-b' : ''}`} >
-                                <h3 className="px-5 text-nowrap font-avo_bold p-3 font-semibold text-[#6D6E71] ">{it.title}</h3>
+                                <h3 className="px-5 text-nowrap font-avo_bold p-3 font-semibold text-[#6D6E71] "><Translations text={it.title} /></h3>
                                 <div className='ms-7'>
                                     {it.subMenu.map((i, idx) => (<Link onClick={() => setOpen(!open)} key={i.title} href={i.path} className={`${idx != it.subMenu.length - 1 ? 'border-b' : ''} flex  items-center px-5   gap-x-2.5 p-3 font-semibold text-[#6D6E71] hover:bg-gray-100`}>
                                         <Translations text={i.title} />

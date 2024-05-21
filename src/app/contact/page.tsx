@@ -97,8 +97,9 @@ const ContactUs = () => {
                           color="black"
                           className="w-[12px] custom-icon-hidden"
                         />
-                        <span className="text=[15px] font-medium">
-                          <Translations text="66/52 Phổ Quang, P.2, Q. Tân Bình, TP. Hồ Chí Minh" />
+                        <span className="text-[15px] font-medium">
+                          <Translations text="66/52 Phổ Quang, P.2," /> {' '}
+                          <Translations text="Q. Tân Bình, TP. Hồ Chí Minh" />
                         </span>
                       </div>
                       <div className="flex justify-between flex-wrap">
@@ -121,7 +122,7 @@ const ContactUs = () => {
                           <span className="custom-text-mode text-[15px]">
                             028.39971009
                           </span>
-                        </div> 
+                        </div>
                       </div>
                       <div className="flex custom-text-mode gap-2">
                         <IconEmail

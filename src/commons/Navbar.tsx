@@ -27,7 +27,7 @@ const Navbar = () => {
               <Translations text="Trang chủ" />
             </Link>
             <div className={`${styles.submenu} relative`}>
-              <h3 className={`  text-[18px] cursor-pointer py-3 font-avo_bold`}>
+              <h3 className={`text-[18px] cursor-pointer py-3 font-avo_bold`}>
                 <Translations text="Sản phẩm" />{" "}
                 <i className="fa fa-angle-down text-[#6D6E71]"></i>
               </h3>
