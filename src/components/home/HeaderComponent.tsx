@@ -42,7 +42,7 @@ const HeaderComponent = () => {
                         <div onClick={() => handleLangItemClick('vi')} className='cursor-pointer font-semibold flex items-center mr-3'> <Image style={{ width: 20, height: 20 }} alt='' src={flagVN} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]"> <Translations text='Tiếng Việt' /></span> </div>
                         <div onClick={() => handleLangItemClick('en')} className='cursor-pointer font-semibold flex items-center'> <Image style={{ width: 20, height: 20 }} alt='' src={flagUK} /> <span className="text-white ml-2 hidden sm:inline-block text-[15px]"><Translations text='Tiếng Anh' /></span> </div>
                     </div>
-                    <div className=' md:hidden flex'>
+                    <div className='items-center md:hidden flex'>
                         <Image style={{ width: 20, height: 20 }} alt='' src={location} />
                         <span className="text-white ml-2 font-semibold text-[15px] sm:text-[16.5px]">
                             <Translations text='66/52 Phổ Quang, P.2,' />

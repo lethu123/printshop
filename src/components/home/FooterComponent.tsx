@@ -91,14 +91,25 @@ const FooterComponent = () => {
                       <Translations text="Trang chủ" />
                     </Link>
                   </li>
-                  <li className="text-[15px] ">
+                  <li className="text-[15px] sm:hidden">
+                    <Link href={"/products/banner"}>
+                      <Translations text="Sản phẩm" />
+                    </Link>
+                  </li>
+                  <li className="text-[15px] sm:hidden ">
+                    {" "}
+                    <Link href={"/services/banner"}>
+                      <Translations text="Dịch vụ" />
+                    </Link>
+                  </li>
+                  <li className="text-[15px] hidden sm:block">
                     <Link href={"/about-us"}>
                       <Translations text="Về chúng tôi" />
                     </Link>
                   </li>
 
                 </ul>
-                <ul className={`${styles.ul} custom-text-mode`}>
+                <ul className={`${styles.ul} custom-text-mode hidden sm:block`}>
                   <li className="text-[15px] ">
                     <Link href={"/products/banner"}>
                       <Translations text="Sản phẩm" />
@@ -114,6 +125,11 @@ const FooterComponent = () => {
                 </ul>
 
                 <ul className={`${styles.ul} custom-text-mode`}>
+                  <li className="text-[15px] sm:hidden">
+                    <Link href={"/about-us"}>
+                      <Translations text="Về chúng tôi" />
+                    </Link>
+                  </li>
                   <li className="text-[15px] ">
                     {" "}
                     <Link href={"/news"}>

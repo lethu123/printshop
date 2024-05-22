@@ -263,7 +263,7 @@ export default function Home() {
 
               <Image alt="" src={certificate5} className="aspect-[3/4] h-[290px] " />
               <Image alt="" src={certificate6} className="aspect-[3/2] h-[290px] " /> 
-              <Image alt="" src={certificate7} className="aspect-[1/2] h-[290px]  " />
+              <Image alt="" src={certificate7} className="aspect-[1/2] px-4 h-[290px]  " />
              
             </Slider>
           </Container>
