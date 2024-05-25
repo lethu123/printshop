@@ -60,7 +60,7 @@ const BannerTemplate = ({ slide }: { slide: string }) => {
         </div>
         <div className="absolute bottom-0 w-full pb-10">
             <Container>
-                <div className="md:justify-center md:items-center   md:gap-5 lg:gap-10 md:pb-8 flex-col md:flex-row flex items-start">
+                <div className="md:justify-center md:items-center   md:gap-5 lg:gap-10 md:pb-8  md:flex-row flex items-start">
                     <div className='z-10  h-[42px] md:h-auto md:grow'>
                         <Image className={`h-full w-full`} src={lang === 'en' ? icon4 : icon1} alt='' />
                     </div>
