@@ -24,7 +24,7 @@ const AboutUs = () => {
   return (
     <Screen _className="product-page relative">
       <BannerSingle classImage={"bg-banner-about"} />
-      <section className="bg-[#808080] pt-10">
+      <section className="bg-[#6D6E70] pt-10">
         <Container>
           <div className="xl:flex items-center justify-between">
             <h1 className="border-l-4 pl-5 border-white text-white text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 uppercase text-shadown">
@@ -158,13 +158,13 @@ const AboutUs = () => {
           </h1>
           <div className="sm:hidden mb-5 mt-3">
             <p className="text-[#145629] font-avo_bold  text-xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer">
-              <Translations text="SẢN XUẤT  BỀN VỮNG" />
+              <Translations text="SẢN XUẤT BỀN VỮNG" />
             </p>
             <p className="text-[#145629] font-avo_bold  text-xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer">
-              <Translations text="THÂN THIỆN  MÔI TRƯỜNG" />
+              <Translations text="THÂN THIỆN MÔI TRƯỜNG" />
             </p>
             <p className="text-[#145629] font-avo_bold  text-xl mb-1 md:mb-0 md:text-xl lg:text-2xl 2xl:text-[28px] cursor-pointer">
-              <Translations text="TIẾT KIỆM  NĂNG LƯỢNG" />
+              <Translations text="TIẾT KIỆM NĂNG LƯỢNG" />
             </p>
           </div>
           <div className="items-center pb-8 hidden sm:flex mt-3">
