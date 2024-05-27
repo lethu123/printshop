@@ -193,7 +193,7 @@ export default function Home() {
           <Container>
             <div className="flex items-center justify-center flex-col">
               <div className="inline-block pb-[50px]">
-                <h1 className="text-center text-shadown font-semibold  text-2xl md:text-3xl lg:text-[30.48px] text-white uppercase">
+                <h1 className="text-center text-shadown font-semibold text-xl  sm:text-2xl md:text-3xl lg:text-[30.48px] text-white uppercase">
                   <Translations text="Chứng nhận/ Bằng khen" />
                 </h1>
               </div>
@@ -247,23 +247,23 @@ export default function Home() {
                 {
                   breakpoint: 480,
                   settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                   },
                 },
               ]}
             >
-              <Image alt="" src={certificate1} className="  h-[260px] md:h-[290px]" />
+              <Image alt="" src={certificate1} className="aspect-[439/584] h-[300px] " />
 
-              <Image alt="" src={certificate2} className="  h-[260px] md:h-[290px] " />
+              <Image alt="" src={certificate2} className="aspect-[439/592] h-[300px]  " />
 
-              <Image alt="" src={certificate3} className="  h-[260px] md:h-[290px] " />
+              <Image alt="" src={certificate3} className="aspect-[439/584] h-[300px]  " />
 
-              <Image alt="" src={certificate4} className="  h-[260px] md:h-[290px] " />
+              <Image alt="" src={certificate4} className="aspect-[428/586] h-[300px]  " />
 
-              <Image alt="" src={certificate5} className="  h-[260px] md:h-[290px] " />
-              <Image alt="" src={certificate6} className="   h-[260px] md:h-[290px] " /> 
-              <Image alt="" src={certificate7} className="  px-4  h-[260px] md:h-[290px]  " />
+              <Image alt="" src={certificate5} className="aspect-[428/570] h-[300px]  " />
+              <Image alt="" src={certificate6} className=" h-[300px] " /> 
+              <Image alt="" src={certificate7} className=" aspect-[213/570] h-[300px]   " />
              
             </Slider>
           </Container>
