@@ -189,7 +189,7 @@ const ProductDetail = () => {
             </div>
             <div className="col-span-5 sm:col-span-4 md:col-span-3 lg:col-span-2">
               <div
-                className={`${styles.bg_custom_yellow} h-full relative overflow-hidden`}
+                className={`${styles.bg_custom_yellow} h-full relative z-0 overflow-hidden`}
               >
                 <p className="text-white leading-7 uppercase p-3 text-base xl:text-[21.42px]">
                   <Translations text="Lịch tường" /> <br />{" "}
@@ -197,7 +197,7 @@ const ProductDetail = () => {
                   <Translations text="Lịch bloc" />
                 </p>
                 <div
-                  className="absolute -bottom-10 -right-10 h-[80%] w-[80%] z-10 rounded-full"
+                  className="absolute -bottom-10 -right-10 h-[80%] w-[80%] -z-10 rounded-full"
                   style={{ background: "#FAB674" }}
                 ></div>
               </div>
