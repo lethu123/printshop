@@ -204,7 +204,7 @@ export default function Home() {
               infinite={true}
               slidesToShow={5}
               slidesToScroll={1} 
-              autoplay={true}
+              // autoplay={true}
               autoplaySpeed={2000}
               speed={1500}
               variableWidth={true}
@@ -253,17 +253,17 @@ export default function Home() {
                 },
               ]}
             >
-              <Image alt="" src={certificate1} className=" h-[260px] md:h-[290px]" />
+              <Image alt="" src={certificate1} className=" h-[290px]" />
 
-              <Image alt="" src={certificate2} className=" h-[260px] md:h-[290px] " />
+              <Image alt="" src={certificate2} className=" h-[290px] " />
 
-              <Image alt="" src={certificate3} className=" h-[260px] md:h-[290px] " />
+              <Image alt="" src={certificate3} className=" h-[290px] " />
 
-              <Image alt="" src={certificate4} className=" h-[260px] md:h-[290px] " />
+              <Image alt="" src={certificate4} className=" h-[290px] " />
 
-              <Image alt="" src={certificate5} className=" h-[260px] md:h-[290px] " />
-              <Image alt="" src={certificate6} className="  h-[260px] md:h-[290px] " /> 
-              <Image alt="" src={certificate7} className="  px-4 h-[260px] md:h-[290px]  " />
+              <Image alt="" src={certificate5} className=" h-[290px] " />
+              <Image alt="" src={certificate6} className="  h-[290px] " /> 
+              <Image alt="" src={certificate7} className="  px-4 h-[290px]  " />
              
             </Slider>
           </Container>
