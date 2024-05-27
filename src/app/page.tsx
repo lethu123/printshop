@@ -253,17 +253,17 @@ export default function Home() {
                 },
               ]}
             >
-              <Image alt="" src={certificate1} className="aspect-[439/584] h-[300px] " />
+              <Image alt="" src={certificate1} className="aspect-[439/584]  sm:h-[300px] " />
 
-              <Image alt="" src={certificate2} className="aspect-[439/592] h-[300px]  " />
+              <Image alt="" src={certificate2} className="aspect-[439/592]  sm:h-[300px]  " />
 
-              <Image alt="" src={certificate3} className="aspect-[439/584] h-[300px]  " />
+              <Image alt="" src={certificate3} className="aspect-[439/584]  sm:h-[300px]  " />
 
-              <Image alt="" src={certificate4} className="aspect-[428/586] h-[300px]  " />
+              <Image alt="" src={certificate4} className="aspect-[428/586]  sm:h-[300px]  " />
 
-              <Image alt="" src={certificate5} className="aspect-[428/570] h-[300px]  " />
-              <Image alt="" src={certificate6} className=" h-[300px] " /> 
-              <Image alt="" src={certificate7} className=" aspect-[213/570] h-[300px]   " />
+              <Image alt="" src={certificate5} className="aspect-[428/570]  sm:h-[300px]  " />
+              <Image alt="" src={certificate6} className="  sm:h-[300px] " /> 
+              <Image alt="" src={certificate7} className=" aspect-[213/570]  sm:h-[300px]   " />
              
             </Slider>
           </Container>
