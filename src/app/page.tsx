@@ -4,7 +4,9 @@ import HeaderComponent from "@components/home/HeaderComponent";
 import styles from "@assets/scss/home.module.scss";
 import Image from "next/image";
 import icon30 from "@assets/images/30-01.svg";
-import icon302 from "@assets/images/30-01-en.svg";
+import icon302 from "@assets/images/30-02.svg";
+import icon30en from "@assets/images/30-01-en.svg";
+import icon302en from "@assets/images/30-02-en.svg";
 
 import certificate1 from "@assets/images/c1.jpg";
 import certificate2 from "@assets/images/c2.jpg";
@@ -48,41 +50,28 @@ export default function Home() {
 
       <div className={`${styles.bg_intro} pb-[5rem] pt-10 -mt-2`}>
         <div className="w-full px-4 xl:px-0 xl:w-5/6 mx-auto 3xl:mx-auto max-w-screen-2xl lg:ms-auto xl:mr-0">
-          <div className="hidden md:flex items-center flex-wrap gap-6">
-            <div className="w-[150px] lg:w-[210px]">
+          <div className="hidden xl:flex items-center flex-wrap gap-6">
+            <div className="w-[400px] ">
               <Image
                 alt=""
                 className="w-full"
-                src={lang === "en" ? icon302 : icon30}
+                src={lang === "en" ? icon30en : icon30}
+                
               />
-            </div>
-            <div className="w-full md:mt-0 md:w-auto">
-              <h1 className="text-[24px] text-white font-avo_bold">
-                <Translations text="THÀNH LẬP CÔNG TY" />
-              </h1>
-              <h1 className="text-[24px] leading-7 text-white font-avo_bold ">
-                1998 - 2028
-              </h1>
-            </div>
+            </div> 
           </div>
-          <div className="md:hidden flex justify-center flex-wrap gap-6">
+          <div className="xl:hidden flex justify-center flex-wrap gap-6">
             <div className="flex flex-col items-center justify-center">
-              <div className="w-[150px] lg:w-[210px]">
+              <div className="w-[190px] lg:w-[210px]">
                 <Image
                   alt=""
                   className="w-full"
-                  src={lang === "en" ? icon302 : icon30}
+                  src={lang === "en" ? icon302en : icon302}
                 />
-              </div>
-              <h1 className="text-[24px] text-white">
-                <Translations text="THÀNH LẬP CÔNG TY" />
-              </h1>
-              <h1 className="text-[24px] leading-7 text-white  ">
-                1998 - 2028
-              </h1>
+              </div> 
             </div>
           </div>
-          <div className="grid grid-cols-6 gap-10 mt-5 items-center">
+          <div className="grid grid-cols-6 gap-10 mt-5 items-start">
             <div className="col-span-6 xl:col-span-3">
               <p className="text-[18px] mb-3">
                 <span className="font-avo_bold font-medium">4-1998: </span>

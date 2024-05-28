@@ -4,7 +4,9 @@ import Container from "@srccommons/Container";
 import Image from "next/image";
 import styles from "@assets/scss/home.module.scss";
 import icon30 from "@assets/images/30-01-yellow.svg";
-import icon302 from "@assets/images/30-01-yellow-en.svg";
+import icon302 from "@assets/images/30-02-yellow.svg";
+import icon30en from "@assets/images/30-01-yellow-en.svg";
+import icon302en from "@assets/images/30-02-yellow-en.svg";
 
 import "@assets/scss/home.scss";
 import BannerSingle from "@srccommons/BannerSingle";
@@ -30,38 +32,26 @@ const AboutUs = () => {
             <h1 className="border-l-4 pl-5 border-white text-white text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 uppercase text-shadown">
               <Translations text="Hành trình của chúng tôi" />
             </h1>
-            <div className="hidden md:flex items-center flex-wrap gap-6">
-              <div className="w-[150px] lg:w-[210px]">
+            <div className="hidden xl:flex items-center flex-wrap gap-6">
+              <div className="w-[400px] ">
                 <Image
                   alt=""
                   className="w-full"
-                  src={lang === "en" ? icon302 : icon30}
+                  src={lang === "en" ? icon30en : icon30}
+
                 />
               </div>
-              <div className="w-full md:mt-0 md:w-auto">
-                <h1 className="text-[23px] font-avo_bold text-white">
-                  <Translations text="THÀNH LẬP CÔNG TY" />
-                </h1>
-                <h1 className="text-[23px] font-avo_bold leading-7 text-white ">
-                  1998 - 2028
-                </h1>
-              </div>
             </div>
-            <div className="md:hidden justify-center flex  flex-wrap gap-6">
+            <div className="xl:hidden justify-center flex  flex-wrap gap-6">
               <div className="flex flex-col items-center justify-center">
-                <div className="w-[150px] lg:w-[210px]">
+                <div className="w-[190px] lg:w-[210px]">
                   <Image
                     alt=""
                     className="w-full"
-                    src={lang === "en" ? icon302 : icon30}
+                    src={lang === "en" ? icon302en : icon302}
                   />
                 </div>
-                <h1 className="text-[24px] font-avo_bold text-white">
-                  <Translations text="THÀNH LẬP CÔNG TY" />
-                </h1>
-                <h1 className="text-[24px] font-avo_bold leading-7 text-white  ">
-                  1998 - 2028
-                </h1>
+
               </div>
             </div>
           </div>
